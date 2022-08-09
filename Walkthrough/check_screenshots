@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+
+import re
+import argparse
+import os
+import os.path
+
+image_by_reference_matcher = re.compile(r'\!\[(?P<caption>[^\]]+)\]\[(?P<reference>[^\]]+)\]')
+reference_matcher = re.compile(r'\[(?P<reference>[^\]]+)\]: (?P<url>\S+)(\s+(?P<text>[\'\"].*[\'\"]))?')
+
+images = {}
+references = {}
+
+argparser = argparse.ArgumentParser(description='Check that all image links in a Markdown document have an associated file')
+argparser.add_argument('markdown_file', help='the Markdown file to examine')
+argparser.add_argument('--pictures', help='directory containing pictures', default='Screenshots')
+args = argparser.parse_args()
+
+markdown_filename = args.markdown_file
+f = open(markdown_filename)
+for line in f:
+    im = image_by_reference_matcher.match(line)
+    if im:
+        images[im.group('reference')] = im
+    rm = reference_matcher.match(line)
+    if rm:
+        references[rm.group('reference')] = rm
+f.close()
+
+pictures = os.listdir(args.pictures)
+pictures.sort()
+pictures = [os.path.join(args.pictures, picture) for picture in pictures]
+stray_pictures = []
+
+print("Images with no reference:")
+for reference in images.keys():
+    if reference not in references:
+        print(F"{reference}")
+
+print(" ")
+print("References with no image:")
+for reference in references.keys():
+    url = references[reference]['url']
+    if url.startswith('http'):
+        continue
+    if reference not in images:
+        print(F"{reference}")
+
+print(" ")
+print("Image references that don't have files:")
+for reference in references.keys():
+    if reference not in images:
+        continue
+    url = references[reference]['url']
+    if url.startswith('http'):
+        continue
+    if not os.path.isfile(url):
+        print(F"{url} ({reference})")
+
+print(" ")
+print("Pictures with no reference in document:")
+urls = [references[reference]['url'] for reference in references.keys()]
+urls.sort()
+for picture in pictures:
+    if picture in urls:
+        continue
+    if picture.endswith('.md'):
+        continue
+    stray_pictures.append(picture)
+    print(F"{picture}")
