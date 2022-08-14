@@ -397,7 +397,7 @@ Satellites:
 + Canyons (18.150, -50,300) (18 9' 0"N, 50 18'0"W) (18.177, -50.448)
 + East Crater (-0.617, 81.593)
 + East Farside Crater (7.109, -150.838)
-+ Farside Basin (20.618, -93.351) (29 37' 5"N, 93 21' 5"W)
++ Farside Basin (29.618, -93.351) (29 37' 5"N, 93 21' 5"W)
 + Farside Crater (-0.247, -58.873) (0 14' 48"N, 58 53' 2"W)
 + Highland Craters (64.424, 173.655) (64 25' 41"N 173 40' 3"E)
 + Highlands (0.372, -34.280)
@@ -406,7 +406,7 @@ Satellites:
 + Midlands (0,96.966) (0N, 96 58'20"E)
 + Northern Basin (36.592, 61.975) (36 35'34"N, 61 58'47"E)
 + Northwest Crater
-+ Polar Crater (50 52' 4"N 36 32' 59"W)
++ Polar Crater (50.87, -36.55) (50 52' 4"N 36 32' 59"W)
 + Polar Lowlands (79.666, 108.266) (79° 39' 57.6"N, 108° 15' 57.6"E)
 + Poles (74.464, 83.926) (74 27'56"N, 83 59'3"E)
 + Southwest Crater
@@ -459,3 +459,4 @@ Satellites:
 [WOLFIWPC]: https://github.com/UmbraSpaceIndustries/MKS/wiki/WOLF-%E2%80%94-Industry-without-the-part-count "WOLF: Industry without the part count"
 [MRWOLFTS]: https://github.com/MaraRinn/WOLF-Tutorial-Ships "Mara Rinn's WOLF Tutorial Ships repository"
 [BCRESDIAG]: https://forum.kerbalspaceprogram.com/index.php?/topic/154587-111x-modular-kolonization-system-mks/&do=findComment&comment=4026544 "bigcalm's resource diagram"
+[DECDEGREES]: https://www.rapidtables.com/convert/number/degrees-to-degrees-minutes-seconds.html "Decimal Degrees to Degrees,Minutes,Seconds"

@@ -29,9 +29,9 @@
 - [Extracting Resources from WOLF to MKS](#extracting-resources-from-wolf-to-mks)
   - [Establishing the Kerbin Shipyard](#establishing-the-kerbin-shipyard)
   - [Crew Transport Preparation](#crew-transport-preparation)
-- [Minmus Shipyard](#minmus-shipyard)
-  - [Minmus Expansion Shipyard](#minmus-expansion-shipyard)
-  - [Minmus Expansion](#minmus-expansion)
+- [Minmus Expansion](#minmus-expansion)
+  - [Minmus Shipyard](#minmus-shipyard)
+  - [Minmus Overview](#minmus-overview)
   - [Minmus CommNet and Skycrane](#minmus-commnet-and-skycrane)
   - [Minmus Route Preparation](#minmus-route-preparation)
   - [01 Midlands Exotic Minerals](#01-midlands-exotic-minerals)
@@ -55,13 +55,24 @@
   - [19 Highlands Life Support](#19-highlands-life-support)
   - [20 Midlands Metals (teal)](#20-midlands-metals-teal)
   - [21 Lesser Flats Silicon (violet)](#21-lesser-flats-silicon-violet)
+  - [22 Greater Flats Specialized Parts (orange)](#22-greater-flats-specialized-parts-orange)
+  - [Build Routes Back to Kerbin Orbit](#build-routes-back-to-kerbin-orbit)
 - [Passenger Transport](#passenger-transport)
   - [Passengers from KSC to Kerbin Orbit](#passengers-from-ksc-to-kerbin-orbit)
+  - [03 Grasslands Material Kits](#03-grasslands-material-kits)
+  - [04 Grasslands Material Kits](#04-grasslands-material-kits)
+  - [05 KSC Colony Supplies](#05-ksc-colony-supplies)
+  - [Establish KSC to Orbit Passenger Route](#establish-ksc-to-orbit-passenger-route)
+  - [Passenger Transfers](#passenger-transfers)
+  - [06 Grasslands Material Kits](#06-grasslands-material-kits)
+  - [07 Orbit Colony Supplies (SPH)](#07-orbit-colony-supplies-sph)
 - [The Mun Expansion](#the-mun-expansion)
   - [Mun Shipyard](#mun-shipyard)
   - [Mun CommNet](#mun-commnet)
-  - [Mun Route Builder Rover](#mun-route-builder-rover)
+  - [Mun Passenger Routes](#mun-passenger-routes)
   - [Mun Depots](#mun-depots)
+  - [Mun Route Builder Rover](#mun-route-builder-rover)
+  - [Depot Deployment Checklist](#depot-deployment-checklist)
   - [01 Farside Crater Material Kits](#01-farside-crater-material-kits)
   - [02 Highlands Specialized Parts](#02-highlands-specialized-parts)
   - [03 East Farside Polymers](#03-east-farside-polymers)
@@ -74,6 +85,7 @@
   - [10 Farside Crater Specialized Parts](#10-farside-crater-specialized-parts)
   - [11 Highlands Specialized Parts](#11-highlands-specialized-parts)
   - [12 Polar Crater Exotic Minerals](#12-polar-crater-exotic-minerals)
+  - [13 Farside Crater Colony Supplies](#13-farside-crater-colony-supplies)
 - [Duna Expansion](#duna-expansion)
   - [Relay Satellites](#relay-satellites)
   - [Establish Depots](#establish-depots)
@@ -81,6 +93,8 @@
   - [02 Polar Craters Metals](#02-polar-craters-metals)
   - [03 Midland Sea A/E/R/S](#03-midland-sea-aers)
 - [WOLF Walkthrough Conclusion](#wolf-walkthrough-conclusion)
+- [Addendums](#addendums)
+  - [Route Builder Rover User Guide](#route-builder-rover-user-guide)
 
 ## WOLF From Scratch: Introducing WOLF Infrastructure on Kerbin
 
@@ -113,7 +127,7 @@ There are a number of differences in the resource chain between MKS and WOLF, ch
 
 ### The Plan
 
-For this part of the walkthrough, the focus is on introducing the WOLF components and workflows:
+For this part of the walkthrough, the focus is on introducing the WOLF components and workflows through a "go big up front" campaign:
 
 1. Explore WOLF biomes and depots
 2. Introduce WOLF transport routes and shipments
@@ -231,7 +245,7 @@ Now that the KSC WOLF Biome is surveyed, we need to deploy a WOLF depot. Before 
 
 ## WOLF Modules
 
-To extract WOLF resources and convert them to useful outputs you'll use a lot of WOLF modules which are the WOLF equivalents to MKS systems such as mining drills, assembly lines, refineries and workshops.
+To extract WOLF resources and convert them to useful outputs you'll use WOLF modules which are the WOLF equivalents to MKS systems such as mining drills, assembly lines, refineries and workshops.
 
 From the SPH scene, start a new ship and open the _Planner_ pane in the **WOLF Dashboard**, and select the "WOLF" parts group in the selection pane on the left, then start planning this depot with a **WOLF Fabricator Module**. Set the **WOLF Fabricator Module** to produce _Material Kits_:
 
@@ -713,20 +727,23 @@ Here's a finished Kerbin Shipyard, ready to start the next phase of expansion:
 - Dock **Reactor Maintenance** to **Crew Transport**
 - Perform Maintenance on **Crew Transport** nuclear reactor (engineer needs to do an EVA)
 - Put **Reactor Maintenance** into a parking orbit
+- At some point in the future, add a **Passenger Quarters** module to **Kerbin Shipyard** which will be used to refresh hab timers for Kerbals in orbit (eg: the engineer aboard **Reactor Maintenance**)
 
 For the duration of the Minmus campaign, the passenger terminal at **Kerbin Shipyard** will be used as a layover for crews launched from Kerbin waiting for the **Crew Transport** to arrive.
 
-## Minmus Shipyard
+## Minmus Expansion
 
 To establish the Minmus shipyard the basic steps are:
 
 1. Build an **Expansion Shipyard**, launch it to Minmus, place it in a 20km circular orbit
 2. Launch a new **Advanced Materials Delivery** rocket and send it to Minmus to dock with the shipyard
-3. Build the **Orbital Route Builder 75** and establish cargo routes between Kerbin Orbit and Minmus Orbit
+3. Build the **Orbital Route Builder 75** and establish a cargo route between Kerbin Orbit and Minmus Orbit
+4. Use the route builder to establish cargo route between Minmus Orbit and Minmus Greater Flats
+5. Use the route builder to establish cargo routes between Greater Flats and the other depots on Minmus
 
 Let's go through that now. If this list has enough detail for you, work through it and skip to the section **Minmus Expansion**.
 
-### Minmus Expansion Shipyard
+### Minmus Shipyard
 
 The **Expansion Shipyard** requires approximately the following materials:
 
@@ -773,7 +790,7 @@ With 15 Material Kits abundance from Kerbin, **Minmus Shipyard** will be produci
 
 Now **Minmus Shipyard** has been established, it's time to expand our WOLF infrastructure to **Minmus** itself.
 
-### Minmus Expansion
+### Minmus Overview
 
 At this point you should be familiar with:
 
@@ -1272,10 +1289,12 @@ Crew:
 
 ### 21 Lesser Flats Silicon (violet)
 
+On the last stretch, just gathering up the remaining resources that will contribute to Specialized Parts production.
+
 Imports:
 
 - Food
-- 3 x Material Kits
+- 3 x Material Kit
 - Oxygen
 - 5 x Water
 
@@ -1291,114 +1310,314 @@ Exports:
 
 - 36 x Silicon
 
+### 22 Greater Flats Specialized Parts (orange)
+
+Our final installation for Minmus. What a journey it's been! Here we just produce some more _Specialized Parts_ which will be almost immediately swallowed up by the next WOLF feature the Walkthrough will be exploring which is _passenger routes_.
+
+Crew:
+
+- 2 x Miner
+- 4 x Technician
+
+Exports:
+
+- 80 x Specialized Parts
+
+### Build Routes Back to Kerbin Orbit
+
+With that deployment done there is a cornucopia of _Specialized Parts_ abundance to transfer to _Kerbin Orbit_. Build another route from _Greater Flats_ to _Minmus Orbit_, then from _Minmus Orbit_ to _Kerbin Orbit_ using the technique that has worked so well so far:
+
+1. Remove what propellant you can
+2. Start the route
+3. Load up with propellant
+4. At the other end you should have a zero cost route
+
+This new route should be enough to carry about 80 _Specialized Parts_ back to Kerbin. There's still a quantity remaining, you could send the route builder back to Minmus to expand that route, since the **Kerbin Shipyard** is going to need time to produce the fuel required to get the Mun fleet provisioned.
+
 ## Passenger Transport
+
+Some time back you built a **KSC Passenger Terminal**. Find it and move it next to the launch pad. Make sure the _WOLF Terminal_ module is connected to the depot.
 
 ### Passengers from KSC to Kerbin Orbit
 
 Creating passenger routes is done similarly to creating cargo routes, but there are extra requirements at the origin depot:
 
 - 2 Colony Supplies per luxury berth (colony supplies require specialized parts)
-- 2 habitation per luxury berth for the origin terminal
-- 2 life support per luxury berth for the origin terminal
-- passenger terminal deployed at origin biome
-- passenger terminal deployed at destination biome
+- 2 habitation per luxury berth
+- 2 life support per luxury berth
+- passenger route must start within 500m of a _WOLF Passenger Terminal_
+- passenger route must finish within 500m of a _WOLF Passenger Terminal_
 
-To set up a 3.75m Passenger Terminal (maximum capacity 6 passengers) we'll want to set up a 6 luxury passenger route (luxury routes are faster, but consume double the resources of economy routes):
+For this part of the walkthrough we'll want to set up a 15 luxury passenger route (luxury routes are faster, but consume double the resources per seat of economy routes). This will require 30 _Habitation_, 30 _Life Support_, and 30 _Colony Supplies_. The catch is that the _WOLF Fabricator Module_ will produce batches of 5 _Colony Supplies_ with these inputs:
 
-- 12 x _Colony Supplies_
-  - 36 x _Material Kits_ (3 x 12)
-  - 24 x _Specialized Parts_ (2 x 12)
-- 12 x _Habitation_
-- 12 x _Life Support_
+- 5 x _Colony Supplies_ (Fabricator)
+  - 5 x _Machinery_ (Fabricator)
+    - 3 x _Material Kits_
+    - 2 x _Specialized Parts_
+  - 3 x _Material Kits_
+  - 2 x _Specialized Parts_
 
-Prepare 6 Passenger SSTO for launch:
+Thus with 1 _WOLF Fabricator Module_ configured for _Colony Supplies_ paired with another configured for _Machinery_, we can produce 5 x _Colony Supplies_ for a total of 6 x _Material Kits_ and 4 x _Specialized Parts_.
+
+Assemble six of those pairs (6 fabricators producing _Colony Supplies_, 6 fabricators producing _Machinery_) and add two _WOLF Habitation Module_ and one _WOLF Life Support Module_ to produce:
+
+- 30 x _Colony Supplies_
+- 40 x _Habitation_
+- 30 x _Life Support_
+
+This will consume:
+
+- 36 x _Material Kits_
+- 24 x _Specialized Parts_
+
+There are other considerations along the way such as life support and crew (remembering that crew dedicated to the WOLF depot consume habitation and life support themselves), maintenance and power. I've packaged this up as **02 Orbit Colony Supplies** in the VAB under **WOLF Depot Landers/Kerbin**.
+
+The _Specialized Parts_ will be coming from Minmus, so let's sort out the 36 _Material Kits)_ required for this expansion.
+
+### 03 Grasslands Material Kits
+
+This is the first of two depot expansions to produce the _Material Kits_ required for production of the _Colony Supplies_ required for the passenger route from _KSC_ to _Kerbin Orbit_. Note that the prebuilt assembly is the **RBR Trailer** with solar power and a Malemute cabin. We don't need to expand route capacity for this installation so no giant Route Builder Rover here.
+
+Deploying this expansion can be done similarly to previous Kerbin ground deployments:
+
+1. engage the brakes
+2. open Bon Voyage Control Panel from the Malemute Cab PAW
+3. select "Use Batteries"
+4. set the destination coordinates
+5. GO!
+6. Switch to a different scene and wait
+
+Being solar powered, this depot deployer will run on batteries until that energy is used up, then halt until the sunshine is available.
+
+Crew:
+
+- 2 x Miner
+- 3 x Technician
+
+Exports:
+
+- 19 _Material Kits_
+
+### 04 Grasslands Material Kits
+
+This is the second of two depot expansions to produce the _Material Kits_ required for the _KSC_ to _Kerbin Orbit_ passenger route.
+
+Deploying this one is basically a repeat of **03 Grasslands Material Kits**.
+
+Note to self: be patient and don't try sending two rovers to the same coordinates otherwise they will spawn inside each other and explode.
+
+Crew:
+
+- Engineer
+- Kolonist
+- 3 x Miner
+- 3 x Technician
+
+Exports:
+
+- 24 _Material Kits_
+
+### 05 KSC Colony Supplies
+
+Import those 24 x _Specialized Parts_ to _KSC_ from **Minmus** via _Kerbin Orbit_ and deploy **05 KSC Colony Supplies** from the SPH.
+
+Crew:
+
+- Technician
+
+### Establish KSC to Orbit Passenger Route
+
+And now we get to what all that effort was about: creating a passenger route from KSC to Kerbin Orbit. Prepare **5m 15 Passenger SSTO** for launch:
 
 - Transfer propellant to KSC Passenger Terminal
-- Start the passenger route
-- Transfer propellant back to 6 Passenger SSTO
+- Start the passenger route by selecting _Connect to origin depot_ under the _WOLF Crew Transporter_ heading
+- Transfer propellant back to the route builder
 - Launch to orbit
 - Rendezvous with **Kerbin Shipyard**
+- Finish the passenger route by selecting _Connect to destination depot_ under the _WOLF Crew Transporter_ heading
+- Dispost of **5m 15 Passenger SSTO** as you see fit
+
+**Note: If you get a warning that you must be within 500m of a terminal in the same biome** this will be because you haven't connected the **KSC Passenger Terminal** to the depot yet. Do that, then you'll need to change scenes and come back to the launch so that the WOLF modules will know that there's a depot in that biome now.
+
+### Passenger Transfers
+
+The next infrastructure you're going to deploy is **07 Orbit Colony Supplies**. It requires 5 crew (see the crew list i nthe following section). Up till now we've launched crews from KSC in crew pods. Now there's a passenger route from KSC to Kerbin Orbit, so let's use that.
+
+Put these crew into something that holds crew (eg: the **07 Orbit Colony Supplies** craft itself, which will let you check the _Planner_ before launching to make sure everything's set up correctly) and "launch" the crew holder from the VAB. 
+
+![KSC Launchpad with 02 Orbit Colony Supplies on pad and KSC Passenger Terminal in background][KSCORBSUPPPAD]
+
+Open the _Crew Transfers_ interface using the icon that looks like a plane taking off.
+
+![Crew Transfers Interface showing one flight available from Kerbin KSC to Kerbin Orbit][CREWTRANSUI]
+
+On the left you have a list of flights that are available. The icons next to the flights will be a plane taking off to indicate an available departing flight, a plane landing to indicate a crew transfer that has completed (more on that later) or a flying rocket to indicate a crew transfer flight that is in progress.
+
+For the moment there is only one flight, which is the one we just established from _Kerbin KSC_ to _Kerbin Orbit_. Select that flight and the middle column will be populated with the flight details and available crew.
+
+The flight details pane show where this flight is leaving from and where it travels to, how many economy or luxury seats are available, and how long the flight will take (in this case "1d 0h 0m").
+
+On the right is the departure pane. Once you add crew to the flight you can click "Launch!" to commit those crew to the flight. At this point, select all the crew in the middle pane and click "Launch!"
+
+The right hand pane of the Crew Transfers window should now show only the delay until the flight arrives:
+
+![Crew Transfers Interface showing the KSC to Orbit flight is in progress and will arrive in about 1d][CREWTRANSINFLGHT]
+
+Now recover the craft that previously held the crew.
+
+When the flight has reached Kerbin Orbit, head to the **Kerbin Shipyard** and open the _Crew Transfers_ window through the _Show Terminal Window_ action in the _WOLF Terminal_'s PAW, then:
+
+1. Select the flight that has arrived at this terminal from the left pane (the icon of a plane landing, standard "arrivals" ideogram)
+2. Select all the crew from the middle pane
+3. Select the terminal that you want passengers to disembark at from the dropdown in the right-hand pane
+4. Disembark
+
+This is the scene in my game:
+
+![Kerbin Shipyard with terminal PAW open and Crew Transfers Window showing arrived flight, selected crew and disembarking terminal][KSYCREWARRIVE]
+
+### 06 Grasslands Material Kits
+
+Produce some more _Material Kits_ to support the passenger route from _Kerbin Orbit_ to _Mun Orbit_. You'll need to expand the route for Grasslands back to KSC so this one is a trailer deployed by the Route Builder Rover. Remember to put a pilot in the RBR itself to get it moving faster when using Bon Voyage to move rovers. This rover is un-steerable due to using Rovemax Model XL3 wheels.
+
+Crew (in the Karibou Crew Cabin, which you might need to re-attach in order to convince KSP that the crew seats exist):
+
+- Technician
+
+Exports:
+
+- 60 x _Material Kits_ (send these to Kerbin Orbit)
+
+### 07 Orbit Colony Supplies (SPH)
+
+This Kerbin Orbit depot expansion simply adds the required _Colony Supplies_, habitation and life support to allow a passenger route builder to link **Kerbin Shipyard** to the imminent **Mun Shipyard**.
+
+Once the crew that you transferred have arrived, build this craft and transfer the crew aboard:
+
+1. undock the crew pod
+2. dock the crew pod with **Kerbin Shipyard**
+3. transfer the crew from the WOLF Terminal to the crew pod
+4. undock the crew pod
+5. dock the crew pod with **O7 Orbit Colony Supplies**
+6. connect to depot.
+
+Imports:
+
+- 2 x Food
+- 41 x Material Kits (from Kerbin)
+- 2 x Oxygen
+- 24 x Specialized Parts (from Minmus)
+- 10 x Water
+
+Crew:
+
+- Engineer
+- Kolonist
+- Mechanic
+- 2 x Technician
 
 ## The Mun Expansion
 
 The Mun expansion will be a rehearsal for further expansion into the Kerbol system. The basics will be:
 
-- establish a shipyard
+- send a seed fleet of shipyard, cargo route builder and passenger route builder
+- if you are planning to use nuclear powered rovers, send the **Reactor Maintenance** vessel with an engineer (and when establishing the shipyard make sure to include **Passenger Quarters** along with the **Passenger Terminal** to get the Kerbal back to work)
+- establish the orbital depot
+- finish the cargo and passenger routes
 - transfer WOLF resources using WOLF cargo routes
 - establish communications network
 - build a route builder rover (and land it)
-- prepare WOLF passenger routes
 - build the WOLF infrastructure at the shipyard
 - import crew from Kerbin via the WOLF passenger routes
 
+Before you go further, tie up your loose ends. Make sure all the resources you want from Minmus are transferred to Kerbin Orbit, all the resources you want from Kerbin are transferred to Kerbin Orbit, and you have the **Orbital Route Builder 75** and **5m 15 Passenger SSTO** parked in orbit around Kerbin.
+
+At this point in the game there should have at least the following available in Kerbin Orbit:
+
+- 1 Alloys
+- 1 Electronics
+- 1 Robotics
+- 1 Sythetics
+- 5 Specialized Parts
+- 35 Material Kits
+
+You can free up more resources by disconnecting the Minmus Shipyard hoppers from the depot, we aren't going to be using those resources again during the walkthrough.
+
+Check that you have 30 spare of each of Colony Supplies, Habitation and Life Support to build the passenger route to the Mun.
+
+With all those items checked, we can start on the Mun expansion!
+
 ### Mun Shipyard
 
-- Prepare for expansion by building route from _Kerbin Orbit_ to _Mun Orbit_
-- Transfer 15 _Material Kits_, 5 _Specialized Parts_, 1 _Alloys_, 1 _Electronics_, 1 _Robotics_ and 1 _Synthetics_ to _the Mun_
-- Build **Expansion Shipyard** at **Kerbin Shipyard**
-- Rename **Expansin Shipyard** to **Mun Shipyard**
+This expansion to the Mun will serve as a template for expansions to other worlds. Here's the rough game plan for establishing the **Mun Shipyard**:
+
+- Build **Expansion Shipyard** at **Kerbin Shipyard** and name it **Mun Shipyard**
 - Provide **Mun Shipyard** with starter resources of _Alloys_, _Electronics_, _Robotics_ and _Prototypes_ (basically enough to build the A/E/R/S Hopper)
-  - 94 Alloys
-  - 145 Synthetics
+  - 100 Alloys
+  - 150 Synthetics
   - 20 Robotics
-  - 20 Prototypes
   - (No electronics required to bootstrap)
   - (Material Kits and Specialized Parts will arrive via WOLF Transfers)
-- Send **Mun Shipyard** to _the Mun_
+- Send **Mun Shipyard** to _the Mun_ along with the passenger and cargo route builders
 - Once at _the Mun_ put **Mun Shipyard** into a circular 30km orbit at 0 inclination
-- Build the **A/E/R/S Hopper** shipyard component
-- Dock the **A/E/R/S Hopper** to the **Mun Shipyard**
-- Connect the four WOLF Manufacturing Hoppers to the depot and start them
-- Build the **Passenger Terminal** shipyard component
-- Dock the **Passenger Terminal** to **Mun Shipyard**
+- Establish cargo route from _Kerbin Orbit_ to _Mun Orbit_
+- Transfer 15 _Material Kits_, 5 _Specialized Parts_, 1 _Alloys_, 1 _Electronics_, 1 _Robotics_ and 1 _Synthetics_ to _the Mun_
+- Connect _Material Kits_ and _Specialized Parts_ hoppers to the depot
+- Build the **A/E/R/S Hopper** shipyard component and connect it to the depot
+- Build the **Passenger Terminal** shipyard component and connect it to the depot
+- Build the **Manufacturing Hopper** shipyard component and connect it to the depot (provide an extra 20 _Material Kits_ to hook the hoppers up, you can borrow these from Minmus and Kerbin shipyards)
+
+There are no step-by-step instructions but what you want to end up with here is the **Expansion Shipyard** at the Mun, with the A/E/R/S hopper component and passenger terminal component attached, all the hoppers connected and (with the next section) the CommNet expanded to provide coverage for vessels in orbit and rovers on the surface.
+
+![The Author's example Mun Shipyard with Manufacturing Hopper, A/E/R/S Hopper and Passenger Terminal attached][MUNYARD]
 
 ### Mun CommNet
 
 - Build **Satellite Bundle** and deploy the relay sats
-  - Deployer should go to 357.941km x 534.657km orbit
+  - Deployer should go to 377.355km x 621.4765km orbit (4h neat)
   - Release one relay satellite just before each periapsis
-  - Circularise each relay satellite at periapsis (357.941km circular orbit, 40400s / 1d 5h 13m period, aka 1 Minmus day)
+  - Circularise each relay satellite at periapsis (377.355km circular orbit, 3h neat)
   - Double-check the deployer's orbit between deployments
   - When three relays are deployed, put the deployer into a 200km polar orbit
   - Deploy the scanner and perform an orbital analysis
 
-### Mun Route Builder Rover
+You can tune the orbital period to your liking using tools such as the [Resonant Orbit Calculator][RESORBCALC] we used back in the Minmus expansion. These numbers are only a recommendation. Just remember that a surface-synchronous orbit is not possible due to the Mun's SOI being smaller than the required orbit.
 
-The **Route Builder Rover** has a nuclear power plant. To build it you need to get an Engineer to the **Mun Shipyard** with _Enriched Uranium_ in order to start the reactor.
+### Mun Passenger Routes
 
-- Rendezvous the **Reactor Maintenance** craft with **Kerbin Shipyard** and transfer _supplies_
-- Rendezvous the **Reactor Maintenance** craft with **Mun Shipyard** and dock
-- Build the **Route Builder Rover**
-- Transfer propellant from **Mun Shipyard** to **Route Builder Rover**
-- Undock **Reactor Maintenance** from **Mun Shipyard**
-- Dock **Reactor Maintenance** to **Route Builder Rover**
-- Use the engineer in EVA to _Perform Maintenance_ on the **Route Builder Rover**'s nuclear reactor
-- Return the engineer from EVA and dock **Reactor Maintenance** with **Mun Shipyard**
-- Land the **Route Builder Rover** on **The Mun**
-- Undock **Reactor Maintenance** from **Mun Shipyard**
-- Transfer **Reactor Maintenance** to a parking orbit
+Now to build a passenger route from _Kerbin Orbit_ to _Mun Orbit_. Combined with the route from KSC to Kerbin Orbit, this will reduce the workload of launching crew pods, docking to crew transport, rendezvous at Mun Shipyard and transferring the crew pod back and forth.
 
-Land the **Route Builder Rover** at **Farside Crater**. Build routes from here to:
+To produce the passenger route from _Kerbin Orbit_ to _Mun Orbit_ you'll need to meet the requirements for starting a passenger route at **Kerbin Shipyard**. This means ensuring that _Kerbin Orbit_ has sufficient _Colony Supplies_, _Habitation_ and _Life Support_ to start the new route. Using the 15 luxury berth **5m 15 Passenger SSTO**, you'll need 30 of each of those resources. This should have been provided with the **07 Orbit Colony Supplies** expansion for Kerbin Orbit.
 
-- Highlands
-- East Farside Crater
-- Twin Craters
-- Canyons
-- (continue to the remaining biomes)
+As with the previous route building exercise, start the route near a WOLF Terminal. In this case the terminal will be the **Kerbin Shipyard**:
+
+1. Empty the route builder's propellant into the shipyard
+2. Start the passenger route
+3. Refuel the route builder
+4. Transfer the route builder to the destination
+5. Rendezvous with the destination terminal
+6. Finish the passenger route
+
+Note that you want to have the passenger terminal ready when the route builder arrives. The flight duration is based on how long it took your route builder to transit between the origin and destination stations. Thus to minimise transit time you might look at starting the route immediately  before initiating the transfer burn, and using a rocket with high delta-v to get the trip done quickly, and timing the arrival to ensure that the rendezvous with the destination station happens as soon as possible.
+
+On the flip side, the rate of production of _Material Kits_ at the **Mun Shipyard** is about 15,000 a day and many of the depot landers we're going to build require hundreds of thousands of _Material Kits_, so the duration of the crew transfer flight doesn't really matter that much. Minimising the transfer time will be important for **Duna** however.
 
 ### Mun Depots
 
-Establishing depots will take a few hours. The aim here is the same as for **Minmus**: get the local shipyard to be self-sufficient, get some excess _Specialized Parts_ and _Material Kits_ production to support further expansion of the passenger network, then look at what else can be produced locally to contribute towards _Prototypes_ production back at **Kerbin Shipyard**.
+The aim here is the same as for **Minmus**: get the local shipyard to be self-sufficient, get some excess _Specialized Parts_ and _Material Kits_ production to support further expansion of the passenger network, then look at what else can be produced locally to contribute towards _Prototypes_ and _Colony Supplies_ production back at **Kerbin Shipyard**.
 
-Establish depots in these biomes (locations are flat-ish and level-ish enough to land a rocket or park a rover):
+The critical path for **Mun** is getting the passenger terminal, route builder rover, and orbit to Farside Crater cargo route established.
 
-- Canyons (18.150, -50,300) (18.177, -50.448)
-- East Crater (-9.746, 84.452)
-- East Farside Crater (7.109, -150.838) (7° 6' 32.4"N, 150° 50' 16.8"W)
-- Farside Basin (20.618, -93.351) (29 37' 5"N, 93 21' 5"W) or (31.279 96.945) (31 16'44"N 96 53'48"W)
+Establish depots in the following biomes. The supplied locations are flat-ish and level-ish enough to land a rocket or park a rover, and the order will allow you to start setting up cargo routes and establishing the infrastructure while you establish the remaining depots ahead of landing the expansions:
+
 - Farside Crater (-0.247, -58.873) (0 14' 48"N, 58 53' 2"W)
+- Highlands (0.372, -34.280) (0° 22' 19.2"N, 34° 16' 48"W)
+- East Farside Crater (7.109, -150.838) (7° 6' 32.4"N, 150° 50' 16.8"W)
+- Twin Craters (-5.916, 139.817) (5 54'56"S, 139 49' 1"E)
+- Canyons (18.150, -50.300) (18 9' 0"N, 50 18' 0"W)
+- East Crater (-9.746, 84.452) (9 44' 45"S, 84 27' 7"E)
+- Farside Basin (20.618, -93.351) (29 37' 5"N, 93 21' 5"W) (~1100m/s dv required to land)
 - Highland Craters (64.424, 173.655) (64 25' 41"N 173 40' 3"E)
-- Highlands (0.372, -34.280)
 - Lowlands (0.305, -0.530)
 - Midland Craters
 - Midlands (-0.97, 158.681)
@@ -1408,7 +1627,6 @@ Establish depots in these biomes (locations are flat-ish and level-ish enough to
 - Polar Lowlands (79.666, 108.266)
 - Poles
 - Southwest Crater (-28.202, 8.093) (28 9'55"S 8 14'53"E)
-- Twin Craters (-5.916, 139.817) (5 54'56"S, 139 49' 1"E)
 
 Canyons is unique in having Exotic Minerals and Rare Metals in one biome, from this one depot we can develop an abundance of 160 _Specialized Parts_ and 15 _Synthetics_ (ignoring allocaton of rare metals for alloys or polymers for material kits). Canyons can also be expanded to produce food, water and oxygen.
 
@@ -1431,9 +1649,45 @@ Life support:
 - 140 Food, 78 water from Twin Craters
 - 100 Food, 118 water from Highlands
 
-For these depots on the Mun the crew are usually 12 kerbals, so two flights from KSC to orbit, then to Mun Orbit. Once there is sufficient supply of Specialized Parts there should be sufficient Colony Supplies to launch the 5m passenger route builder 
+### Mun Route Builder Rover
+
+The **Route Builder Rover** has a nuclear power plant. To build it you need to get an Engineer to the **Mun Shipyard** with _Enriched Uranium_ in order to start the reactor. It will also help to get a pilot to the shipyard before landing the rover.
+
+- Rendezvous the **Reactor Maintenance** craft with **Kerbin Shipyard** and transfer _supplies_
+- Rendezvous the **Reactor Maintenance** craft with **Mun Shipyard** and dock
+- Build the **Route Builder Rover**
+- Transfer propellant from **Mun Shipyard** to **Route Builder Rover**
+- Undock **Reactor Maintenance** from **Mun Shipyard**
+- Dock **Reactor Maintenance** to **Route Builder Rover**
+- Use the engineer in EVA to _Perform Maintenance_ on the **Route Builder Rover**'s nuclear reactor
+- Undock **Reactor Maintenance** from **Mun Shipyard**
+- Transfer **Reactor Maintenance** to a parking orbit
+
+Land the **Route Builder Rover** at **Farside Crater**. Build routes from here to these biomes and back (in order, since this is where the depot landers will be going):
+
+- Highlands
+- East Farside Crater
+- Twin Craters
+- Canyons
+- Farside Basin
+- Polar Crater
+
+Perform a survey at each biome as the RBR arrives there.
+
+### Depot Deployment Checklist
+
+Here's a handy checklist for managing these depot deployments with minimal fuss:
+
+1. Depot is Established (land a Depot module and establish the depot)
+2. Depot is Surveyed (RBR visit, scan using Surface Scanner)
+3. Depot has cargo route to Farside Crater (RBR)
+4. Depot has cargo route from Farside Crater (RBR)
+5. Entire crew has arrived at Mun Shipyard
+6. There are sufficient resources to build the lander
 
 ### 01 Farside Crater Material Kits
+
+This first expansion sets up some basic infrastructure for food, water and oxygen production and happens to make some material kits on the side.
 
 Crew:
 
@@ -1445,6 +1699,14 @@ Crew:
 - Miner x 3
 - Scientist
 - Technician x 3
+
+Materials:
+
+- 417,436 x _Material Kits_
+- 4,013 x _Specialized Parts_
+- 1,044 x _Alloys_
+- 3,578 x _Synthetics_
+- 63 x _Robotics_
 
 ### 02 Highlands Specialized Parts
 
@@ -1463,6 +1725,16 @@ Crew:
 - Scientist
 - Technician x 3
 
+Exports:
+
+- 30 x _Specialized Parts_
+
+Materials:
+
+- 463,596 x _Material Kits_
+- 4,405 x _Specialized Parts_
+- 3,935 x _Synthetics_
+
 ### 03 East Farside Polymers
 
 Crew:
@@ -1476,6 +1748,14 @@ Crew:
 - Scientist
 - Technician x 3
 
+Exports:
+
+- 26 x _Polymers_
+
+Materials:
+
+- 438,596 x _Material Kits_
+
 ### 04 Twin Craters Polymers
 
 Crew:
@@ -1488,6 +1768,8 @@ Crew:
 - Miner x 3
 - Scientist
 - Technician x 3
+
+Materials: 408,596 x _Material Kits_
 
 ### 05 Canyons Exotic Minerals
 
@@ -1507,6 +1789,8 @@ Crew:
 - Scientist
 - Technician x 2
 
+Materials: 413,596 x _Material Kits_
+
 ### 06 Farside Basin Material Kits
 
 Imports:
@@ -1523,7 +1807,11 @@ Crew:
 - Scientist
 - Technician x 3
 
-Build Cost: 431,820 Material Kits
+Exports:
+
+- 20 x _Material Kits_
+
+Materials: 438,596 _Material Kits_
 
 ### 07 Canyons Electronics and Robotics
 
@@ -1538,18 +1826,27 @@ Crew:
 - Scientist
 - 2 x Technician
 
-Build Cost: 159,910 Material Kits
+Exports:
+
+- 1 x Alloys
+- 1 x Electronics
+- 1 x Robotics
+- 1 x Synthetics
+- 20 x Exotic Minerals
+- 34 x Polymers
+
+Build Cost: 183,395 Material Kits
 
 ### 08 Twin Craters Material Kits
-
-Imports:
-
-- 12 x Polymers
 
 Crew:
 
 - 2 x Miner
 - 4 x Technician
+
+Exports:
+
+- 80 x _Material Kits_
 
 Build Cost: 371820
 
@@ -1567,51 +1864,92 @@ Crew:
 - 2 x Miner
 - 2 x Technician
 
-Build Cost: 316,820 Material Kits
+Exports:
+
+- 60 x _Rare Metals_
+- 30 x _Metals_
+- 26 x _Polymers_
+
+Build Cost: 320,615 Material Kits
 
 ### 10 Farside Crater Specialized Parts
 
+Prepare a lot of _Material Kits_ and _Specialized Parts_ to contribute to _Colony Supplies_ for the **Duna** expansion.
+
 Crew:
 
-- Miner
-- Technician x 5
+- Engineer
+- Kolonist
+- 3 x Miner
+- 3 x Technician
 
-Build Cost: 278,395 Material Kits
+Build Cost: 427,486 _Material Kits_
 
 ### 11 Highlands Specialized Parts
 
 Imports:
 
-- Material Kits x 2
+- _Material Kits_ x 4
 
 Crew:
 
-- Miner x 2
-- Technician x 4
+- Engineer
+- Kolonist
+- 4 x Miner
+- 6 x Technician
 
-Build Cost:
+Exports:
+
+- 95 x _Specialized Parts_
+
+Build Cost: 448,596 _Material Kits_
 
 ### 12 Polar Crater Exotic Minerals
 
 Imports:
 
-- Fertilizer x 2
-- Material Kits x 3
+- Food
+- 3 x _Material Kits_
+- 2 x _Refined Exotics_
 
 Crew:
 
 - Engineer
-- Farmer
 - Kolonist
 - Mechanic
 - Medic
+- Miner
 - Scientist
+- 2 x Technician
 
-Build Cost: 216600 Material Kits
+Exports:
+
+Hope you enjoy driving that rover... 205 materials to export here.
+
+- 124 _Exotic Minerals_
+- 1 _Rare Metals_
+- 20 _Specialized Parts_
+- 60 _Water_
+
+Build Cost: 282,486 _Material Kits_
+
+### 13 Farside Crater Colony Supplies
+
+Now to use all those resources to build stuff. How about 100 Colony Supplies?
+
+This will be sufficient to set up passenger routes to Duna (coming up in this walkthrough) and a couple of other places that you might want to explore on your own.
+
+Crew:
+
+- Miner
+- Scientist
+- 5 x Technician
+
+Build Cost: 412,486 _Material Kits_
 
 ## Duna Expansion
 
-The Duna expansion is going to be done using WOLF systems where possible. This means using passenger routes to transfer crew, which means the first crew will arrive about 2 years after the shipyard is parked in orbit. Because the **Route Builder Rover** is nuclear powered, we need an engineer to service the nuclear reactor and a pilot to drive the rover -- to handle this I will send an engineer and a pilot in the **Reactor Maintenance** craft that serviced the **Mun Route Builder Rover**. Dock it with the **Crew Transport** and send that combined vessel with the two crew to Duna when the time comes. You can greatly accelerate the Duna expansion by sending crew for early depot expansions in a **Long Duration Crew Transport** which is designed to hold 18 crew for four years.
+The Duna expansion is going to be done using WOLF systems where possible. This means using passenger routes to transfer crew, which means the first crew will arrive about 2 years after the shipyard is parked in orbit. Because the **Route Builder Rover** is nuclear powered, we need an engineer to service the nuclear reactor and a pilot to drive the rover -- to handle this I will send an engineer and a pilot in the **Reactor Maintenance** craft that serviced the **Mun Route Builder Rover**. Dock it with the **Crew Transport** and send that combined vessel with the two crew to Duna.
 
 Sticking to the WOLF-only plan, build these ships and send them to Duna, try to get them to arrive in this order too:
 
@@ -1643,10 +1981,10 @@ Establish the shipyard at a "low" Duna Orbit (100km or less), then:
 From here the process is the same as the previous expansions:
 
 1. 1 each A/E/R/S
-1. 5 Fuel to support depot landers
-1. 15 Material Kits
-1. 5 Fertilizer + 5 Supplies to support passenger terminal
-1. 5 Specialized Parts
+2. 5 Fuel to support depot landers
+3. 15 Material Kits
+4. 5 Fertilizer + 5 Supplies to support passenger terminal
+5. 5 Specialized Parts
 
 ### Relay Satellites
 
@@ -1656,7 +1994,7 @@ Ike orbital period is 65 517.859s (3d 0h 11m 57.9s), and its orbit is slightly
 
 My usual method for getting relay satellites into a decent spread is to use a resonant orbit. That doesn't work for Duna/Ike because Ike keeps getting in the way. What I do for Duna is simply build the two Relay 100 satellites and set them directly on a rendezvous with their assigned positions 120 degrees leading and lagging Ike.
 
-Then launch a trio of small relay satellites for Ike. When you capture that satellite delivery to Ike's SOI, use the [Resonant Orbit Calculator][RESORBCALC] to figure out what orbital parameters the deployer will need to space the satellites out correctly. Note that you can't achieve surface-synchronous orbit at Ike because it's SOI is too small. The important thing is to get all the satellites onto the same orbital period to within a few seconds. With that level of accuracy you should have decent coverage for years at a time.
+Then launch a trio of small relay satellites for Ike. When you capture that satellite delivery to Ike's SOI, use the [Resonant Orbit Calculator][RESORBCALC] to figure out what orbital parameters the deployer will need to space the satellites out correctly. Note that you can't achieve surface-synchronous orbit at Ike because its SOI is too small. The important thing is to get all the satellites onto the same orbital period to within a few seconds. With that level of accuracy you should have decent coverage for years at a time.
 
 ### Establish Depots
 
@@ -1745,6 +2083,16 @@ This is the end of the walkthrough for now. In this walkthrough we've covered:
 - Using WOLF passenger routes to deliver kerbals between WOLF Passenger Terminals
 
 You have the tools and training required to use the WOLF Industry system. Good luck with your adventures!
+
+## Addendums
+
+Herein lies all the cruft that didn't fit elsewhere.
+
+### Route Builder Rover User Guide
+
+Welcome to the Jameson Industries RBR-45, the ultimate electric rover for your USI WOLF industry needs!
+
+
 
 [MRWOLFTS]: https://github.com/MaraRinn/WOLF-Tutorial-Ships "Mara Rinn's WOLF Tutorial Ships repository"
 [RDWOLF1]: https://docs.google.com/document/d/1zft2Ka9gubOYQf4CQgvReTxpnP8_LQYNyHouEjQZqjw/edit "Roverdude's introduction to WOLF"
