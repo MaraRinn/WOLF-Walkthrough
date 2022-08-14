@@ -11,3 +11,7 @@ This project is a walkthrough of the entire WOLF system including:
 + Moving WOLF resources to the MKS system
 
 The walkthrough includes step by step instructions and prepared craft.
+
+# Installation
+
+The entire walkthrough is a KSP savegame. Check out this repository and move that newly created "WOLF-Walkthrough" folder into the KSP "saves" directory. Start with the "Start" savegame which lets you rewind to the beginning at any time.
