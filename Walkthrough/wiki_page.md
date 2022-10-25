@@ -196,7 +196,7 @@ As soon as you start the new sandbox game, head to the SPH and build yourself a 
 <!--
 
 + Place the rover further down the runway from the touchdown markings.
-+ Open and pin the PAW for the command seat ("Karibou Expedition Rover") to the left
++ Open and pin the PAW for the command seat ("Malemute Cab") to the left
 + Open and pin the PAW for the WOLF Transport Computer to bottom right
 + Open and pin the PAW for the Surface Scanning Module to top right
 + Aim camera down with front of rover away from camera
@@ -212,16 +212,31 @@ Label this image with:
 4. Surface Scanning Module
 5. Bon Voyage controller
 6. WOLF Transport Computer
+7. Ladder (AG1)
+
+Highlight:
+
+1. "Bon Voyage Control Panel" action in cab PAW
+2. "WOLF Biome" in scanner PAW
+3. "Survey WOLF Biome" action in scanner PAW
 
 -->
 
 This rover has four side-mounted rocket engines which are useful for landing on small worlds like Minmus and Mun. They are not at all useful on Kerbin itself.
 
+The life support on this rover can sustain one crew for about three years, or two crew for a little over 1 year. Crew is only necessary to increase the movement speed when controlled by Bon Voyage. Without crew, this rover will travel around 6m/s while with crew it will travel around 14m/s.
+
 Action Groups:
 
-0: Turn the rover on and off. This affects all the components that produce or consume power such as the nuclear reactor, radiator, habitation and Nom-O-Matics, and lights.
-9: Switch control to Karibou Radial Probe for flight (the dome light will turn on to remind you that the rover is configured for flight)
-8: Switch control to probe core for driving (the dome light will come on to remind you that the rover is configured for driving)
+- AG0: Turn the rover on and off. This affects all the components that produce or consume power such as the nuclear reactor, radiator, habitation and Nom-O-Matics, and lights.
+- AG9: Switch control to Karibou Radial Probe for flight (the dome light will turn on to remind you that the rover is configured for flight)
+- AG8: Switch control to probe core for driving (the dome light will come on to remind you that the rover is configured for driving)
+- AG1: Extend/retract the ladder from the hitchhiker storage compartment
+
+Important PAW features:
+
+- **Bon Voyage Control Panel** in Malemute cab PAW
+- **WOLF Biome** and **Survey WOLF Biome** in Surface Scanning Module PAW
 
 ### Surveying Harvestable Biome Resources
 
@@ -237,7 +252,7 @@ Recover this vessel.
 
 ## WOLF Dashboard -- Harvestable Resources and Depots
 
-Now to check those resources. Switch scenes to the SPH and open the WOLF dashboard, then click the _Harvestable Resources_ button:
+Now to check those resources. Switch scenes to the SPH and open the WOLF dashboard, then select the _Harvestable Resources_ pane:
 
 ![SPH scene showing WOLF Dashboard open to Harvestable Resources pane with KSC biome populated with harvestable resources][WolfDashboardHarvestableResourcesScannedBiome]
 
@@ -274,6 +289,17 @@ Food is produced by an agricultural module or bioreactor module. Add a **WOLF Ag
 
 Now add the **MHU-550 Bulk Harvesters** and **WOLF Refinery Modules** required for the chemicals (feed stock is minerals), metals (feed stock is metallic ore) and polymers (feed stock is substrates). These modules have added demand for a _Miner_ crew member so recruit one of those and add them to the crew module. To finish off this infrastructure install add another **WOLF Power Module**, and you should no longer have any deficits in the _Planner_.
 
+You should now have this crew in the _Karibou Passenger Cabin_:
+
+- Engineer
+- Farmer
+- Kolonist
+- Mechanic
+- Medic
+- Miner
+- Scientist
+- Technician
+
 **Note** that some of the _Material Kits_ produced by this infrastructure have immediately been consumed by other parts of the infrastructure (the habitation, life support and maintenance modules each consume 1 _Material Kits_ abundance). From the 5 _Material Kits_ produced by the fabricator, 3 have been consumed by the depot infrastructure leaving 2 for use elsewhere.
 
 Before we can deploy this infrastructure we need to establish the depot itself. To do this, add a decoupler and a **WOLF Depot Module** with a probe core. Note that this depot module, probe core and decoupler combination is going to be used so often that I prepared a subassembly for it -- check Subassemblies for _Depot on Decoupler_. When you launch this craft you'll decouple the depot, which needs control in order to be useful.
@@ -294,44 +320,31 @@ Now that you have your **WOLF Depot Module** separated, it's time to establish y
 
 ![WOLF Depot Module with PAW showing "Establish Depot" action.][WOLFDEPOTPAWESTABLISH]
 
-Just select the _Establish Depot_ action for the WOLF Depot Module, and the craft will disappear. It belongs to WOLF now.
+Just select the _Establish Depot_ action for the WOLF Depot Module, and the module will disappear. It belongs to WOLF now.
 
 That depot has given us 1 Food, 1 Oxygen, 5 Material Kits, 5 Water, and 10 Power. This will significantly reduce the amount of infrastructure we need to get started — but remember that these bonus resources only apply to WOLF biomes on Kerbin.
 
-![Runway scene with WOLF Dashboard showing new production added][RUNWAYWOLFDASHNEWKSCDEPOTPRODUCTION]
-
-Now switch to the remaining depot infrastructure and connect it to the depot that you just established:
+Switch to the remaining depot infrastructure and connect it to the depot that you just established:
 
 ![Runway scene with 01 KSC Material Kits infrastructure showing PAW with 'Connect to depot' visible][RUNWAY01KSCMATKITSCONNECT]
+
+Now open up the **WOLF Dashboard** to the _Depots_ pane to see the new production capacity from that WOLF infrastructure:
+
+![Runway scene with WOLF Dashboard showing new production added][RUNWAYWOLFDASHNEWKSCDEPOTPRODUCTION]
 
 ### WOLF Infrastructure Expansion
 
 **I highly recommend you get the Bon Voyage add-on**, it makes the process of deploying biome depots much, much easier.
 
-To prepare for the next stage of the tutorial, let's expand the biome depots on Kerbin a little. To do that, we'll build ourselves a rover to help deploy the depot components. Why? Because sometimes the best way to get stuff to where you need it is to stick wheels or rockets on it.
+To prepare for the next stage of the tutorial, let's expand the biome depots on Kerbin a little. For these first few expansions there are pre-built craft provided. For this part of the walkthrough we're focussing on the mechanics of surveying the biome, establishing the depot and then setting up a route for production to return to KSC. In the next section we'll work with the **WOLF Depot Planner** to build a depot to extract resources from the abundance presented by each depot.
 
-![This assemblage of WOLF modules and wheels will make life easier for us, trust me][RUNWAYDEPOTBONVOYAGE]
+The first task is to deploy basic depots. Start with the **WOLF Tutorial/Route Builder Rover** craft, add the **RBR Basic Depot** subassembly, then add an Engineer, a Kolonist and a Mechanic to the Karibou Passenger Cabin. Note: sometimes crewed components added using submodules or merged craft will not show up in the list of "parts with crew capacity". You can remedy this by removing the component and reattaching it.
 
-The ingredients for this rover are:
+Launch the rover, activate the parking brake to stop it rolling down the runway, then activate Action Group 10 (press "0" on the keyboard) to turn on the power supply.
 
-- WOLF Route Builder Rover
-- RBR Trailer subassembly
-  - WOLF Life Support Module
-  - WOLF Habitation Module
-  - WOLF Maintenance Module
-  - WOLF Power Module
-  - Depot on Decoupler subassembly
-- Engineer
-- Kolonist
-- Mechanic
+Use the **Bon Voyage** autopilot to send the rover to _Kerbin Shores_ (0.0, -74.709). You can do this through the _Bon Voyage Control Panel_ option in the PAW for the **Malemute Cab** component of the rover. There is a list of locations like this later in this section, you might find it handy to keep a copy on hand. Activate the Bon Voyage autopilot (the "GO!" button) and then change scene to the Space Centre. Wait for the rover to reach its destination -- warp can help here -- and then switch back to the rover.
 
-Assemble those components in the SPH. **Remember to add the Engineer, Kolonist and Mechanic** (mentioned in the subassembly description) to the **Karibou Passenger Cabin in the trailer** before launching. The crew will be no use to you in the rover command seats.
-
-Once you've launched the rover, activate the parking brake to stop it rolling down the runway, then activate Action Group 10 (press "0" on the keyboard) to turn on the power supply.
-
-Use the **Bon Voyage** autopilot to send the rover to _Kerbin Shores_ (-0.04, -74.9). You can do this through the _Bon Voyage Control Panel_ option in the PAW for the **Malemute Cab** component of the rover. There is a list of locations like this at the end of this document, you might find it handy to keep a copy on hand. Activate the Bon Voyage autopilot (the "GO!" button) and then change scene to the Space Centre. Wait for the rover to reach its destination -- warp can help here -- and then switch back to the rover.
-
-![The Bon Voyage Control Panel is accessed through the Malemute Cab PAW][RUNWAYRBRBVCONTROL]
+![The Bon Voyage Control Panel is accessed through the Malemute Cab PAW][RUNWAYDEPOTBONVOYAGE]
 
 The process for establishing a depot using this rover is:
 
@@ -346,7 +359,7 @@ Once you have completed those operations you should see the new depot establishe
 
 ![Kerbin Shores scene with WOLF Dashboard open to Depots pane showing new Kerbin Shores depot][KERBINSHORESDEPOTDASHBOARD]
 
-Now establish a WOLF Cargo route from the Shores back to KSC:
+Now establish a WOLF Cargo route from the Grasslands back to KSC:
 
 1. Open the **WOLF Transport Computer** PAW
 2. Under _WOLF Cargo Transporter_  select _Connect to Origin Depot_
@@ -354,13 +367,14 @@ Now establish a WOLF Cargo route from the Shores back to KSC:
 4. Open the **WOLF Transport Computer** PAW
 5. Under _WOLF Cargo Transporter_ select _Connect to Destination Depot_
 
-Repeat this process to deploy this simple infrastructure to:
+Repeat this process to deploy this simple infrastructure to Grasslands, Highlands and Mountains. These locations will help you find relatively flat ground in the right biome:
 
+- Shores (0.107, -74.57)
 - Grasslands (0.0 -75.38)
 - Highlands (1.741, -77.339)
 - Mountains (0.637, -78.659)
 
-Remember you can return to KSC at (-0.1, -74.647). There are more biomes to explore but between KSC, Shores, Grasslands, Highlands and Mountains there's more than enough to complete this walkthrough.
+Remember you can return to KSC at (-0.1, -74.647). There are more biomes to explore but between KSC, Shores, Grasslands, Highlands and Mountains there are more than enough resources to complete this walkthrough.
 
 Remember the basic process for establishing a new biome depot is:
 
@@ -372,14 +386,14 @@ Remember the basic process for establishing a new biome depot is:
 - Decouple the **WOLF Depot** component
 - Use the _Establish Depot_ action on the **WOLF Depot**
 - Undock the **RBR Basic Depot** assembly
-- Use the _Connect to depot_ action on the **Tutorial Basic Depot** assembly
+- Use the _Connect to depot_ action on the **RBR Basic Depot** assembly
 - Switch vessels to the rover
 - Use the _Connect to Origin Depot_ action on the **WOLF Transport Computer**
 - Move the rover back to the KSC
 - Use the _Connect to Destination Depot_ action on the **WOLF Transport Computer**
 - Recover the rover
 
-![Use the connect to origin depot action on the WOLF Transport Computer before departing the remote biome][MountainsDepotDeployerConnectOriginDepot]
+![Use the connect to origin depot action on the WOLF Transport Computer before departing the remote biome][ShoresDepotDeployerConnectOriginDepot]
 
 ![Use the connect to destinationi depot action on the WOLF Transport Computer after arriving at KSC][KSCDepotDeployerCoonectDestinationDepot]
 
@@ -393,13 +407,13 @@ Let's start with the _Alloys_. In the SPH, load the **WOLF Route Builder Rover**
 
 Unfortunately, it turns out that _Rare Metals_ are not a thing in Kerbin biomes. Okay, what about the others? _Electronics_ requires _Synthetics_ which in turn requires _ExoticMinerals_ ... which it turns out are not available on Kerbin either. Maybe _Prototypes_ then? No, they require _Electronics_ which we can't manufacture in WOLF on Kerbin. _Robotics_ are in the same boat, requiring _Alloys_. Last on the list are _Specialized Parts_ but it turns out that they require _Refined Exotics_ (refined from _Rare Metals_ and _Exotic Minerals_).
 
-The only spaceship-building things we can make on Kerbin using WOLF infrastructure are _Material Kits_ and _Fuel_. What do we do about the rest? For the boot-strapping stage, any time we need _Specialized Parts_, _Alloys_, _Electronics_, _Prototypes_, _Robotics_ or _Synthetics_ the options are to buy them (create a new craft with a resource container full of the resource we're after), set up WOLF infrastructure where we _can_ find them and transport the supplies to the shipyard, or find some surface resources to extract and perform all the industry using MKS.
+The only spaceship-building things we can make on Kerbin using WOLF infrastructure are _Material Kits_ and _Fuel_. What do we do about the rest? For the boot-strapping stage, any time we need _Specialized Parts_, _Alloys_, _Electronics_, _Prototypes_, _Robotics_ or _Synthetics_ the options are to buy them (create a new craft with a resource container full of the resource we're after), find some surface resources to extract and perform all the industry using MKS, or set up WOLF infrastructure where we _can_ find them and transport the supplies to the shipyard using WOLF routes and transfers.
 
 For this walkthrough we're not going to go overboard with production, and as far as the other spaceship building materials go we'll simply buy them. Tens of abundance for _Material Kits_ and _Fuel_ will be enough to get us to Minmus where we'll find the resources that Kerbin doesn't have itself. Along the way we'll also produce _Fertilizer_, _Food_, _Oxygen_, and _Water_ to reduce the amount of infrastructure we need to establish on Minmus at the start.
 
 ### 01 Grasslands Material Kits
 
-Clear the SPH build area and load up the **WOLF Route Builder Rover**, add the **RBR 5 Material Kits** subassembly four times to get 20 _Material Kits_ production, put 3 x Miner and 3 x Technician in the **Karibou Passenger Cabin** (as indicated in the subassembly description), and check the _Planner_ pane of the **WOLF Dashboard** to see which biome will have the most resources left over after we commit to this _Material Kit_ production. For me this is the _Grasslands_ biome which had 100 _Minerals_ abundance before this infrastructure took 20 away.
+Clear the SPH build area and load up the **WOLF Route Builder Rover**, attach a **RBR Trailer** subassembly, then add the **RBR 5 Material Kits** subassembly to the trailer four times to get 20 _Material Kits_ production, put 3 x Miner and 3 x Technician in the **Karibou Passenger Cabin** (as indicated in the subassembly description), and check the _Planner_ pane of the **WOLF Dashboard** to see which biome will have the most resources left over after we commit to this _Material Kit_ production. For me this is the _Grasslands_ biome which had 100 _Minerals_ abundance before this infrastructure took 20 away.
 
 The _Planner_ shows that there's a deficit of Power and Maintenance, so add a **WOLF Maintenance Module** and a **WOLF Power Module** to the trailer and you should have a completed depot expansion.
 
@@ -1469,7 +1483,7 @@ And now we get to what all that effort was about: creating a passenger route fro
 
 The next infrastructure you're going to deploy is **07 Orbit Colony Supplies**. It requires 5 crew (see the crew list i nthe following section). Up till now we've launched crews from KSC in crew pods. Now there's a passenger route from KSC to Kerbin Orbit, so let's use that.
 
-Put these crew into something that holds crew (eg: the **07 Orbit Colony Supplies** craft itself, which will let you check the _Planner_ before launching to make sure everything's set up correctly) and "launch" the crew holder from the VAB. 
+Put these crew into something that holds crew (eg: the **07 Orbit Colony Supplies** craft itself, which will let you check the _Planner_ before launching to make sure everything's set up correctly) and "launch" the crew holder from the VAB.
 
 ![KSC Launchpad with 02 Orbit Colony Supplies on pad and KSC Passenger Terminal in background][KSCORBSUPPPAD]
 
@@ -2040,7 +2054,7 @@ And for the 15 passenger route builder:
 - 30 Habitation
 - 30 Life Support
 
-The life support and habitation should have been provided by the 
+The life support and habitation should have been provided by the
 
 ## Duna Expansion
 
@@ -2100,12 +2114,7 @@ To provide communications coverage for all of Duna's surface, my preferred optio
 
 Ike orbital period is 65 517.859s (3d 0h 11m 57.9s), and its orbit is slightly eccentric. A compatible circular orbit is 2,880km, though you don't need to be exact on altitude at long as you can get the orbital period correct.
 
-My usual method for getting relay satellites into a decent spread is to use a resonant orbit. That doesn't work for Duna/Ike because Ike keeps getting in the way. What I do for Duna is simply build the two Relay 100 satellites and set them directly on a rendezvous with their assigned positions 120 degrees leading and lagging Ike:
-
-1. Start at circular orbit of 328km
-2. When target passes nadir raise apoapsis to 2,880km
-3. Circularise at apoapsis
-4. Trim orbital period to 3d0h11m
+My usual method for getting relay satellites into a decent spread is to use a resonant orbit. That doesn't work for Duna/Ike because Ike keeps getting in the way. What I do for Duna is simply build the two Relay 100 satellites and set them directly on a rendezvous with their assigned positions 120 degrees leading and lagging Ike.
 
 Then launch a trio of small relay satellites for Ike. When you capture that satellite delivery to Ike's SOI, use the [Resonant Orbit Calculator][RESORBCALC] to figure out what orbital parameters the deployer will need to space the satellites out correctly. Note that you can't achieve surface-synchronous orbit at Ike because its SOI is too small. The important thing is to get all the satellites onto the same orbital period to within a few seconds. With that level of accuracy you should have decent coverage for years at a time.
 
@@ -2227,7 +2236,7 @@ Welcome to the Jameson Industries RBR-45, the ultimate electric rover for your U
 
 [AddOnInstallation]: Screenshots/AddonInstallation.png "Drag the contents of the USI GameData folder to the KSP GameData folder, then drag the contents of the CRP GameData folder to the KSP GameData folder, overwriting the CommunityResourcePack folder that's already there"
 [TutorialShipsInstall]: Screenshots/WOLFTutorialSaveInstall.png "Drag the WOLF Tutorial folder from the WOLF Tutorial package to the Kerba Space Program saves folder, replacing any existing save of the same name"
-[WolfDepotDeployerParts]: Screenshots/WOLFDepotDeployerParts.png "Runway scene with Wolf Depot Deployer showing WOLF related parts with PAWs open for Surface Scanner, WOLF Transport Computer and Bon Voyage controller"
+[WolfDepotDeployerParts]: Screenshots/WOLFDepotDeployerParts.png "Runway scene with WOLF Route Builder Rover showing WOLF related parts with PAWs open for Surface Scanner, WOLF Transport Computer and Bon Voyage controller"
 [WolfDashboardHarvestableResourcesEmpty]: Screenshots/WolfDashboardHarvestableResourcesEmpty.png "Runway scene with WOLF Dashboard open to Harvestable Resources pane showing no biomes with harvestable resources because they have not been scanned"
 [WolfDashboardHarvestableResourcesScannedBiome]: Screenshots/WolfDashboardHarvestableResourcesScannedBiome.png "SPH scene with WOLF Dashboard open to Harvestable Resources pane showing resource abundance for freshly scanned biome"
 [SPHWOLFEMPTY]: Screenshots/SPHWOLFEMPTY.png "SPH scene with WOLF Dashboard open to Depots pane showing no depots"
@@ -2235,12 +2244,13 @@ Welcome to the Jameson Industries RBR-45, the ultimate electric rover for your U
 [SPHSCENE2MATKITS]: Screenshots/SPHSCENE2MATKITS.png "SPH scene showing WOLF infrastructure required to support creation of 2 Material Kits abundance"
 [WOLFDEPOTPAWESTABLISH]: Screenshots/WOLFDEPOTPAWESTABLISH.png "WOLF Depot Module with PAW showing Establish depot action"
 [WOLFDASHKERBINDEPOTBONUS]: Screenshots/WOLFDASHKERBINDEPOTBONUS.png "WOLF Dashboard showing the new KSC Biome Depot with bonus resources awarded to Kerbin-based depots"
+[RUNWAY01KSCMATKITSCONNECT]: Screenshots/RUNWAY01KSCMATKITSCONNECT.png "Runway scene with WOLF expansion. PAW open showing Connect to Depot action"
 [RUNWAYWOLFDASHNEWKSCDEPOTPRODUCTION]: Screenshots/RUNWAYWOLFDASHNEWKSCDEPOTPRODUCTION.png "Runway scene with WOLF Dashboard showing new production added"
 [RUNWAYDEPOTBONVOYAGE]: Screenshots/RUNWAYDEPOTBONVOYAGE.png "Runway scene with WOLF Depot Deployer Rover PAW and Bon Voyage control panel with destination set"
 [KERBINSHORESDEPOTDEPLOYMENT]: Screenshots/KERBINSHORESDEPOTDEPLOYMENT.png "Kerbin Shores scene with WOLF Depot Deployer. The depot and trailer are decoupled and Surface Scanner PAW is open. There are numbers 1, 2 and 3 indicating the order of operations."
 [KERBINSHORESDEPOTDASHBOARD]: Screenshots/KERBINSHORESDEPOTDASHBOARD.png "Kerbin Shores scene with WOLF Dashboard open to Depots pane showing new Kerbin Shores depot"
 [SPHDDRMaterialKitsAndCrew]: Screenshots/SPHDepotDeployer5MaterialKitsTrailer.png
-[MountainsDepotDeployerConnectOriginDepot]: Screenshots/MountainsDepotDeployerConnectOriginDepot.png "Mountains scene with WOLF Depot Deployer rover showing the Transport Computer PAW. The 'connect to origin depot' action is visible."
+[ShoresDepotDeployerConnectOriginDepot]: Screenshots/ShoresDepotDeployerConnectOriginDepot.png "Mountains scene with WOLF Depot Deployer rover showing the Transport Computer PAW. The 'connect to origin depot' action is visible."
 [KSCDepotDeployerCoonectDestinationDepot]: Screenshots/KSCDepotDeployerCoonectDestinationDepot.png "WOLF Depot Deployer rover at KSC with 'connect to destination depot' action visible in the Transport Computer PAW"
 [SPHWOLFDASHSTARTERPRODUCTION]: Screenshots/SPHWOLFDASHSTARTERPRODUCTION.png "SPH scene with WOLF dashboard showing starter depots expanded with completed production of material kits, fuel, food, oxygen, water and fertilizer"
 [SPHWOLFDASHROUTESPANE]: Screenshots/SPHWOLFDASHROUTESPANE.png "SPH scene with WOLF dashboard open to routes pane showing starter routes established during depot construction"
