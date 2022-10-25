@@ -4,7 +4,7 @@ description = Transfer 6 crew between vessels.¨¨Handy indicator lights to help
 type = VAB
 size = 2.9856534,3.90036011,2.98565364
 steamPublishedFileId = 0
-persistentId = 2408965058
+persistentId = 3500476344
 rot = 0,0,0,0
 missionFlag = UmbraSpaceIndustries/WOLF/Assets/Flags/USI WOLF
 vesselType = Ship
@@ -16,7 +16,7 @@ PART
 {
 	part = crewCabin_4289071444
 	partName = Part
-	persistentId = 99370934
+	persistentId = 4052501302
 	pos = 0.76578778,18.677227,-0.622033
 	attPos = 0,0,0
 	attPos0 = 0.76578778,18.677227,-0.622033
@@ -411,7 +411,7 @@ PART
 {
 	part = mk2LanderCabin.v2_4294278742
 	partName = Part
-	persistentId = 2499567557
+	persistentId = 3290236002
 	pos = 0.76578778,20.0676994,-0.622033
 	attPos = 0,0,0
 	attPos0 = 0,1.39047241,0
@@ -433,14 +433,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = rcsTankRadialLong_4290175148
-	link = rcsTankRadialLong_4294273266
 	link = RCSBlock.v2_4293658780
 	link = RCSBlock.v2_4294251352
 	link = RCSBlock.v2_4294251106
 	link = RCSBlock.v2_4294250860
 	link = rcsTankRadialLong_4294273668
 	link = rcsTankRadialLong_4294249774
+	link = SR.ProbeCore_4293229142
 	attN = hatch,Null_0_0|0.174178004|-1.32667005_0|0|-1_0|0.174178004|-1.32667005_0|0|-1
 	attN = nose,Null_0_0|0.174178004|1.36706996_0|0|1_0|0.174178004|1.36706996_0|0|1
 	attN = bottom,crewCabin_4289071444_0|-0.40357399|0_0|-1|0_0|-0.40357399|0_0|-1|0
@@ -1557,235 +1556,9 @@ PART
 }
 PART
 {
-	part = rcsTankRadialLong_4290175148
-	partName = Part
-	persistentId = 4181735779
-	pos = 0.425661534,20.0058479,-0.713169515
-	attPos = 0.267484546,0.0053768158,0.267484784
-	attPos0 = -0.340126246,-0.0618515015,-0.0911365151
-	rot = 0,0.60876143,0,0.793353379
-	attRot = 0,0,0,1
-	attRot0 = 0,0.60876143,0,0.793353379
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = rcsTankRadialLong_4294273266
-	srfN = srfAttach,mk2LanderCabin.v2_4294278742,COLPod,0|0|-0.3125,0|0|-1,0|0|-0.3125
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = MonoPropellant
-		amount = 50
-		maxAmount = 50
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = rcsTankRadialLong_4294273266
-	partName = Part
-	persistentId = 1443020305
-	pos = 1.105914,20.0058479,-0.530896544
-	attPos = 0.267484546,0.0053768158,0.267484784
-	attPos0 = 0.340126216,-0.0618515015,0.0911364555
-	rot = 0,0.793353379,0,-0.608761489
-	attRot = 0,0,0,1
-	attRot0 = 0,0.793353379,0,-0.608761489
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = rcsTankRadialLong_4290175148
-	srfN = srfAttach,mk2LanderCabin.v2_4294278742,COLPod,0|0|-0.3125,0|0|-1,0|0|-0.3125
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = MonoPropellant
-		amount = 50
-		maxAmount = 50
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
 	part = dockingPort2_4292931788
 	partName = Part
-	persistentId = 2054380469
+	persistentId = 2267647786
 	pos = 0.76578778,17.6903286,-0.622033
 	attPos = 0,0,0
 	attPos0 = 0,-0.986898422,0
@@ -1986,7 +1759,7 @@ PART
 {
 	part = RCSBlock.v2_4293658780
 	partName = Part
-	persistentId = 833866632
+	persistentId = 2066923579
 	pos = -0.467374861,20.7913818,-0.62203294
 	attPos = 0,0,0
 	attPos0 = -1.23316264,0.723682404,5.96046448E-08
@@ -2154,7 +1927,7 @@ PART
 {
 	part = RCSBlock.v2_4294251352
 	partName = Part
-	persistentId = 2425145726
+	persistentId = 3322133197
 	pos = 0.76578778,20.7913818,0.611129522
 	attPos = 0,0,0
 	attPos0 = 0,0.723682404,1.23316252
@@ -2322,7 +2095,7 @@ PART
 {
 	part = RCSBlock.v2_4294251106
 	partName = Part
-	persistentId = 260073630
+	persistentId = 1416584241
 	pos = 1.99895048,20.7913818,-0.622033179
 	attPos = 0,0,0
 	attPos0 = 1.23316264,0.723682404,-1.78813934E-07
@@ -2490,7 +2263,7 @@ PART
 {
 	part = RCSBlock.v2_4294250860
 	partName = Part
-	persistentId = 2853874182
+	persistentId = 2450226618
 	pos = 0.765787661,20.7913818,-1.85519552
 	attPos = 0,0,0
 	attPos0 = -1.1920929E-07,0.723682404,-1.23316252
@@ -2658,7 +2431,7 @@ PART
 {
 	part = rcsTankRadialLong_4294273668
 	partName = Part
-	persistentId = 77949066
+	persistentId = 3819820901
 	pos = 0.438995063,20.0012627,-0.534469187
 	attPos = 0.267484546,0.0053768158,0.267484784
 	attPos0 = -0.326792717,-0.0664367676,0.0875638127
@@ -2771,7 +2544,7 @@ PART
 {
 	part = rcsTankRadialLong_4294249774
 	partName = Part
-	persistentId = 3504307119
+	persistentId = 1342560475
 	pos = 1.09258056,20.0012627,-0.709596872
 	attPos = 0.267484546,0.0053768158,0.267484784
 	attPos0 = 0.326792777,-0.0664367676,-0.0875638723
@@ -2884,7 +2657,7 @@ PART
 {
 	part = domeLight1_4293598310
 	partName = Part
-	persistentId = 3799998956
+	persistentId = 63610930
 	pos = -0.0709635615,17.8822613,-1.45878422
 	attPos = 0,0,0
 	attPos0 = -0.836751342,-0.794965744,-0.836751223
@@ -3116,7 +2889,7 @@ PART
 {
 	part = domeLight1_4294151090
 	partName = Part
-	persistentId = 3860190927
+	persistentId = 881421360
 	pos = -0.0709634423,17.8822613,0.214718223
 	attPos = 0,0,0
 	attPos0 = -0.836751223,-0.794965744,0.836751223
@@ -3324,7 +3097,7 @@ PART
 {
 	part = domeLight1_4294151032
 	partName = Part
-	persistentId = 3563459283
+	persistentId = 1269893972
 	pos = 1.60253918,17.8822613,0.214718163
 	attPos = 0,0,0
 	attPos0 = 0.836751401,-0.794965744,0.836751163
@@ -3532,7 +3305,7 @@ PART
 {
 	part = domeLight1_4294150974
 	partName = Part
-	persistentId = 1372886115
+	persistentId = 1194169304
 	pos = 1.60253882,17.8822613,-1.45878434
 	attPos = 0,0,0
 	attPos0 = 0.836751044,-0.794965744,-0.836751342
@@ -3740,7 +3513,7 @@ PART
 {
 	part = flagPartSize2_4294114082
 	partName = Part
-	persistentId = 61885059
+	persistentId = 194723847
 	pos = -0.102038324,18.6576996,-1.48985887
 	attPos = 0,0,0
 	attPos0 = -0.867826104,-0.0195274353,-0.867825866
@@ -3794,7 +3567,7 @@ PART
 	{
 		name = FlagDecalBackground
 		isEnabled = True
-		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/USI WOLF Teal
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
 		displayingPortrait = False
 		flagSize = 1
 		placementID = 0
@@ -4014,7 +3787,7 @@ PART
 {
 	part = flagPartSize2_4294113360
 	partName = Part
-	persistentId = 1140224597
+	persistentId = 2202268687
 	pos = -0.102038085,18.6576996,0.245792985
 	attPos = 0,0,0
 	attPos0 = -0.867825866,-0.0195274353,0.867825985
@@ -4068,7 +3841,7 @@ PART
 	{
 		name = FlagDecalBackground
 		isEnabled = True
-		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/USI WOLF Teal
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
 		displayingPortrait = False
 		flagSize = 1
 		placementID = 0
@@ -4288,7 +4061,7 @@ PART
 {
 	part = flagPartSize2_4294113000
 	partName = Part
-	persistentId = 2762574699
+	persistentId = 232325400
 	pos = 1.63361394,18.6576996,0.245792806
 	attPos = 0,0,0
 	attPos0 = 0.867826164,-0.0195274353,0.867825806
@@ -4342,7 +4115,7 @@ PART
 	{
 		name = FlagDecalBackground
 		isEnabled = True
-		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/USI WOLF Teal
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
 		displayingPortrait = False
 		flagSize = 1
 		placementID = 0
@@ -4562,7 +4335,7 @@ PART
 {
 	part = flagPartSize2_4294112640
 	partName = Part
-	persistentId = 3342253723
+	persistentId = 2083347212
 	pos = 1.63361359,18.6576996,-1.4898591
 	attPos = 0,0,0
 	attPos0 = 0.867825806,-0.0195274353,-0.867826104
@@ -4616,7 +4389,7 @@ PART
 	{
 		name = FlagDecalBackground
 		isEnabled = True
-		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/USI WOLF Teal
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
 		displayingPortrait = False
 		flagSize = 1
 		placementID = 0
@@ -4836,7 +4609,7 @@ PART
 {
 	part = RCSBlock.v2_4293657614
 	partName = Part
-	persistentId = 335696929
+	persistentId = 457284051
 	pos = -0.373892248,18.1219864,-0.62203294
 	attPos = 0,0,0
 	attPos0 = -1.13968003,-0.555240631,5.96046448E-08
@@ -5004,7 +4777,7 @@ PART
 {
 	part = RCSBlock.v2_4294093594
 	partName = Part
-	persistentId = 273965395
+	persistentId = 3270022804
 	pos = 0.76578778,18.1219864,0.517646909
 	attPos = 0,0,0
 	attPos0 = 0,-0.555240631,1.13967991
@@ -5172,7 +4945,7 @@ PART
 {
 	part = RCSBlock.v2_4294093348
 	partName = Part
-	persistentId = 1904572723
+	persistentId = 2423334337
 	pos = 1.90546775,18.1219864,-0.622033179
 	attPos = 0,0,0
 	attPos0 = 1.13967991,-0.555240631,-1.78813934E-07
@@ -5340,7 +5113,7 @@ PART
 {
 	part = RCSBlock.v2_4294093102
 	partName = Part
-	persistentId = 3197428911
+	persistentId = 2763296469
 	pos = 0.765787661,18.1219864,-1.76171291
 	attPos = 0,0,0
 	attPos0 = -1.1920929E-07,-0.555240631,-1.13967991
@@ -5498,6 +5271,341 @@ PART
 		}
 		ACTIONS
 		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = SR.ProbeCore_4293229142
+	partName = Part
+	persistentId = 3732028485
+	pos = 0.140788734,20.1987152,-0.955211759
+	attPos = 0,0,0
+	attPos0 = -0.624999046,0.131015778,-0.333178759
+	rot = 0,-1,0,-2.52881108E-07
+	attRot = 0,0,0,1
+	attRot0 = 0,-1,0,-2.52881108E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,mk2LanderCabin.v2_4294278742,COLPod,0|0|0,-1|0|0,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		hibernation = False
+		hibernateOnWarp = False
+		activeControlPointName = _default
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			MakeReferenceToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			HibernateToggle
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = MechJebCore
+		isEnabled = True
+		running = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnOrbitProgradeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnOrbitRetrogradeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnOrbitNormalAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnOrbitAntinormalAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnOrbitRadialInAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnOrbitRadialOutAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnKillRotationAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnDeactivateSmartASSAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnLandsomewhereAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnLandTargetAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnPanicAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnTranslatronOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnTranslatronKeepVertAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnTranslatronZeroSpeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnTranslatronPlusOneSpeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnTranslatronMinusOneSpeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnTranslatronToggleHSAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnAscentAPToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = kOSProcessor
+		isEnabled = True
+		bootFile = None
+		diskSpace = 1500
+		baseDiskSpace = 1500
+		baseModuleMass = 0
+		additionalCost = 0
+		MaxPartId = 100
+		RequiredPower = 0.0399999991
+		stagingEnabled = True
+		activated = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			Deactivate
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			Toggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			TogglePower
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			StartSuppressAutopilot
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			StopSuppressAutopilot
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ToggleSuppressAutopilot
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
 		}
 		UPGRADESAPPLIED
 		{
