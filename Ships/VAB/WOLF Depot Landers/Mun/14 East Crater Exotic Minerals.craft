@@ -1,13 +1,13 @@
-ship = 01 Midlands Exotic Minerals
+ship = 14 East Crater Exotic Minerals
 version = 1.12.3
-description = Bare minimum Exotic Minerals extraction. No requirements.
+description = Extract the 5 abundance of Exotic Minerals. Nothing else of interest.
 type = VAB
-size = 1.63849247,5.71203613,1.45456207
+size = 2.52499986,7.51668549,2.52499986
 steamPublishedFileId = 0
-persistentId = 876118741
+persistentId = 530971711
 rot = 0,0,0,0
 missionFlag = UmbraSpaceIndustries/WOLF/Assets/Flags/USI WOLF
-vesselType = Debris
+vesselType = Lander
 OverrideDefault = False,False,False,False
 OverrideActionControl = 0,0,0,0
 OverrideAxisControl = 0,0,0,0
@@ -17,9 +17,9 @@ PART
 	part = HECS2.ProbeCore_4293289720
 	partName = Part
 	persistentId = 886979001
-	pos = 0.658368111,14.7228184,-0.294096678
+	pos = 0.0059799701,13.6118326,-0.0204910338
 	attPos = 0,0,0
-	attPos0 = 0.658368111,14.7228184,-0.294096678
+	attPos0 = 0.0059799701,13.6118326,-0.0204910338
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -38,10 +38,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = fuelTank_4293234246
-	link = WOLF.Harvester.375_4292734716
-	attN = top,WOLF.Harvester.375_4292734716_0|0.5|0_0|1|0_0|0.5|0_0|1|0
-	attN = bottom,fuelTank_4293234246_0|-0.5|0_0|-1|0_0|-0.5|0_0|-1|0
+	link = Rockomax16.BW_4294216110
+	link = WOLF.Harvester.375_4291195950
+	attN = top,WOLF.Harvester.375_4291195950_0|0.5|0_0|1|0_0|0.5|0_0|1|0
+	attN = bottom,Rockomax16.BW_4294216110_0|-0.5|0_0|-1|0_0|-0.5|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -979,15 +979,21 @@ PART
 		isVisible = True
 		flowMode = Both
 	}
+	VESSELNAMING
+	{
+		name = 14 East Crater Exotic Minerals
+		type = Lander
+		priority = 10
+	}
 }
 PART
 {
-	part = fuelTank_4293234246
+	part = Rockomax16.BW_4294216110
 	partName = Part
-	persistentId = 2804517068
-	pos = 0.658368111,13.2410936,-0.294096678
+	persistentId = 707966163
+	pos = 0.0059799701,12.1918325,-0.0204910338
 	attPos = 0,0,0
-	attPos0 = 0,-1.48172474,0
+	attPos0 = 0,-1.42000008,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -1006,9 +1012,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = liquidEngine3.v2_4293218776
-	attN = top,HECS2.ProbeCore_4293289720_0|0.981724977|0_0|1|0_0|0.981724977|0_0|1|0
-	attN = bottom,liquidEngine3.v2_4293218776_0|-0.912500024|0_0|-1|0_0|-0.912500024|0_0|-1|0
+	link = liquidEngine2-2.v2_4294219388
+	attN = top,HECS2.ProbeCore_4293289720_0|0.920000017|0_0|1|0_0|0.920000017|0_0|1|0
+	attN = bottom,liquidEngine2-2.v2_4294219388_0|-0.920000017|0_0|-1|0_0|-0.920000017|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -1051,24 +1057,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = USI_ModuleRecycleablePart
 		isEnabled = True
 		stagingEnabled = True
@@ -1098,11 +1086,29 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
-		amount = 180
-		maxAmount = 180
+		amount = 720
+		maxAmount = 720
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -1112,8 +1118,8 @@ PART
 	RESOURCE
 	{
 		name = Oxidizer
-		amount = 220
-		maxAmount = 220
+		amount = 880
+		maxAmount = 880
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -1123,12 +1129,12 @@ PART
 }
 PART
 {
-	part = liquidEngine3.v2_4293218776
+	part = liquidEngine2-2.v2_4294219388
 	partName = Part
-	persistentId = 3057265332
-	pos = 0.658368111,12.3285942,-0.294096678
+	persistentId = 215991947
+	pos = 0.0059799701,11.2718325,-0.0204910338
 	attPos = 0,0,0
-	attPos0 = 0,-0.912499428,0
+	attPos0 = 0,-0.920000076,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -1147,8 +1153,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,fuelTank_4293234246_0|0|0_0|1|0_0|0|0_0|1|0
-	attN = bottom,Null_0_0|-0.817809999|0_0|-1|0_0|-0.817809999|0_0|-1|0
+	attN = top,Rockomax16.BW_4294216110_0|0|0_0|1|0_0|0|0_0|1|0
+	attN = bottom,Null_0_0|-1.5|0_0|-1|0_0|-1.5|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -1245,6 +1251,29 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = Shroud1
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleGimbal
 		isEnabled = True
 		gimbalLock = False
@@ -1297,22 +1326,61 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleJettison
+		name = FXModuleLookAtConstraint
 		isEnabled = True
-		activejettisonName = ShortShroud
-		isJettisoned = True
-		shroudHideOverride = False
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			JettisonAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		animState = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		animState = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -1353,22 +1421,6 @@ PART
 		name = ModulePartVariants
 		isEnabled = True
 		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		animState = 0
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1432,15 +1484,15 @@ PART
 }
 PART
 {
-	part = WOLF.Harvester.375_4292734716
+	part = WOLF.Harvester.375_4291195950
 	partName = Part
-	persistentId = 2049757902
-	pos = 0.658368111,16.2228184,-0.294096678
+	persistentId = 3804506167
+	pos = 0.0059799701,15.1118326,-0.0204910338
 	attPos = 0,0,0
 	attPos0 = 0,1.5,0
-	rot = -1,0,0,0
-	attRot = -0.99999994,0,0,0
-	attRot0 = -1,0,0,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1460,8 +1512,8 @@ PART
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
-	attN = top,HECS2.ProbeCore_4293289720_0|1|0_0|1|0_0|1|0_0|1|0
-	attN = bottom,Null_0_0|-1|0_0|-1|0_0|-1|0_0|-1|0
+	attN = top,Null_0_0|1|0_0|1|0_0|1|0_0|1|0
+	attN = bottom,HECS2.ProbeCore_4293289720_0|-1|0_0|-1|0_0|-1|0_0|-1|0
 	EVENTS
 	{
 	}

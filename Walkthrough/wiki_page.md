@@ -6,9 +6,10 @@
   - [WOLF for the Adventurous](#wolf-for-the-adventurous)
   - [WOLF Resource Conversions](#wolf-resource-conversions)
   - [The Plan](#the-plan)
-- [WOLF Biomes and Depots for Beginners](#wolf-biomes-and-depots-for-beginners)
-  - [Start a New Sandbox Game](#start-a-new-sandbox-game)
-  - [WOLF Biomes](#wolf-biomes)
+- [Prepare The Walkthrough Game](#prepare-the-walkthrough-game)
+  - [Install the requried Addons](#install-the-requried-addons)
+  - [Pre-Packaged Save Game](#pre-packaged-save-game)
+- [WOLF Biomes](#wolf-biomes)
   - [WOLF Route Builder Rover](#wolf-route-builder-rover)
   - [Surveying Harvestable Biome Resources](#surveying-harvestable-biome-resources)
 - [WOLF Dashboard -- Harvestable Resources and Depots](#wolf-dashboard----harvestable-resources-and-depots)
@@ -86,6 +87,11 @@
   - [11 Highlands Specialized Parts](#11-highlands-specialized-parts)
   - [12 Polar Crater Exotic Minerals](#12-polar-crater-exotic-minerals)
   - [13 Farside Crater Colony Supplies](#13-farside-crater-colony-supplies)
+  - [14 East Crater Exotic Minerals](#14-east-crater-exotic-minerals)
+  - [15 Farside Crater Water](#15-farside-crater-water)
+  - [16 East Farside Polymers](#16-east-farside-polymers)
+  - [17 Farside Crater Prototypes](#17-farside-crater-prototypes)
+  - [Wrapping Up](#wrapping-up)
 - [Duna Expansion](#duna-expansion)
   - [Relay Satellites](#relay-satellites)
   - [Establish Depots](#establish-depots)
@@ -140,11 +146,14 @@ The Duna expansion will take all the lessons learned from the Mun expansion and 
 
 Throughout this guide you'll see reference to PAW, which is the "Part Action Window" that you typically open up by right-clicking on a part.
 
-## WOLF Biomes and Depots for Beginners
+## Prepare The Walkthrough Game
 
-Let's start with exploring biomes and depots. You'll be familiar with _biomes_ as a term from stock KSP -- these are the regions of a body's surface where you'll gather different types of science from. In MKS there's less focus on biomes in favour of body-wide concentrations of certain resources. In WOLF the biomes act to simplify the development of infrastructure.
+There's a bit of housekeeping to take care of before you can start the walkthrough proper:
 
-### Start a New Sandbox Game
+1. Some add-ons to install
+2. A pre-packaged savegame to copy
+
+### Install the requried Addons
 
 Before you start a new KSP game, you'll need to install the Umbra Space Industries add-ons that make MKS and WOLF work:
 
@@ -160,13 +169,15 @@ But ultimately you'll have the KSP GameData folder in front of you, along with t
 
 ![The Kerbal Space Program GameData folder is open with the USI archive and the CRP archive open alongside. There are two arrows, the first is labelled 1 and points from the USI archive pointing at the GameData window, and a second arrow labelled 2, pointing from the CRP archive to the GameData window][AddOnInstallation]
 
+### Pre-Packaged Save Game
+
 If you want to use the tutorial ships, get the [WOLF Tutorial Save][MRWOLFTS] release file and unpack it now. Put put the **Ships** and **Subassemblies** folders into your save directory.
 
 ![The Kerbal Space Program saves directory showing the WOLF Tutorial save folder. Alongside that is the WOLF_Tutorial_Ships ZIP file contents. An arrow indicates that the contents of the ZIP file should be dragged directly to the WOLF Tutorial save folder][TutorialShipsInstall]
 
 **Create a new sandbox game**. Configure the options as you see fit. I will typically turn off other launch sites, turn off missing crew respawning, and turn off stock vessels. This is just to keep things tidy and organised.
 
-### WOLF Biomes
+## WOLF Biomes
 
 The foundation of industry in WOLF is the "WOLF Biome" and its associated depot. The basic idea is that each WOLF Biome has a certain abundance of resources, you dedicate a WOLF Biome to certain types of activity, and either transfer resources to other biome depots for further processing, or extract resources through WOLF "Hoppers" for use in the MKS industry that you're familiar with.
 
@@ -841,6 +852,21 @@ The sum total thus becomes:
 - Silicon x 15 (only for SP)
 
 Because of the proportions in which the various materials are consumed, this setup will be enough to support production of the advanced materials up until around the point we have a hundred or so Material Kits hoppers. While it could be possible to transport these resources around the place using freighters, in this walkthrough we're pursuing the goal of making each shipyard independent. The extra work required is actually fairly low.
+
+Production of _Prototypes_ is beyond the scope of this walkthrough. Each unit of _Prototypes_ requires 5 x _Electronics_, 5 x _Robotics_, and 5 x _Specialized Parts_. Working backwards:
+
+- Prototypes x 1
+  - Electronics x 5
+    - Material Kits x 25 (5 x 5)
+    - Synthetics x 25 (5 x 5)
+      - Exotic Minerals x 100 (4 x 25)
+      - Polymers x 25 (1 x 25)
+  - Robotics x 5
+    - Material Kits x 25 (5 x 5)
+    - Alloys x 25 (5 x 5)
+      - Rare Metals x 100 (4 x 25)
+      - Metals x 25 (1 x 25)
+  - Specialized Parts x 5
 
 Later we'll look at producing _Colony Supplies_ at KSC:
 
@@ -1610,14 +1636,13 @@ The critical path for **Mun** is getting the passenger terminal, route builder r
 
 Establish depots in the following biomes. The supplied locations are flat-ish and level-ish enough to land a rocket or park a rover, and the order will allow you to start setting up cargo routes and establishing the infrastructure while you establish the remaining depots ahead of landing the expansions:
 
-- Farside Crater (-0.247, -58.873) (0 14' 48"N, 58 53' 2"W)
-- Highlands (0.372, -34.280) (0° 22' 19.2"N, 34° 16' 48"W)
-- East Farside Crater (7.109, -150.838) (7° 6' 32.4"N, 150° 50' 16.8"W)
-- Twin Craters (-5.916, 139.817) (5 54'56"S, 139 49' 1"E)
 - Canyons (18.150, -50.300) (18 9' 0"N, 50 18' 0"W)
 - East Crater (-9.746, 84.452) (9 44' 45"S, 84 27' 7"E)
-- Farside Basin (20.618, -93.351) (29 37' 5"N, 93 21' 5"W) (~1100m/s dv required to land)
+- East Farside Crater (7.109, -150.838) (7° 6' 32.4"N, 150° 50' 16.8"W)
+- Farside Basin (28.514, -91.562) () (~1100m/s dv required to land)
+- **Farside Crater** (-0.247, -58.873) (0 14' 48"N, 58 53' 2"W)
 - Highland Craters (64.424, 173.655) (64 25' 41"N 173 40' 3"E)
+- Highlands (0.372, -34.280) (0° 22' 19.2"N, 34° 16' 48"W)
 - Lowlands (0.305, -0.530)
 - Midland Craters
 - Midlands (-0.97, 158.681)
@@ -1627,6 +1652,7 @@ Establish depots in the following biomes. The supplied locations are flat-ish an
 - Polar Lowlands (79.666, 108.266)
 - Poles
 - Southwest Crater (-28.202, 8.093) (28 9'55"S 8 14'53"E)
+- Twin Craters (-5.916, 139.817) (5 54'56"S, 139 49' 1"E)
 
 Canyons is unique in having Exotic Minerals and Rare Metals in one biome, from this one depot we can develop an abundance of 160 _Specialized Parts_ and 15 _Synthetics_ (ignoring allocaton of rare metals for alloys or polymers for material kits). Canyons can also be expanded to produce food, water and oxygen.
 
@@ -1809,7 +1835,8 @@ Crew:
 
 Exports:
 
-- 20 x _Material Kits_
+- 24 x _Material Kits_
+- 160 x _Rare Metals_
 
 Materials: 438,596 _Material Kits_
 
@@ -1851,6 +1878,8 @@ Exports:
 Build Cost: 371820
 
 ### 09 East Farside Crater Rare Metals
+
+TODO: update to extract substrate (refine to polymers) as well
 
 Prepare 110 route capacity between East Farside Crater and Farside Crater.
 
@@ -1943,26 +1972,103 @@ Crew:
 
 - Miner
 - Scientist
-- 5 x Technician
+- 6 x Technician
 
-Build Cost: 412,486 _Material Kits_
+Exports:
+
+- 100 x _Colony Supplies_
+
+Build Cost: 463,596 _Material Kits_
+
+### 14 East Crater Exotic Minerals
+
+This single-extractor depot expansion exploits the tiny amount of exotic mineral abundance in the East Crater biome.
+
+Exports:
+
+- 10 x _Exotic Minerals_
+
+### 15 Farside Crater Water
+
+Crew:
+
+- Kolonist
+
+Exports:
+
+- 40 x Water
+
+### 16 East Farside Polymers
+
+Imports:
+
+- 2 x Material Kits
+
+Crew:
+
+- Engineer
+- 2 x Miner
+- 2 x Technician
+
+Exports:
+
+- 24 x Polymers
+
+### 17 Farside Crater Prototypes
+
+Crew:
+
+- 2 x Engineer
+- Kolonist
+- Mechanic
+- 5 x Scientist
+
+### Wrapping Up
+
+Now you need to build a route from Farside Crater to Mun Orbit to Kerbin Orbit and transfer some Colony Supplies and Material Kits. For this stage of the Walkthrough you need 30 _Colony Supplies_ in Kerbin Orbit. The final tally for this chapter is to bring these resources to Kerbin Orbit and have them available for the **Duna Shipyard**:
+
+- 15 Material Kits
+- 5 Specialized Parts
+- 1 Alloys
+- 1 Electronics
+- 1 Robotics
+- 1 Synthetics
+
+And for the 15 passenger route builder:
+
+- 30 Colony Supplies
+- 30 Habitation
+- 30 Life Support
+
+The life support and habitation should have been provided by the 
 
 ## Duna Expansion
 
 The Duna expansion is going to be done using WOLF systems where possible. This means using passenger routes to transfer crew, which means the first crew will arrive about 2 years after the shipyard is parked in orbit. Because the **Route Builder Rover** is nuclear powered, we need an engineer to service the nuclear reactor and a pilot to drive the rover -- to handle this I will send an engineer and a pilot in the **Reactor Maintenance** craft that serviced the **Mun Route Builder Rover**. Dock it with the **Crew Transport** and send that combined vessel with the two crew to Duna.
 
+**NB**: you might find it useful to add the **Bulk Fuel Storage** module to the **Kerbin Shipyard**, or simply pay attention to refilling the various craft as propellant becomes available.
+
 Sticking to the WOLF-only plan, build these ships and send them to Duna, try to get them to arrive in this order too:
 
 - Duna Shipyard
 - Cargo route builder
-- Passenger route builder
+- Passenger route builder (remember to only start the passenger route immediately before the departure burn)
 - Reactor Maintenance with Engineer and Pilot (if you plan to use the Route Builder Rover)
 
-Remember to add the materials to the shipyard that it will need to build the **A/E/R/S Hopper**:
+Remember to add the materials to the Duna Shipyard that it will need to build the **A/E/R/S Hopper**:
 
 - 94 Alloys
 - 145 Synthetics
 - 20 Robotics
+
+Before departure, double check that the WOLF abundance of the following is ready (as per _Wrapping Up_ in the Mun expansion writeup):
+
+- 15 Material Kits
+- 5 Specialized Parts
+- 1 Alloys
+- 1 Electronics
+- 1 Robotics
+- 1 Synthetics
 
 Establish the shipyard at a "low" Duna Orbit (100km or less), then:
 
@@ -1970,7 +2076,7 @@ Establish the shipyard at a "low" Duna Orbit (100km or less), then:
 - transfer 5 x _Material Kits_, 5 x _Specialized Parts_, and 1 each of Alloys, Electronics, Robotics and Synthetics from Kerbin:Orbit to Duna:Orbit
 - connect the _Specialized Parts_ hopper and one _Material Kits_ hopper to the depot and start them up
 - Deploy the Orbital Shipyard when you have 4000 _Material Kits_ (about 6 hours)
-- If you have an engineer available, deconstruct the fuel tanks and engines that were used to deliver the **Duna Shipyard** to Duna (this should produce a reasonable amount of the advanced resources)
+- If you have an engineer available, deconstruct the fuel tanks and engines that were used to deliver the **Duna Shipyard** to Duna (this will produce some _Material Kits_)
 - Build the **A/E/R/S Hopper** and attach it to the shipyard (requires about 6 days of resource production)
 - Build the **Passenger Terminal** and attach it to the shipyard (requires about 10 days of production)
 - connect the passenger route to the Duna:Orbit depot
@@ -1981,10 +2087,12 @@ Establish the shipyard at a "low" Duna Orbit (100km or less), then:
 From here the process is the same as the previous expansions:
 
 1. 1 each A/E/R/S
-2. 5 Fuel to support depot landers
+2. Fuel to support depot landers
 3. 15 Material Kits
-4. 5 Fertilizer + 5 Supplies to support passenger terminal
+4. 5 Fertilizer to support passenger terminal
 5. 5 Specialized Parts
+
+At this point Duna will be more or less self-sufficient apart from having to send crew from Kerbin.
 
 ### Relay Satellites
 
@@ -1992,7 +2100,12 @@ To provide communications coverage for all of Duna's surface, my preferred optio
 
 Ike orbital period is 65 517.859s (3d 0h 11m 57.9s), and its orbit is slightly eccentric. A compatible circular orbit is 2,880km, though you don't need to be exact on altitude at long as you can get the orbital period correct.
 
-My usual method for getting relay satellites into a decent spread is to use a resonant orbit. That doesn't work for Duna/Ike because Ike keeps getting in the way. What I do for Duna is simply build the two Relay 100 satellites and set them directly on a rendezvous with their assigned positions 120 degrees leading and lagging Ike.
+My usual method for getting relay satellites into a decent spread is to use a resonant orbit. That doesn't work for Duna/Ike because Ike keeps getting in the way. What I do for Duna is simply build the two Relay 100 satellites and set them directly on a rendezvous with their assigned positions 120 degrees leading and lagging Ike:
+
+1. Start at circular orbit of 328km
+2. When target passes nadir raise apoapsis to 2,880km
+3. Circularise at apoapsis
+4. Trim orbital period to 3d0h11m
 
 Then launch a trio of small relay satellites for Ike. When you capture that satellite delivery to Ike's SOI, use the [Resonant Orbit Calculator][RESORBCALC] to figure out what orbital parameters the deployer will need to space the satellites out correctly. Note that you can't achieve surface-synchronous orbit at Ike because its SOI is too small. The important thing is to get all the satellites onto the same orbital period to within a few seconds. With that level of accuracy you should have decent coverage for years at a time.
 
@@ -2005,9 +2118,9 @@ With the relay satellites in place, use a Skycrane to establish the depots (reme
 - Highlands (-0.518,163.717)
 - Lowlands (-0.030, 6.424)
 - Midland Canyon (9.398, -2.374)
-- Midland Sea (0.103,75.868)
-- Midlands (0 35'21"S 131 28'54"E needs refinement)
-- Northern Basin (10 30'32"N, 84 24'30"W)
+- **Midland Sea** (0.103,75.868) (0° 6' 10.8"N, 75° 52' 4.8"E) (build route to orbit from here)
+- Midlands (-0.883,131.492) (0° 52' 58.8"S, 131° 29' 31.2"E)
+- Northern Basin (10 30'32"N, 84 24'30"W) (10.577, -84.653)
 - Northern Shelf (23.941,21.445)
 - Western Canyon (0 7' 31"S, 59 12' 43"W)
 - Polar Craters (-52.989,147.409) (52°59'20.4"S, 147°24'32.4")
@@ -2032,9 +2145,11 @@ Crew:
 - Miner
 - 2 x Technician
 
-Get that crew transferred to Kerbin Shipyard. Once there, send them off to Duna. This route will take 1y 367d. That's a lot of time to be waiting for things to happen! Note that the route building craft presented in the tutorial save has a Luxury capacity of 15 Kerbals, meaning that you can potentially send the crew for three depot landers depending on whether you're able to limit yourself to 5 crew per lander. This can be great for setting up the basic infrastructure to get A/E/R/S production up and running without having to wait several decades.
+The route building craft presented in the tutorial save has a Luxury capacity of 15 Kerbals, meaning that you can potentially send the crew for multiple depot landers depending on whether you're able to limit the crew per lander. This can be great for setting up the basic infrastructure to get A/E/R/S production up and running without having to wait several decades.
 
-Remember you have time to explore the other biomes, and perhaps even send new shipyards and route builders to Eve, Moho and Jool.
+For this walkthrough, you should be able to get this crew and the crew for **02 Polar Craters Metals** into the same flight from Kerbin Orbit to Duna Orbit. Send the crews to Duna, and spend the transit time establishing depots and scanning resources. I found it helps to write down the names of the Kerbals that belong to each crew so that transferring kerbals from **Duna Shipyard** to the crew section of the depot landers is easier.
+
+Remember you have time to explore the other biomes, and perhaps even send new shipyards and route builders to other worlds.
 
 ### 02 Polar Craters Metals
 
@@ -2057,6 +2172,10 @@ Crew:
 - Scientist
 - Technician
 
+Exports:
+
+- 16 x Metals
+
 ### 03 Midland Sea A/E/R/S
 
 Here's the final depot expansion for this walkthrough, where we upgrade _Midland Sea_ to provide **Duna Shipyard** with its final essential resources.
@@ -2069,6 +2188,8 @@ Crew:
 - 2 x Technician
 
 There are only 7 crew for this mission, feel free to design your own depot expansion for somewhere else (perhaps to build more Specialized Parts to ship back to Kerbin for Colony Supplies) and add the crew here. Remember to test-land each lander before you put crew in one! Quicksave is your friend.
+
+Once this expansion is connected to the _Midland Sea_ depot, you can cancel the exports of A/E/R/S, 5 x Specialized Parts and 15 x Material Kits from _Kerbin Orbit_.
 
 ## WOLF Walkthrough Conclusion
 
@@ -2102,6 +2223,7 @@ Welcome to the Jameson Industries RBR-45, the ultimate electric rover for your U
 [CRPRELEASES]: https://github.com/UmbraSpaceIndustries/CommunityResourcePack/releases "Community Resource Pack releases"
 [KSPROOT]: https://wiki.kerbalspaceprogram.com/wiki/Root_directory "Where to find the KSP root directory"
 [RESORBCALC]: https://meyerweb.com/eric/ksp/resonant-orbits/ "KSP Resonant Orbit Calculator"
+[TransferWindows]: https://docs.google.com/spreadsheets/d/1TOTvHIGdhWzK3FJC-DPzM1dQjXYcS_Mlbfs6rFD0hnU/pub?single=true&gid=0&output=html "Transfer windows for the first five years"
 
 [AddOnInstallation]: Screenshots/AddonInstallation.png "Drag the contents of the USI GameData folder to the KSP GameData folder, then drag the contents of the CRP GameData folder to the KSP GameData folder, overwriting the CommunityResourcePack folder that's already there"
 [TutorialShipsInstall]: Screenshots/WOLFTutorialSaveInstall.png "Drag the WOLF Tutorial folder from the WOLF Tutorial package to the Kerba Space Program saves folder, replacing any existing save of the same name"

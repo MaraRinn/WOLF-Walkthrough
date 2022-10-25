@@ -2,7 +2,7 @@ ship = Polar Lander
 version = 1.12.3
 description = Larger propellant capacity and a drop tank to allow for polar mission plane changes.
 type = VAB
-size = 14.9980211,13.0054092,14.998024
+size = 14.9980211,20.5054092,14.998024
 steamPublishedFileId = 0
 persistentId = 1813474274
 rot = 0,0,0,0
@@ -14,9 +14,9 @@ OverrideAxisControl = 0,0,0,0
 OverrideGroupNames = ,,,
 PART
 {
-	part = FTT.SAS.500_4292313396
+	part = FTT.SAS.0500_4292313396
 	partName = Part
-	persistentId = 472257446
+	persistentId = 2072210908
 	pos = 1.88171983,30.5685825,-0.842019677
 	attPos = 0,0,0
 	attPos0 = 1.88171983,30.5685825,-0.842019677
@@ -170,7 +170,7 @@ PART
 {
 	part = probeStackSmall_4285066616
 	partName = Part
-	persistentId = 3628391540
+	persistentId = 1234914805
 	pos = 1.88171983,30.9685822,-0.842019677
 	attPos = 0,0,0
 	attPos0 = 0,0.399999619,0
@@ -193,7 +193,7 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = batteryBank_4285054336
-	attN = bottom,FTT.SAS.500_4292313396_0|-0.100000001|0_0|-1|0_0|-0.100000001|0_0|-1|0
+	attN = bottom,FTT.SAS.0500_4292313396_0|-0.100000001|0_0|-1|0_0|-0.100000001|0_0|-1|0
 	attN = top,batteryBank_4285054336_0|0.100000001|0_0|1|0_0|0.100000001|0_0|1|0
 	EVENTS
 	{
@@ -1158,7 +1158,7 @@ PART
 {
 	part = batteryBank_4285054336
 	partName = Part
-	persistentId = 4203033671
+	persistentId = 1720149395
 	pos = 1.88171983,31.1794357,-0.842019677
 	attPos = 0,0,0
 	attPos0 = 0,0.210855484,0
@@ -1272,7 +1272,7 @@ PART
 {
 	part = dockingPort2_4289912188
 	partName = Part
-	persistentId = 1566831272
+	persistentId = 1904543785
 	pos = 1.88171983,31.2902908,-0.842019677
 	attPos = 0,0,0
 	attPos0 = 0,0.110855103,0
@@ -1477,7 +1477,7 @@ PART
 {
 	part = Size4.Tank.02_4294182340
 	partName = Part
-	persistentId = 3065048290
+	persistentId = 549609825
 	pos = 1.88171983,28.3935833,-0.842019677
 	attPos = 0,0,0
 	attPos0 = 0,-2.17499924,0
@@ -1508,7 +1508,7 @@ PART
 	link = Rockomax32.BW_4294160776
 	link = Rockomax32.BW_4294160282
 	link = Rockomax32.BW_4294159788
-	attN = top,FTT.SAS.500_4292313396_0|1.875|0_0|1|0_0|1.875|0_0|1|0
+	attN = top,FTT.SAS.0500_4292313396_0|1.875|0_0|1|0_0|1.875|0_0|1|0
 	attN = bottom,Decoupler.4_4294181786_0|-1.875|0_0|-1|0_0|-1.875|0_0|-1|0
 	EVENTS
 	{
@@ -1610,7 +1610,7 @@ PART
 {
 	part = Decoupler.4_4294181786
 	partName = Part
-	persistentId = 748469493
+	persistentId = 1821061086
 	pos = 1.88171983,26.3185825,-0.842019677
 	attPos = 0,0,0
 	attPos0 = 0,-2.07500076,0
@@ -1625,16 +1625,16 @@ PART
 	resPri = 0
 	dstg = 1
 	sidx = 0
-	sqor = 1
-	sepI = 1
+	sqor = 0
+	sepI = 0
 	attm = 0
 	sameVesselCollision = False
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = Size4.Tank.03_4294181074
+	link = Size4.Tank.04_4290768420
 	attN = top,Size4.Tank.02_4294182340_0|0.200000003|0_0|1|0_0|0.200000003|0_0|1|0
-	attN = bottom,Size4.Tank.03_4294181074_0|-0.200000003|0_0|-1|0_0|-0.200000003|0_0|-1|0
+	attN = bottom,Size4.Tank.04_4290768420_0|-0.200000003|0_0|-1|0_0|-0.200000003|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -1795,133 +1795,9 @@ PART
 }
 PART
 {
-	part = Size4.Tank.03_4294181074
-	partName = Part
-	persistentId = 2147091976
-	pos = 1.88171983,22.3685837,-0.842019677
-	attPos = 0,0,0
-	attPos0 = 0,-3.94999886,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 1
-	resPri = 1
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 0
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	attN = top,Decoupler.4_4294181786_0|3.75|0_0|1|0_0|3.75|0_0|1|0
-	attN = bottom,Null_0_0|-3.75|0_0|-1|0_0|-3.75|0_0|-1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = LiquidFuel
-		amount = 11520
-		maxAmount = 11520
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Oxidizer
-		amount = 14080
-		maxAmount = 14080
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
 	part = Rockomax32.BW_4290470324
 	partName = Part
-	persistentId = 2258558572
+	persistentId = 752243813
 	pos = -1.82555532,28.4943295,-0.842019558
 	attPos = 0,0,0
 	attPos0 = -3.70727515,0.100746155,1.1920929E-07
@@ -2072,11 +1948,11 @@ PART
 {
 	part = kaRadialLeg_4290470254
 	partName = Part
-	persistentId = 511383931
+	persistentId = 4283958985
 	pos = -3.26555705,27.2201443,-0.842019796
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
-	rot = -5.02429578E-15,1.05310746E-23,-8.22379675E-08,1
+	rot = -5.02429578E-15,1.05310959E-23,-8.22379675E-08,1
 	attRot = 0,0,0,1
 	attRot0 = 4.29114389E-32,0,2.09603046E-09,1
 	mir = 1,1,1
@@ -2216,11 +2092,11 @@ PART
 {
 	part = solarPanels5_4290470068
 	partName = Part
-	persistentId = 337196727
+	persistentId = 1593349739
 	pos = -3.05882001,30.0653439,-0.842019796
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
-	rot = -6.15895317E-08,-0.707106709,-6.15895388E-08,0.707106829
+	rot = -6.15895317E-08,-0.707106709,-6.15895459E-08,0.707106829
 	attRot = 0,0,0,1
 	attRot0 = -1.95639416E-09,-0.707106709,-1.95639416E-09,0.707106829
 	mir = 1,1,1
@@ -2363,7 +2239,7 @@ PART
 {
 	part = LiquidEngineRE-J10_4290470030
 	partName = Part
-	persistentId = 3337399717
+	persistentId = 275286395
 	pos = -1.82555556,26.2732601,-0.842019558
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
@@ -2693,7 +2569,7 @@ PART
 {
 	part = Rockomax32.BW_4294162752
 	partName = Part
-	persistentId = 2524870385
+	persistentId = 2140200457
 	pos = -0.739719391,28.4943295,1.77942002
 	attPos = 0,0,0
 	attPos0 = -2.62143922,0.100746155,2.6214397
@@ -2844,11 +2720,11 @@ PART
 {
 	part = kaRadialLeg_4294162682
 	partName = Part
-	persistentId = 671669172
-	pos = -1.7579546,27.2201443,2.79765511
+	persistentId = 1747977244
+	pos = -1.75795484,27.2201443,2.79765511
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
-	rot = -3.14711137E-08,0.382683456,-7.59779724E-08,0.923879504
+	rot = -3.14711137E-08,0.382683456,-7.59779653E-08,0.923879504
 	attRot = 0,0,0,1
 	attRot0 = 4.29114389E-32,0,2.09603046E-09,1
 	mir = 1,1,1
@@ -2988,11 +2864,11 @@ PART
 {
 	part = solarPanels5_4294162496
 	partName = Part
-	persistentId = 2332406211
+	persistentId = 3661065996
 	pos = -1.6117692,30.0653439,2.65146971
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
-	rot = -8.04706062E-08,-0.382683307,-3.33320145E-08,0.923879564
+	rot = -8.04706062E-08,-0.382683307,-3.33320038E-08,0.923879564
 	attRot = 0,0,0,1
 	attRot0 = -1.95639416E-09,-0.707106709,-1.95639416E-09,0.707106829
 	mir = 1,1,1
@@ -3135,11 +3011,11 @@ PART
 {
 	part = LiquidEngineRE-J10_4294162458
 	partName = Part
-	persistentId = 2941539626
+	persistentId = 3662029269
 	pos = -0.739719629,26.2732601,1.77942026
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
-	rot = -7.79144642E-08,-0.382683426,-3.2273217E-08,0.923879623
+	rot = -7.79144642E-08,-0.382683426,-3.22732134E-08,0.923879623
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.707106829,0,0.707106829
 	mir = 1,1,1
@@ -3457,7 +3333,7 @@ PART
 {
 	part = Rockomax32.BW_4294162258
 	partName = Part
-	persistentId = 387679921
+	persistentId = 2255424693
 	pos = 1.88171971,28.4943295,2.86525536
 	attPos = 0,0,0
 	attPos0 = -1.1920929E-07,0.100746155,3.70727491
@@ -3608,7 +3484,7 @@ PART
 {
 	part = kaRadialLeg_4294162188
 	partName = Part
-	persistentId = 1271804039
+	persistentId = 1354707647
 	pos = 1.88171959,27.2201443,4.30525732
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
@@ -3752,11 +3628,11 @@ PART
 {
 	part = solarPanels5_4294162002
 	partName = Part
-	persistentId = 331223728
+	persistentId = 2266197775
 	pos = 1.88171959,30.0653439,4.0985198
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
-	rot = -8.71007657E-08,8.94069672E-08,0,1
+	rot = -8.71007728E-08,1.1920929E-07,3.55271368E-15,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = -1.95639416E-09,-0.707106709,-1.95639416E-09,0.707106829
 	mir = 1,1,1
@@ -3899,11 +3775,11 @@ PART
 {
 	part = LiquidEngineRE-J10_4294161964
 	partName = Part
-	persistentId = 1755636616
+	persistentId = 3355003076
 	pos = 1.88171971,26.2732601,2.86525583
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
-	rot = -8.43340118E-08,0,7.10542736E-15,1.00000012
+	rot = -8.43340189E-08,0,1.0658141E-14,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.707106829,0,0.707106829
 	mir = 1,1,1
@@ -4221,7 +4097,7 @@ PART
 {
 	part = Rockomax32.BW_4294161764
 	partName = Part
-	persistentId = 2682639318
+	persistentId = 1392037212
 	pos = 4.50315905,28.4943295,1.77941954
 	attPos = 0,0,0
 	attPos0 = 2.62143922,0.100746155,2.62143922
@@ -4372,11 +4248,11 @@ PART
 {
 	part = kaRadialLeg_4294161694
 	partName = Part
-	persistentId = 1876215828
+	persistentId = 1019195354
 	pos = 5.52139378,27.2201443,2.79765511
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
-	rot = -7.59779866E-08,0.923879564,-3.14711031E-08,0.382683456
+	rot = -7.59779937E-08,0.923879564,-3.14711031E-08,0.382683456
 	attRot = 0,0,0,1
 	attRot0 = 4.29114389E-32,0,2.09603046E-09,1
 	mir = 1,1,1
@@ -4516,11 +4392,11 @@ PART
 {
 	part = solarPanels5_4294161508
 	partName = Part
-	persistentId = 1832947732
+	persistentId = 1777643695
 	pos = 5.37520885,30.0653439,2.65146971
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
-	rot = -8.04706133E-08,0.382683516,3.33320145E-08,0.923879504
+	rot = -8.04706204E-08,0.382683575,3.33320216E-08,0.923879623
 	attRot = 0,0,0,1
 	attRot0 = -1.95639416E-09,-0.707106709,-1.95639416E-09,0.707106829
 	mir = 1,1,1
@@ -4663,7 +4539,7 @@ PART
 {
 	part = LiquidEngineRE-J10_4294161470
 	partName = Part
-	persistentId = 1245689890
+	persistentId = 3978449288
 	pos = 4.50315952,26.2732601,1.77941978
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
@@ -4985,7 +4861,7 @@ PART
 {
 	part = Rockomax32.BW_4294161270
 	partName = Part
-	persistentId = 3412780918
+	persistentId = 2954083502
 	pos = 5.58899498,28.4943295,-0.842020094
 	attPos = 0,0,0
 	attPos0 = 3.70727515,0.100746155,-4.17232513E-07
@@ -5136,7 +5012,7 @@ PART
 {
 	part = kaRadialLeg_4294161200
 	partName = Part
-	persistentId = 2037745742
+	persistentId = 1945749150
 	pos = 7.02899647,27.2201443,-0.842019975
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
@@ -5280,11 +5156,11 @@ PART
 {
 	part = solarPanels5_4294161014
 	partName = Part
-	persistentId = 3857187098
+	persistentId = 33467753
 	pos = 6.8222599,30.0653439,-0.842019975
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
-	rot = -6.15895317E-08,0.707106888,6.15895388E-08,0.70710665
+	rot = -6.15895246E-08,0.707106888,6.15895459E-08,0.70710665
 	attRot = 0,0,0,1
 	attRot0 = -1.95639416E-09,-0.707106709,-1.95639416E-09,0.707106829
 	mir = 1,1,1
@@ -5427,11 +5303,11 @@ PART
 {
 	part = LiquidEngineRE-J10_4294160976
 	partName = Part
-	persistentId = 1795422834
+	persistentId = 46032881
 	pos = 5.58899546,26.2732601,-0.842020094
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
-	rot = -5.96331375E-08,0.707106888,5.96331517E-08,0.707106769
+	rot = -5.96331304E-08,0.707106888,5.96331589E-08,0.707106769
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.707106829,0,0.707106829
 	mir = 1,1,1
@@ -5749,7 +5625,7 @@ PART
 {
 	part = Rockomax32.BW_4294160776
 	partName = Part
-	persistentId = 569737107
+	persistentId = 1843818816
 	pos = 4.50315857,28.4943295,-3.46345949
 	attPos = 0,0,0
 	attPos0 = 2.62143874,0.100746155,-2.62143993
@@ -5900,7 +5776,7 @@ PART
 {
 	part = kaRadialLeg_4294160706
 	partName = Part
-	persistentId = 4157077500
+	persistentId = 2165971703
 	pos = 5.52139378,27.2201443,-4.4816947
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
@@ -6044,11 +5920,11 @@ PART
 {
 	part = solarPanels5_4294160520
 	partName = Part
-	persistentId = 3650931037
+	persistentId = 34150781
 	pos = 5.37520885,30.0653439,-4.3355093
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
-	rot = -3.33320145E-08,0.923879623,8.04706133E-08,0.382683277
+	rot = -3.33320216E-08,0.923879623,8.04706133E-08,0.382683247
 	attRot = 0,0,0,1
 	attRot0 = -1.95639416E-09,-0.707106709,-1.95639416E-09,0.707106829
 	mir = 1,1,1
@@ -6191,7 +6067,7 @@ PART
 {
 	part = LiquidEngineRE-J10_4294160482
 	partName = Part
-	persistentId = 3535306784
+	persistentId = 27737755
 	pos = 4.50315905,26.2732601,-3.46345997
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
@@ -6513,7 +6389,7 @@ PART
 {
 	part = Rockomax32.BW_4294160282
 	partName = Part
-	persistentId = 1513754683
+	persistentId = 1133255715
 	pos = 1.88171947,28.4943295,-4.54929447
 	attPos = 0,0,0
 	attPos0 = -3.57627869E-07,0.100746155,-3.70727491
@@ -6664,7 +6540,7 @@ PART
 {
 	part = kaRadialLeg_4294160212
 	partName = Part
-	persistentId = 1408827768
+	persistentId = 106294026
 	pos = 1.88171983,27.2201443,-5.98929644
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
@@ -6808,11 +6684,11 @@ PART
 {
 	part = solarPanels5_4294160026
 	partName = Part
-	persistentId = 2344323452
+	persistentId = 3397013441
 	pos = 1.88171983,30.0653439,-5.78255892
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
-	rot = 0,1,8.71007657E-08,-8.94069672E-08
+	rot = 3.55271368E-15,1.00000012,8.71007728E-08,-1.1920929E-07
 	attRot = 0,0,0,1
 	attRot0 = -1.95639416E-09,-0.707106709,-1.95639416E-09,0.707106829
 	mir = 1,1,1
@@ -6955,11 +6831,11 @@ PART
 {
 	part = LiquidEngineRE-J10_4294159988
 	partName = Part
-	persistentId = 3902053026
+	persistentId = 2954244992
 	pos = 1.88171947,26.2732601,-4.54929495
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
-	rot = 7.10542736E-15,1.00000012,8.43340118E-08,0
+	rot = 1.0658141E-14,1.00000012,8.43340189E-08,0
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.707106829,0,0.707106829
 	mir = 1,1,1
@@ -7277,7 +7153,7 @@ PART
 {
 	part = Rockomax32.BW_4294159788
 	partName = Part
-	persistentId = 1817487431
+	persistentId = 1659144309
 	pos = -0.739720583,28.4943295,-3.46345806
 	attPos = 0,0,0
 	attPos0 = -2.62144041,0.100746155,-2.6214385
@@ -7428,7 +7304,7 @@ PART
 {
 	part = kaRadialLeg_4294159718
 	partName = Part
-	persistentId = 1848635384
+	persistentId = 3142809217
 	pos = -1.75795579,27.2201443,-4.48169327
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
@@ -7572,11 +7448,11 @@ PART
 {
 	part = solarPanels5_4294159532
 	partName = Part
-	persistentId = 4164083516
+	persistentId = 1010148898
 	pos = -1.61177039,30.0653439,-4.33550787
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
-	rot = 3.33320251E-08,0.923879504,8.04705991E-08,-0.382683665
+	rot = 3.33320251E-08,0.923879504,8.04705991E-08,-0.382683635
 	attRot = 0,0,0,1
 	attRot0 = -1.95639416E-09,-0.707106709,-1.95639416E-09,0.707106829
 	mir = 1,1,1
@@ -7719,7 +7595,7 @@ PART
 {
 	part = LiquidEngineRE-J10_4294159494
 	partName = Part
-	persistentId = 3516308461
+	persistentId = 946110194
 	pos = -0.739720821,26.2732601,-3.46345854
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
@@ -8035,5 +7911,129 @@ PART
 		UPGRADESAPPLIED
 		{
 		}
+	}
+}
+PART
+{
+	part = Size4.Tank.04_4290768420
+	partName = Part
+	persistentId = 3201072299
+	pos = 1.88171983,18.6185837,-0.842019677
+	attPos = 0,0,0
+	attPos0 = 0,-7.69999886,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,Decoupler.4_4294181786_0|7.5|0_0|1|0_0|7.5|0_0|1|0
+	attN = bottom,Null_0_0|-7.5|0_0|-1|0_0|-7.5|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 23040
+		maxAmount = 23040
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 28160
+		maxAmount = 28160
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
 	}
 }
