@@ -376,21 +376,29 @@ Note that some addons will prevent routes showing up. My list of suspects that I
 
 ### Minmus
 
-+ Flats (1 49'32"N, 40 13'8"W -- just NW of Greater Flats)
-+ Great Flats (-10, -92)
-+ Greater Flats
-+ Highlands (0N, 82E -- equator East of Greater Flats) (0 6'15"S 78 18'4"E))
-+ Lesser Flats (9.404, -178.003)
-+ Lowlands (0.026, -51.516)
-+ Midlands (4.390, -86.594 -- flat plateau)
-+ Poles (82 43'31"N 77 16'36"W)
-+ Slopes (good luck)
++ Midlands (4.390, -86.594) or (4N, 86 43'37"W) -- flat plateau to the immediate east of Great Flats
++ Greater Flats (0, -7.5) or (0N, 7 30'00"W)
++ Flats (1.5, -40) or (1 30' 0"N 40 0' 0"W) -- bottom lobe of the flats just NW of Greater Flats
++ Lesser Flats (9.404, -178.003) (9° 24' 14.4"N, 178° 0' 10.8"W)
++ Great Flats (-10, -92) (10S, 92W)
++ Poles (78.045, 164.276) (78° 2' 42"N, 164° 16' 33.6"E)
++ Lowlands (0.026, -51.516) (0° 1' 33.6"N, 51° 30' 57.6"W)
++ Highlands (0N, 82E)
 
 Satellites:
 
 + Synchronous orbit: 357940.87 (40400s)
 + Deployer apoapsis: 534657.74 ()
 + "Low" orbit is 10-20km
+
++ Shipyard Component
+  + 42,400 _Material Kits_
+  + 528 _Specialized Parts_
+  + 145 _Alloys_
+  + 194 _Synthetics_
++ A/E/R/S
+  + 32,230 _Material Kits_
+  + 369 _Specialized Parts_
 
 ### Mun
 
@@ -428,6 +436,8 @@ Satellites:
 
 + Shallows (-55.060, 113.400 - near Western Sea)
 
+Survey altitude is 1000km (70km to 1500km).
+
 ## Uraninite For Nuclear Reactor Fuel
 
 + Mun, Farside Crater 6.76% (2.943, 61.761)
@@ -460,3 +470,4 @@ Satellites:
 [MRWOLFTS]: https://github.com/MaraRinn/WOLF-Tutorial-Ships "Mara Rinn's WOLF Tutorial Ships repository"
 [BCRESDIAG]: https://forum.kerbalspaceprogram.com/index.php?/topic/154587-111x-modular-kolonization-system-mks/&do=findComment&comment=4026544 "bigcalm's resource diagram"
 [DECDEGREES]: https://www.rapidtables.com/convert/number/degrees-to-degrees-minutes-seconds.html "Decimal Degrees to Degrees,Minutes,Seconds"
+[ALARMENHANCE]: https://github.com/severedsolo/AlarmEnhancements/releases "KAC-style enhancements for stock alarm clock"
