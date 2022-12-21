@@ -2231,8 +2231,6 @@ Once at Eve, complete the Moho-Eve route. The route back to Kerbin should requir
 
 The final step of this great adventure is to set up the propellant facilities for torch ships. They run on _Karborundum_ (which we've just imported from **Moho**) and _Water_ (which we can import from **Kerbin**, **Minmus** or **Mun**).
 
-
-
 ## Here There Be Dragons
 
 The remainder of this walkthrough is unmaintained. The original walkthrough involved expanding to Duna, and the depot landers you need are still in the tutorial save. It should all still work but it hasn't been played through since the Moho Expansion was done.
