@@ -1,10 +1,10 @@
-ship = 03 Midlands AERS
+ship = 03 Midlands AERS (Teal)
 version = 1.12.4
-description = Exploit Moho's mineral wealth¨¨Engineer, Farmer, Kolonist, Mechanic, Medic, Miner x 2, Scientist x 2, Technician x 3¨¨26 Exotic Minerals
+description = Exploit Moho's mineral wealth¨¨Engineer, Farmer, Kolonist, Mechanic, Medic, Miner x 2, Scientist x 2, Technician x 3¨¨26 Exotic Minerals¨¨Ditch the drop tank after the deorbit burn.
 type = VAB
-size = 13.7064533,15.9969254,13.7064552
+size = 13.7064533,18.5560989,13.7064552
 steamPublishedFileId = 0
-persistentId = 2239394937
+persistentId = 461095145
 rot = 0,0,0,0
 missionFlag = UmbraSpaceIndustries/WOLF/Assets/Flags/USI WOLF
 vesselType = Lander
@@ -16,7 +16,7 @@ PART
 {
 	part = Size3MediumTank_4285892446
 	partName = Part
-	persistentId = 3588436340
+	persistentId = 585974173
 	pos = 0.440663725,14.69592,2.20021653
 	attPos = 0,0,0
 	attPos0 = 0.440663725,14.69592,2.20021653
@@ -47,8 +47,9 @@ PART
 	link = Rockomax32.BW_4290468348
 	link = Rockomax32.BW_4290467854
 	link = FTT.SAS.0500_4292313396
+	link = Decoupler.3_4294189142
 	attN = top,FTT.SAS.0500_4292313396_0|1.93099999|0_0|1|0_0|1.93099999|0_0|1|0
-	attN = bottom,Null_0_0|-1.93700004|0_0|-1|0_0|-1.93700004|0_0|-1|0
+	attN = bottom,Decoupler.3_4294189142_0|-1.93700004|0_0|-1|0_0|-1.93700004|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -165,7 +166,7 @@ PART
 {
 	part = Rockomax32.BW_4285859280
 	partName = Part
-	persistentId = 1276029873
+	persistentId = 2037317662
 	pos = 0.440663725,14.3483944,-0.861273289
 	attPos = 0,0,0
 	attPos0 = 0,-0.347525597,-3.06148982
@@ -190,6 +191,7 @@ PART
 	link = kaRadialLeg_4285824108
 	link = solarPanels5_4285051722
 	link = LiquidEngineRE-J10_4292787342
+	link = flagPartSize2_4290548576
 	sym = Rockomax32.BW_4290470818
 	sym = Rockomax32.BW_4290470324
 	sym = Rockomax32.BW_4290469830
@@ -316,7 +318,7 @@ PART
 {
 	part = kaRadialLeg_4285824108
 	partName = Part
-	persistentId = 45030066
+	persistentId = 2865842053
 	pos = 0.440664083,13.0742111,-2.30127597
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
@@ -464,7 +466,7 @@ PART
 {
 	part = solarPanels5_4285051722
 	partName = Part
-	persistentId = 531393883
+	persistentId = 3238861003
 	pos = 0.440664083,15.9194088,-2.0945375
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
@@ -611,7 +613,7 @@ PART
 {
 	part = LiquidEngineRE-J10_4292787342
 	partName = Part
-	persistentId = 950832551
+	persistentId = 1757741951
 	pos = 0.440663725,12.127327,-0.861273766
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
@@ -622,11 +624,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 0
+	sqor = 1
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
@@ -941,7 +943,7 @@ PART
 {
 	part = Rockomax32.BW_4290470818
 	partName = Part
-	persistentId = 1727377032
+	persistentId = 3887842063
 	pos = -1.72413671,14.3483944,0.0354163647
 	attPos = 0,0,0
 	attPos0 = -2.16480041,-0.347525597,-2.16480017
@@ -966,6 +968,7 @@ PART
 	link = kaRadialLeg_4290470748
 	link = solarPanels5_4290470562
 	link = LiquidEngineRE-J10_4290470524
+	link = flagPartSize2_4290548216
 	sym = Rockomax32.BW_4290470324
 	sym = Rockomax32.BW_4290469830
 	sym = Rockomax32.BW_4290469336
@@ -1092,7 +1095,7 @@ PART
 {
 	part = kaRadialLeg_4290470748
 	partName = Part
-	persistentId = 3748700286
+	persistentId = 1284358326
 	pos = -2.74237156,13.0742111,-0.982818842
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
@@ -1236,11 +1239,11 @@ PART
 {
 	part = solarPanels5_4290470562
 	partName = Part
-	persistentId = 3634286873
+	persistentId = 68984989
 	pos = -2.59618592,15.9194088,-0.836632967
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
-	rot = 4.82350977E-08,0.923879623,1.16449669E-07,-0.382683516
+	rot = 4.82351261E-08,0.923879623,1.16449669E-07,-0.382683516
 	attRot = 0,0,0,1
 	attRot0 = -1.95639416E-09,-0.707106709,-1.95639416E-09,0.707106829
 	mir = 1,1,1
@@ -1383,7 +1386,7 @@ PART
 {
 	part = LiquidEngineRE-J10_4290470524
 	partName = Part
-	persistentId = 2684750612
+	persistentId = 2733634709
 	pos = -1.72413719,12.127327,0.0354158878
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
@@ -1394,11 +1397,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 0
+	sqor = 1
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
@@ -1713,7 +1716,7 @@ PART
 {
 	part = Rockomax32.BW_4290470324
 	partName = Part
-	persistentId = 1365527927
+	persistentId = 1610809226
 	pos = -2.62082577,14.3483944,2.20021629
 	attPos = 0,0,0
 	attPos0 = -3.06148958,-0.347525597,-2.38418579E-07
@@ -1738,6 +1741,7 @@ PART
 	link = kaRadialLeg_4290470254
 	link = solarPanels5_4290470068
 	link = LiquidEngineRE-J10_4290470030
+	link = flagPartSize2_4290563612
 	sym = Rockomax32.BW_4290469830
 	sym = Rockomax32.BW_4290469336
 	sym = Rockomax32.BW_4290468842
@@ -1864,7 +1868,7 @@ PART
 {
 	part = kaRadialLeg_4290470254
 	partName = Part
-	persistentId = 4271381823
+	persistentId = 2705853077
 	pos = -4.06082773,13.0742111,2.20021605
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
@@ -2008,7 +2012,7 @@ PART
 {
 	part = solarPanels5_4290470068
 	partName = Part
-	persistentId = 3209179317
+	persistentId = 307960681
 	pos = -3.85409021,15.9194088,2.20021605
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
@@ -2155,7 +2159,7 @@ PART
 {
 	part = LiquidEngineRE-J10_4290470030
 	partName = Part
-	persistentId = 3478654418
+	persistentId = 1017821558
 	pos = -2.62082624,12.127327,2.20021629
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
@@ -2166,11 +2170,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 0
+	sqor = 1
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
@@ -2485,7 +2489,7 @@ PART
 {
 	part = Rockomax32.BW_4290469830
 	partName = Part
-	persistentId = 3780342756
+	persistentId = 2530240961
 	pos = -1.72413647,14.3483944,4.36501646
 	attPos = 0,0,0
 	attPos0 = -2.16480017,-0.347525597,2.16479993
@@ -2510,6 +2514,7 @@ PART
 	link = kaRadialLeg_4290469760
 	link = solarPanels5_4290469574
 	link = LiquidEngineRE-J10_4290469536
+	link = flagPartSize2_4290550376
 	sym = Rockomax32.BW_4290469336
 	sym = Rockomax32.BW_4290468842
 	sym = Rockomax32.BW_4290468348
@@ -2636,7 +2641,7 @@ PART
 {
 	part = kaRadialLeg_4290469760
 	partName = Part
-	persistentId = 998845988
+	persistentId = 3017441205
 	pos = -2.74237156,13.0742111,5.38325119
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
@@ -2780,7 +2785,7 @@ PART
 {
 	part = solarPanels5_4290469574
 	partName = Part
-	persistentId = 912497757
+	persistentId = 3987340035
 	pos = -2.59618592,15.9194088,5.23706579
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
@@ -2927,7 +2932,7 @@ PART
 {
 	part = LiquidEngineRE-J10_4290469536
 	partName = Part
-	persistentId = 2664302863
+	persistentId = 3956290819
 	pos = -1.72413695,12.127327,4.36501694
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
@@ -2938,11 +2943,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 0
+	sqor = 1
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
@@ -3257,7 +3262,7 @@ PART
 {
 	part = Rockomax32.BW_4290469336
 	partName = Part
-	persistentId = 859115222
+	persistentId = 4277167275
 	pos = 0.440663993,14.3483944,5.26170635
 	attPos = 0,0,0
 	attPos0 = 2.68220901E-07,-0.347525597,3.06148982
@@ -3282,6 +3287,7 @@ PART
 	link = kaRadialLeg_4290469266
 	link = solarPanels5_4290469080
 	link = LiquidEngineRE-J10_4290469042
+	link = flagPartSize2_4290550016
 	sym = Rockomax32.BW_4290468842
 	sym = Rockomax32.BW_4290468348
 	sym = Rockomax32.BW_4290467854
@@ -3408,7 +3414,7 @@ PART
 {
 	part = kaRadialLeg_4290469266
 	partName = Part
-	persistentId = 861999061
+	persistentId = 3918773690
 	pos = 0.440664232,13.0742111,6.70170879
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
@@ -3552,7 +3558,7 @@ PART
 {
 	part = solarPanels5_4290469080
 	partName = Part
-	persistentId = 3437750434
+	persistentId = 1934949537
 	pos = 0.440664232,15.9194088,6.49497032
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
@@ -3699,22 +3705,22 @@ PART
 {
 	part = LiquidEngineRE-J10_4290469042
 	partName = Part
-	persistentId = 3123388656
+	persistentId = 381142040
 	pos = 0.440663993,12.127327,5.26170683
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
-	rot = 1.23277459E-07,-1.1920929E-07,-1.0658141E-13,-1.00000012
+	rot = 1.23277459E-07,-1.1920929E-07,-1.3500312E-13,-1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.707106829,0,0.707106829
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 0
+	sqor = 1
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
@@ -4029,7 +4035,7 @@ PART
 {
 	part = Rockomax32.BW_4290468842
 	partName = Part
-	persistentId = 3605941241
+	persistentId = 3022124189
 	pos = 2.60546446,14.3483944,4.36501646
 	attPos = 0,0,0
 	attPos0 = 2.16480064,-0.347525597,2.16479993
@@ -4054,6 +4060,7 @@ PART
 	link = kaRadialLeg_4290468772
 	link = solarPanels5_4290468586
 	link = LiquidEngineRE-J10_4290468548
+	link = flagPartSize2_4290549656
 	sym = Rockomax32.BW_4290468348
 	sym = Rockomax32.BW_4290467854
 	sym = Rockomax32.BW_4285859280
@@ -4180,8 +4187,8 @@ PART
 {
 	part = kaRadialLeg_4290468772
 	partName = Part
-	persistentId = 1828490424
-	pos = 3.62370348,13.0742111,5.3832531
+	persistentId = 1743150965
+	pos = 3.62370467,13.0742111,5.3832531
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
 	rot = 1.11957043E-07,-0.923879623,4.63741117E-08,-0.382683367
@@ -4324,11 +4331,11 @@ PART
 {
 	part = solarPanels5_4290468586
 	partName = Part
-	persistentId = 1996070805
+	persistentId = 3328923279
 	pos = 3.47751498,15.9194088,5.23706627
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
-	rot = 1.16449783E-07,-0.382683575,-4.82350586E-08,-0.923879504
+	rot = 1.1644984E-07,-0.382683575,-4.82350657E-08,-0.923879504
 	attRot = 0,0,0,1
 	attRot0 = -1.95639416E-09,-0.707106709,-1.95639416E-09,0.707106829
 	mir = 1,1,1
@@ -4471,7 +4478,7 @@ PART
 {
 	part = LiquidEngineRE-J10_4290468548
 	partName = Part
-	persistentId = 1415681620
+	persistentId = 706755658
 	pos = 2.60546494,12.127327,4.36501694
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
@@ -4482,11 +4489,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 0
+	sqor = 1
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
@@ -4801,7 +4808,7 @@ PART
 {
 	part = Rockomax32.BW_4290468348
 	partName = Part
-	persistentId = 2951307328
+	persistentId = 960484009
 	pos = 3.5021534,14.3483944,2.20021629
 	attPos = 0,0,0
 	attPos0 = 3.06148958,-0.347525597,-2.38418579E-07
@@ -4826,6 +4833,7 @@ PART
 	link = kaRadialLeg_4290468278
 	link = solarPanels5_4290468092
 	link = LiquidEngineRE-J10_4290468054
+	link = flagPartSize2_4290549296
 	sym = Rockomax32.BW_4290467854
 	sym = Rockomax32.BW_4285859280
 	sym = Rockomax32.BW_4290470818
@@ -4952,7 +4960,7 @@ PART
 {
 	part = kaRadialLeg_4290468278
 	partName = Part
-	persistentId = 866594880
+	persistentId = 3278102661
 	pos = 4.94215536,13.0742111,2.20021653
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
@@ -5096,7 +5104,7 @@ PART
 {
 	part = solarPanels5_4290468092
 	partName = Part
-	persistentId = 3396128109
+	persistentId = 3163145624
 	pos = 4.73541784,15.9194088,2.20021653
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
@@ -5243,7 +5251,7 @@ PART
 {
 	part = LiquidEngineRE-J10_4290468054
 	partName = Part
-	persistentId = 3696655114
+	persistentId = 655371188
 	pos = 3.50215387,12.127327,2.20021605
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
@@ -5254,11 +5262,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 0
+	sqor = 1
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
@@ -5573,7 +5581,7 @@ PART
 {
 	part = Rockomax32.BW_4290467854
 	partName = Part
-	persistentId = 2510797750
+	persistentId = 247911402
 	pos = 2.6054635,14.3483944,0.0354156494
 	attPos = 0,0,0
 	attPos0 = 2.16479969,-0.347525597,-2.16480088
@@ -5598,6 +5606,7 @@ PART
 	link = kaRadialLeg_4290467784
 	link = solarPanels5_4290467598
 	link = LiquidEngineRE-J10_4290467560
+	link = flagPartSize2_4290548936
 	sym = Rockomax32.BW_4285859280
 	sym = Rockomax32.BW_4290470818
 	sym = Rockomax32.BW_4290470324
@@ -5724,8 +5733,8 @@ PART
 {
 	part = kaRadialLeg_4290467784
 	partName = Part
-	persistentId = 3176053260
-	pos = 3.62370205,13.0742111,-0.982822895
+	persistentId = 3439770549
+	pos = 3.62370372,13.0742111,-0.982824087
 	attPos = 0,0,0
 	attPos0 = -1.44000065,-1.27418423,-1.19209261E-07
 	rot = 1.11957021E-07,-0.923879504,-4.6374133E-08,0.382683605
@@ -5868,8 +5877,8 @@ PART
 {
 	part = solarPanels5_4290467598
 	partName = Part
-	persistentId = 4149344234
-	pos = 3.47751546,15.9194088,-0.836636543
+	persistentId = 2265793947
+	pos = 3.47751641,15.9194088,-0.836637497
 	attPos = 0,0,0
 	attPos0 = -1.23326373,1.57101154,-1.19209261E-07
 	rot = 4.82349947E-08,-0.923879743,-1.16449698E-07,-0.382683158
@@ -6015,7 +6024,7 @@ PART
 {
 	part = LiquidEngineRE-J10_4290467560
 	partName = Part
-	persistentId = 2992913747
+	persistentId = 2622526289
 	pos = 2.60546398,12.127327,0.0354151726
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
@@ -6026,11 +6035,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 0
+	sqor = 1
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
@@ -6345,7 +6354,7 @@ PART
 {
 	part = FTT.SAS.0500_4292313396
 	partName = Part
-	persistentId = 2596877147
+	persistentId = 788432208
 	pos = 0.440663725,16.9269199,2.20021653
 	attPos = 0,0,0
 	attPos0 = 0,2.23099995,0
@@ -6498,7 +6507,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293393164
 	partName = Part
-	persistentId = 1201206614
+	persistentId = 2901886292
 	pos = 0.440663725,18.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = 0,1.29999924,0
@@ -6525,7 +6534,7 @@ PART
 	link = WOLF.FabricatorModule375_4293372848
 	link = WOLF.FabricatorModule375_4293358300
 	link = WOLF.Harvester.375_4293302156
-	attN = side,WOLF.FabricatorModule375_4293358300_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -6791,7 +6800,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293386274
 	partName = Part
-	persistentId = 2690139535
+	persistentId = 1916696086
 	pos = 0.440663725,18.2269192,3.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -7080,7 +7089,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293383840
 	partName = Part
-	persistentId = 1601533424
+	persistentId = 3698764820
 	pos = 0.440663725,18.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -7369,7 +7378,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293380462
 	partName = Part
-	persistentId = 2562403269
+	persistentId = 4106050635
 	pos = 0.440663725,18.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -7657,7 +7666,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293377936
 	partName = Part
-	persistentId = 108560440
+	persistentId = 1408193730
 	pos = 0.440663725,18.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,0.999999762
@@ -7945,7 +7954,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293372848
 	partName = Part
-	persistentId = 3959171004
+	persistentId = 1816551264
 	pos = -0.559336305,18.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = -1,0,0
@@ -7970,7 +7979,7 @@ PART
 	link = WOLF.FabricatorModule375_4293363448
 	link = WOLF.FabricatorModule375_4293360468
 	link = WOLF.ScienceModule375_4293146612
-	attN = side,WOLF.FabricatorModule375_4293393164_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -8236,7 +8245,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293363448
 	partName = Part
-	persistentId = 362066618
+	persistentId = 2157787865
 	pos = -0.559336305,18.2269192,3.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -8525,7 +8534,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293362758
 	partName = Part
-	persistentId = 2156960561
+	persistentId = 3040957503
 	pos = -0.559336305,18.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -8813,7 +8822,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293360468
 	partName = Part
-	persistentId = 925113739
+	persistentId = 1896766026
 	pos = -0.559336305,18.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -9102,7 +9111,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293359686
 	partName = Part
-	persistentId = 2993434579
+	persistentId = 1679621829
 	pos = -0.559336305,18.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -9390,7 +9399,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293358300
 	partName = Part
-	persistentId = 3853321159
+	persistentId = 3238222664
 	pos = 1.4406637,18.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = 1,0,0
@@ -9415,7 +9424,7 @@ PART
 	link = WOLF.FabricatorModule375_4293358226
 	link = WOLF.FabricatorModule375_4293358060
 	link = WOLF.ScienceModule375_4293330256
-	attN = side,WOLF.ScienceModule375_4293330256_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -9681,7 +9690,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293358226
 	partName = Part
-	persistentId = 1980225890
+	persistentId = 3347071722
 	pos = 1.4406637,18.2269192,3.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -9970,7 +9979,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293358146
 	partName = Part
-	persistentId = 1005906655
+	persistentId = 495156968
 	pos = 1.4406637,18.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -10258,7 +10267,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293358060
 	partName = Part
-	persistentId = 2162657441
+	persistentId = 4012357261
 	pos = 1.4406637,18.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -10547,7 +10556,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293357968
 	partName = Part
-	persistentId = 2873531307
+	persistentId = 3981699837
 	pos = 1.4406637,18.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -10835,7 +10844,7 @@ PART
 {
 	part = WOLF.ScienceModule375_4293330256
 	partName = Part
-	persistentId = 2795709258
+	persistentId = 1485805308
 	pos = 2.44066381,18.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = 1,0,0
@@ -10974,7 +10983,7 @@ PART
 {
 	part = WOLF.MaintenanceModule375_4293329168
 	partName = Part
-	persistentId = 2721026944
+	persistentId = 3246688550
 	pos = 2.44066381,18.2269192,3.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -11112,7 +11121,7 @@ PART
 {
 	part = WOLF.PowerModule375_4293328056
 	partName = Part
-	persistentId = 2072842906
+	persistentId = 1035486575
 	pos = 2.44066381,18.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -11295,7 +11304,7 @@ PART
 {
 	part = WOLF.PowerModule375_4293129800
 	partName = Part
-	persistentId = 891213353
+	persistentId = 2331545892
 	pos = 2.44066381,18.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -11479,7 +11488,7 @@ PART
 {
 	part = WOLF.MaintenanceModule375_4293133228
 	partName = Part
-	persistentId = 663893885
+	persistentId = 19929469
 	pos = 2.44066381,18.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -11616,7 +11625,7 @@ PART
 {
 	part = WOLF.ScienceModule375_4293146612
 	partName = Part
-	persistentId = 171991139
+	persistentId = 1055244998
 	pos = -1.5593363,18.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = -1,0,0
@@ -11640,7 +11649,7 @@ PART
 	modSize = 0,0,0
 	link = WOLF.MaintenanceModule375_4293143320
 	link = WOLF.PowerModule375_4293136642
-	attN = side,WOLF.FabricatorModule375_4293372848_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -11755,7 +11764,7 @@ PART
 {
 	part = WOLF.MaintenanceModule375_4293143320
 	partName = Part
-	persistentId = 3860854335
+	persistentId = 3722832681
 	pos = -1.5593363,18.2269192,3.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,0.999999762
@@ -11893,7 +11902,7 @@ PART
 {
 	part = WOLF.PowerModule375_4293139998
 	partName = Part
-	persistentId = 2916096675
+	persistentId = 2787658802
 	pos = -1.5593363,18.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -12076,7 +12085,7 @@ PART
 {
 	part = WOLF.PowerModule375_4293136642
 	partName = Part
-	persistentId = 1827630793
+	persistentId = 559760436
 	pos = -1.5593363,18.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -12260,7 +12269,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4293319446
 	partName = Part
-	persistentId = 3034190870
+	persistentId = 3442197472
 	pos = -1.5593363,18.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -12548,7 +12557,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293302156
 	partName = Part
-	persistentId = 4091628774
+	persistentId = 60990902
 	pos = 0.440663725,20.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = 0,2,0
@@ -12575,7 +12584,7 @@ PART
 	link = WOLF.Harvester.375_4293300432
 	link = WOLF.Harvester.375_4293287092
 	link = WOLF.Harvester.375_4292792542
-	attN = side,WOLF.Harvester.375_4293287092_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -12920,7 +12929,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293302064
 	partName = Part
-	persistentId = 1424419133
+	persistentId = 362242658
 	pos = 0.440663725,20.2269192,3.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -13209,7 +13218,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293301984
 	partName = Part
-	persistentId = 2958573947
+	persistentId = 3497864448
 	pos = 0.440663725,20.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -13497,7 +13506,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293288896
 	partName = Part
-	persistentId = 3982807739
+	persistentId = 277935439
 	pos = 0.440663725,20.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -13786,7 +13795,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293288988
 	partName = Part
-	persistentId = 2132843818
+	persistentId = 1758240530
 	pos = 0.440663725,20.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -14074,7 +14083,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293300432
 	partName = Part
-	persistentId = 3774829731
+	persistentId = 453876011
 	pos = -0.559336305,20.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = -1,0,0
@@ -14099,7 +14108,7 @@ PART
 	link = WOLF.RefineryModule375_4293300334
 	link = WOLF.RefineryModule375_4293252216
 	link = WOLF.Harvester.375_4293284954
-	attN = side,WOLF.Harvester.375_4293302156_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -14444,7 +14453,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293300334
 	partName = Part
-	persistentId = 2542099749
+	persistentId = 4014937611
 	pos = -0.559336305,20.2269192,3.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -14733,7 +14742,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293300248
 	partName = Part
-	persistentId = 701109305
+	persistentId = 3221911057
 	pos = -0.559336305,20.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -15021,7 +15030,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293252216
 	partName = Part
-	persistentId = 3160310300
+	persistentId = 3928162461
 	pos = -0.559336305,20.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -15310,7 +15319,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293254346
 	partName = Part
-	persistentId = 1324394199
+	persistentId = 4055309429
 	pos = -0.559336305,20.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -15677,7 +15686,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293284954
 	partName = Part
-	persistentId = 4039742248
+	persistentId = 1028328850
 	pos = -1.5593363,20.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = -1,0,0
@@ -15701,7 +15710,7 @@ PART
 	modSize = 0,0,0
 	link = WOLF.RefineryModule375_4293284838
 	link = WOLF.Harvester.375_4293265988
-	attN = side,WOLF.Harvester.375_4293300432_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -16046,7 +16055,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293284838
 	partName = Part
-	persistentId = 3754822079
+	persistentId = 726545410
 	pos = -1.5593363,20.2269192,3.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -16335,7 +16344,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293284734
 	partName = Part
-	persistentId = 2070994111
+	persistentId = 2957917816
 	pos = -1.5593363,20.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -16623,7 +16632,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293265988
 	partName = Part
-	persistentId = 66513849
+	persistentId = 561167375
 	pos = -1.5593363,20.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -16991,7 +17000,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293256528
 	partName = Part
-	persistentId = 1311346466
+	persistentId = 3877160879
 	pos = -1.5593363,20.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -17358,7 +17367,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293287092
 	partName = Part
-	persistentId = 815646913
+	persistentId = 2906610901
 	pos = 1.4406637,20.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = 1,0,0
@@ -17383,7 +17392,7 @@ PART
 	link = WOLF.RefineryModule375_4293286982
 	link = WOLF.Harvester.375_4293205398
 	link = WOLF.Harvester.375_4293303742
-	attN = side,WOLF.Harvester.375_4293303742_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -17728,7 +17737,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293286982
 	partName = Part
-	persistentId = 2372647844
+	persistentId = 974717826
 	pos = 1.4406637,20.2269192,3.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -18017,7 +18026,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293286884
 	partName = Part
-	persistentId = 511777837
+	persistentId = 117661817
 	pos = 1.4406637,20.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -18305,7 +18314,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293205398
 	partName = Part
-	persistentId = 1695274325
+	persistentId = 1553762729
 	pos = 1.4406637,20.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -18673,7 +18682,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293222778
 	partName = Part
-	persistentId = 4287950979
+	persistentId = 4042783223
 	pos = 1.4406637,20.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -19040,7 +19049,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293303742
 	partName = Part
-	persistentId = 2768169626
+	persistentId = 554341785
 	pos = 2.44066381,20.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = 1,0,0
@@ -19409,7 +19418,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293303656
 	partName = Part
-	persistentId = 130438050
+	persistentId = 4013774190
 	pos = 2.44066381,20.2269192,3.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -19698,7 +19707,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293303582
 	partName = Part
-	persistentId = 4134347659
+	persistentId = 3914498170
 	pos = 2.44066381,20.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -19986,7 +19995,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293289092
 	partName = Part
-	persistentId = 761831030
+	persistentId = 2625505124
 	pos = 2.44066381,20.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -20354,7 +20363,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293306398
 	partName = Part
-	persistentId = 4097232574
+	persistentId = 3365014107
 	pos = 2.44066381,20.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -20642,7 +20651,7 @@ PART
 {
 	part = WOLF.Harvester.375_4292792542
 	partName = Part
-	persistentId = 2781004389
+	persistentId = 3049471620
 	pos = 0.440663725,22.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = 0,2,0
@@ -20669,7 +20678,7 @@ PART
 	link = WOLF.Harvester.375_4292792172
 	link = WOLF.Harvester.375_4293165386
 	link = WOLF.AgricultureModule375_4292733402
-	attN = side,WOLF.Harvester.375_4293165386_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -21014,7 +21023,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4292792456
 	partName = Part
-	persistentId = 426830366
+	persistentId = 2801797528
 	pos = 0.440663725,22.2269192,3.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -21303,7 +21312,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4292792382
 	partName = Part
-	persistentId = 365114056
+	persistentId = 1335469064
 	pos = 0.440663725,22.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -21591,7 +21600,7 @@ PART
 {
 	part = WOLF.ExtractorModule375_4292792302
 	partName = Part
-	persistentId = 625467544
+	persistentId = 1943934041
 	pos = 0.440663725,22.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -21790,7 +21799,7 @@ PART
 {
 	part = WOLF.ExtractorModule375_4292792234
 	partName = Part
-	persistentId = 1182057011
+	persistentId = 2701521934
 	pos = 0.440663725,22.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -21988,7 +21997,7 @@ PART
 {
 	part = WOLF.Harvester.375_4292792172
 	partName = Part
-	persistentId = 564336768
+	persistentId = 3584098837
 	pos = -0.559336305,22.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = -1,0,0
@@ -22013,7 +22022,7 @@ PART
 	link = WOLF.ExtractorModule375_4292792074
 	link = WOLF.ExtractorModule375_4292791920
 	link = WOLF.Harvester.375_4292791778
-	attN = side,WOLF.Harvester.375_4292792542_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -22358,7 +22367,7 @@ PART
 {
 	part = WOLF.ExtractorModule375_4292792074
 	partName = Part
-	persistentId = 2993606928
+	persistentId = 1133188231
 	pos = -0.559336305,22.2269192,3.20021677
 	attPos = 0,0,0
 	attPos0 = 0,0,1.00000024
@@ -22557,7 +22566,7 @@ PART
 {
 	part = WOLF.ExtractorModule375_4292792000
 	partName = Part
-	persistentId = 2127874598
+	persistentId = 383585345
 	pos = -0.559336305,22.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,0.999999762
@@ -22755,7 +22764,7 @@ PART
 {
 	part = WOLF.ExtractorModule375_4292791920
 	partName = Part
-	persistentId = 156756993
+	persistentId = 1079183181
 	pos = -0.559336305,22.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -22954,7 +22963,7 @@ PART
 {
 	part = WOLF.ExtractorModule375_4292791846
 	partName = Part
-	persistentId = 513736604
+	persistentId = 903887037
 	pos = -0.559336305,22.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -23152,7 +23161,7 @@ PART
 {
 	part = WOLF.Harvester.375_4292791778
 	partName = Part
-	persistentId = 4191294731
+	persistentId = 1124973645
 	pos = -1.5593363,22.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = -1,0,0
@@ -23176,7 +23185,7 @@ PART
 	modSize = 0,0,0
 	link = WOLF.ExtractorModule375_4292791674
 	link = WOLF.FabricatorModule375_4292791508
-	attN = side,WOLF.Harvester.375_4292792172_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -23521,7 +23530,7 @@ PART
 {
 	part = WOLF.ExtractorModule375_4292791674
 	partName = Part
-	persistentId = 905591438
+	persistentId = 2913950170
 	pos = -1.5593363,22.2269192,3.20021677
 	attPos = 0,0,0
 	attPos0 = 0,0,1.00000024
@@ -23720,7 +23729,7 @@ PART
 {
 	part = WOLF.ExtractorModule375_4292791594
 	partName = Part
-	persistentId = 38536636
+	persistentId = 1326710505
 	pos = -1.5593363,22.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,0.999999762
@@ -23918,7 +23927,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4292791508
 	partName = Part
-	persistentId = 3552516172
+	persistentId = 3745205338
 	pos = -1.5593363,22.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -24207,7 +24216,7 @@ PART
 {
 	part = WOLF.FabricatorModule375_4292791434
 	partName = Part
-	persistentId = 2539543500
+	persistentId = 2099556772
 	pos = -1.5593363,22.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -24495,7 +24504,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293165386
 	partName = Part
-	persistentId = 2390011507
+	persistentId = 191617896
 	pos = 1.4406637,22.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = 1,0,0
@@ -24520,7 +24529,7 @@ PART
 	link = WOLF.ExtractorModule375_4293157246
 	link = WOLF.Harvester.375_4293168426
 	link = WOLF.Habitation375_4293192226
-	attN = side,WOLF.Habitation375_4293192226_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -24865,7 +24874,7 @@ PART
 {
 	part = WOLF.ExtractorModule375_4293157246
 	partName = Part
-	persistentId = 2095912961
+	persistentId = 2026296440
 	pos = 1.4406637,22.2269192,3.20021677
 	attPos = 0,0,0
 	attPos0 = 0,0,1.00000024
@@ -25064,7 +25073,7 @@ PART
 {
 	part = WOLF.ExtractorModule375_4293149766
 	partName = Part
-	persistentId = 2210901254
+	persistentId = 2262194510
 	pos = 1.4406637,22.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,0.999999762
@@ -25262,7 +25271,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293168426
 	partName = Part
-	persistentId = 977735049
+	persistentId = 1907386350
 	pos = 1.4406637,22.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -25630,7 +25639,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293171528
 	partName = Part
-	persistentId = 2233711645
+	persistentId = 2702860035
 	pos = 1.4406637,22.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -25997,7 +26006,7 @@ PART
 {
 	part = WOLF.Habitation375_4293192226
 	partName = Part
-	persistentId = 1628086695
+	persistentId = 1395808393
 	pos = 2.44066381,22.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = 1,0,0
@@ -26136,7 +26145,7 @@ PART
 {
 	part = WOLF.LifeSupport375_4293189320
 	partName = Part
-	persistentId = 368297389
+	persistentId = 3859791212
 	pos = 2.44066381,22.2269192,3.20021677
 	attPos = 0,0,0
 	attPos0 = 0,0,1.00000024
@@ -26274,7 +26283,7 @@ PART
 {
 	part = WOLF.ExtractorModule375_4293197048
 	partName = Part
-	persistentId = 314830512
+	persistentId = 964730241
 	pos = 2.44066381,22.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,0.999999762
@@ -26472,7 +26481,7 @@ PART
 {
 	part = WOLF.AgricultureModule375_4293186268
 	partName = Part
-	persistentId = 740120223
+	persistentId = 3298821660
 	pos = 2.44066381,22.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -26656,7 +26665,7 @@ PART
 {
 	part = WOLF.Harvester.375_4293178402
 	partName = Part
-	persistentId = 3774810073
+	persistentId = 1707256167
 	pos = 2.44066381,22.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -27023,7 +27032,7 @@ PART
 {
 	part = WOLF.AgricultureModule375_4292733402
 	partName = Part
-	persistentId = 2624136954
+	persistentId = 2772101442
 	pos = 0.440663725,24.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = 0,2,0
@@ -27049,12 +27058,12 @@ PART
 	link = WOLF.ExtractorModule375_4292689674
 	link = WOLF.RefineryModule375_4293312778
 	link = WOLF.Harvester.375_4292713514
-	link = probeStackSmall_4285066616
-	attN = side,WOLF.RefineryModule375_4293312778_0.5|0|0_1|0|0_0.5|0|0_1|0|0
-	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
-	attN = side,WOLF.Harvester.375_4292713514_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
+	link = Rockomax8BW_4290622892
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
-	attN = top,probeStackSmall_4285066616_0|1|0_0|1|0_0|1|0_0|1|0
+	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
+	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = top,Rockomax8BW_4290622892_0|1|0_0|1|0_0|1|0_0|1|0
 	attN = bottom,WOLF.Harvester.375_4292792542_0|-1|0_0|-1|0_0|-1|0_0|-1|0
 	EVENTS
 	{
@@ -27211,7 +27220,7 @@ PART
 {
 	part = WOLF.Harvester.375_4292724410
 	partName = Part
-	persistentId = 597761802
+	persistentId = 2487113372
 	pos = 0.440663725,24.2269192,3.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -27579,7 +27588,7 @@ PART
 {
 	part = WOLF.Harvester.375_4292720718
 	partName = Part
-	persistentId = 846005588
+	persistentId = 4020897431
 	pos = 0.440663725,24.2269192,4.20021629
 	attPos = 0,0,0
 	attPos0 = 0,0,1
@@ -27946,7 +27955,7 @@ PART
 {
 	part = WOLF.ExtractorModule375_4292689674
 	partName = Part
-	persistentId = 2341043546
+	persistentId = 1656962651
 	pos = 0.440663725,24.2269192,1.20021653
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -28145,7 +28154,7 @@ PART
 {
 	part = WOLF.Harvester.375_4292717096
 	partName = Part
-	persistentId = 4118092134
+	persistentId = 2542605922
 	pos = 0.440663725,24.2269192,0.200216532
 	attPos = 0,0,0
 	attPos0 = 0,0,-1
@@ -28512,7 +28521,7 @@ PART
 {
 	part = WOLF.RefineryModule375_4293312778
 	partName = Part
-	persistentId = 1491799168
+	persistentId = 3516725983
 	pos = 1.4406637,24.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = 1,0,0
@@ -28536,9 +28545,9 @@ PART
 	modSize = 0,0,0
 	link = WOLF.Harvester.375_4293318242
 	link = WOLF.Harvester.375_4292452036
-	attN = side,WOLF.Harvester.375_4292452036_0.5|0|0_1|0|0_0.5|0|0_1|0|0
-	attN = side,WOLF.AgricultureModule375_4292733402_0|0|0.5_0|0|1_0|0|0.5_0|0|1
-	attN = side,WOLF.Harvester.375_4293318242_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
+	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = top,Null_0_0|1|0_0|1|0_0|1|0_0|1|0
 	attN = bottom,Null_0_0|-1|0_0|-1|0_0|-1|0_0|-1|0
@@ -28802,8 +28811,8 @@ PART
 {
 	part = WOLF.Harvester.375_4293318242
 	partName = Part
-	persistentId = 197648719
-	pos = 1.4406637,24.2269192,1.20021582
+	persistentId = 2266571107
+	pos = 1.4406637,24.2269192,1.20021486
 	attPos = 0,0,0
 	attPos0 = -0.99999994,0,1.19209211E-07
 	rot = 0,0.707106829,0,0.707106829
@@ -28825,9 +28834,9 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = WOLF.RefineryModule375_4292435222
-	attN = side,WOLF.RefineryModule375_4292435222_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
-	attN = side,WOLF.RefineryModule375_4293312778_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
+	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = top,Null_0_0|1|0_0|1|0_0|1|0_0|1|0
 	attN = bottom,Null_0_0|-1|0_0|-1|0_0|-1|0_0|-1|0
@@ -29170,8 +29179,8 @@ PART
 {
 	part = WOLF.RefineryModule375_4292435222
 	partName = Part
-	persistentId = 1366459288
-	pos = 1.4406637,24.2269192,0.200214148
+	persistentId = 3192897381
+	pos = 1.4406637,24.2269192,0.20021224
 	attPos = 0,0,0
 	attPos0 = 1.0000006,0,-1.1920929E-07
 	rot = 0,0,0,1.00000012
@@ -29192,8 +29201,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = side,Null_0_0|0|-0.5_0|0|-1_0|0|-0.5_0|0|-1
-	attN = side,WOLF.Harvester.375_4293318242_0|0|0.5_0|0|1_0|0|0.5_0|0|1
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = top,Null_0_0|1|0_0|1|0_0|1|0_0|1|0
@@ -29458,8 +29467,8 @@ PART
 {
 	part = WOLF.Harvester.375_4292452036
 	partName = Part
-	persistentId = 3082530441
-	pos = 1.4406637,24.2269192,3.20021725
+	persistentId = 1004919146
+	pos = 1.4406637,24.2269192,3.2002182
 	attPos = 0,0,0
 	attPos0 = 0.99999994,0,-1.19209211E-07
 	rot = 0,0,0,1.00000012
@@ -29481,8 +29490,8 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = WOLF.RefineryModule375_4292186618
-	attN = side,WOLF.RefineryModule375_4293312778_0|0|-0.5_0|0|-1_0|0|-0.5_0|0|-1
-	attN = side,WOLF.RefineryModule375_4292186618_0|0|0.5_0|0|1_0|0|0.5_0|0|1
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = top,Null_0_0|1|0_0|1|0_0|1|0_0|1|0
@@ -29826,8 +29835,8 @@ PART
 {
 	part = WOLF.RefineryModule375_4292186618
 	partName = Part
-	persistentId = 1464951453
-	pos = 1.4406637,24.2269192,4.2002182
+	persistentId = 3999679314
+	pos = 1.4406637,24.2269192,4.20022202
 	attPos = 0,0,0
 	attPos0 = -6.39488733E-14,0,1.0000006
 	rot = 0,0,0,1.00000012
@@ -29848,7 +29857,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = side,WOLF.Harvester.375_4292452036_0|0|-0.5_0|0|-1_0|0|-0.5_0|0|-1
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
@@ -30114,7 +30123,7 @@ PART
 {
 	part = WOLF.Harvester.375_4292713514
 	partName = Part
-	persistentId = 3887992080
+	persistentId = 3176380979
 	pos = -0.559336305,24.2269192,2.20021653
 	attPos = 0,0,0
 	attPos0 = -1,0,0
@@ -30138,9 +30147,9 @@ PART
 	modSize = 0,0,0
 	link = WOLF.ExtractorModule375_4292707174
 	link = WOLF.RefineryModule375_4292419926
-	attN = side,WOLF.RefineryModule375_4292419926_0.5|0|0_1|0|0_0.5|0|0_1|0|0
-	attN = side,WOLF.AgricultureModule375_4292733402_0|0|0.5_0|0|1_0|0|0.5_0|0|1
-	attN = side,WOLF.ExtractorModule375_4292707174_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
+	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = top,Null_0_0|1|0_0|1|0_0|1|0_0|1|0
 	attN = bottom,Null_0_0|-1|0_0|-1|0_0|-1|0_0|-1|0
@@ -30483,8 +30492,8 @@ PART
 {
 	part = WOLF.ExtractorModule375_4292707174
 	partName = Part
-	persistentId = 3796495906
-	pos = -0.559336305,24.2269192,3.20021772
+	persistentId = 2808444613
+	pos = -0.559336305,24.2269192,3.20021868
 	attPos = 0,0,0
 	attPos0 = -1.00000012,0,-1.1920929E-07
 	rot = 0,-0.707106829,0,0.707106829
@@ -30506,9 +30515,9 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = WOLF.FabricatorModule375_4292465334
-	attN = side,WOLF.FabricatorModule375_4292465334_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
-	attN = side,WOLF.Harvester.375_4292713514_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
+	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = top,Null_0_0|1|0_0|1|0_0|1|0_0|1|0
 	attN = bottom,Null_0_0|-1|0_0|-1|0_0|-1|0_0|-1|0
@@ -30682,8 +30691,8 @@ PART
 {
 	part = WOLF.FabricatorModule375_4292465334
 	partName = Part
-	persistentId = 1862492885
-	pos = -0.559336066,24.2269192,4.20021915
+	persistentId = 1549372029
+	pos = -0.559336066,24.2269192,4.20022106
 	attPos = 0,0,0
 	attPos0 = 1.00000036,0,-1.1920929E-07
 	rot = 0,-0.707106829,0,0.707106829
@@ -30704,9 +30713,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = side,Null_0_0|0|-0.5_0|0|-1_0|0|-0.5_0|0|-1
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
-	attN = side,WOLF.ExtractorModule375_4292707174_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
+	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = top,Null_0_0|1|0_0|1|0_0|1|0_0|1|0
 	attN = bottom,Null_0_0|-1|0_0|-1|0_0|-1|0_0|-1|0
@@ -30970,8 +30979,8 @@ PART
 {
 	part = WOLF.RefineryModule375_4292419926
 	partName = Part
-	persistentId = 1295959691
-	pos = -0.559336305,24.2269192,1.20021534
+	persistentId = 1689533611
+	pos = -0.559336305,24.2269192,1.20021439
 	attPos = 0,0,0
 	attPos0 = 1.00000012,0,1.19209261E-07
 	rot = 0,0,0,1.00000012
@@ -30993,8 +31002,8 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = WOLF.Harvester.375_4292194938
-	attN = side,WOLF.Harvester.375_4292194938_0|0|-0.5_0|0|-1_0|0|-0.5_0|0|-1
-	attN = side,WOLF.Harvester.375_4292713514_0|0|0.5_0|0|1_0|0|0.5_0|0|1
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = top,Null_0_0|1|0_0|1|0_0|1|0_0|1|0
@@ -31259,8 +31268,8 @@ PART
 {
 	part = WOLF.Harvester.375_4292194938
 	partName = Part
-	persistentId = 563561308
-	pos = -0.559336305,24.2269192,0.200213909
+	persistentId = 1581224282
+	pos = -0.559336305,24.2269192,0.200211048
 	attPos = 0,0,0
 	attPos0 = -1.13686892E-13,0,-1.00000072
 	rot = 0,0,0,1.00000012
@@ -31281,8 +31290,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = side,Null_0_0|0|-0.5_0|0|-1_0|0|-0.5_0|0|-1
-	attN = side,WOLF.RefineryModule375_4292419926_0|0|0.5_0|0|1_0|0|0.5_0|0|1
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
 	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
 	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
 	attN = top,Null_0_0|1|0_0|1|0_0|1|0_0|1|0
@@ -31624,12 +31633,2089 @@ PART
 }
 PART
 {
-	part = probeStackSmall_4285066616
+	part = Rockomax8BW_4290622892
 	partName = Part
-	persistentId = 1281956887
-	pos = 0.440663725,25.3269196,2.20021653
+	persistentId = 1760116655
+	pos = 0.440663725,25.6819191,2.20021653
 	attPos = 0,0,0
-	attPos0 = 0,1.10000038,0
+	attPos0 = 0,1.45499992,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Heaviest
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = flagPartSize2_4290622832
+	link = flagPartSize2_4290622476
+	link = flagPartSize2_4290622120
+	link = flagPartSize2_4290621764
+	link = domeLight1_4290621408
+	link = domeLight1_4290621354
+	link = domeLight1_4290621300
+	link = domeLight1_4290621246
+	link = probeStackSmall_4290621192
+	attN = top,probeStackSmall_4290621192_0|0.455000013|0_0|1|0_0|0.455000013|0_0|1|0
+	attN = bottom,WOLF.AgricultureModule375_4292733402_0|-0.455000013|0_0|-1|0_0|-0.455000013|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 0
+		maxAmount = 360
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 0
+		maxAmount = 440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = flagPartSize2_4290622832
+	partName = Part
+	persistentId = 3218693255
+	pos = -0.464306921,25.5454597,1.29524636
+	attPos = 0,0,0
+	attPos0 = -0.904971242,-0.136457443,-0.904971182
+	rot = 1.03673536E-07,-0.382683456,-4.29429861E-08,-0.923879564
+	attRot = 0,0,0,1
+	attRot0 = 1.03673536E-07,-0.382683456,-4.29429861E-08,-0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 12.5
+	modMass = 0.000675000018
+	modSize = 0,0,0
+	sym = flagPartSize2_4290622476
+	sym = flagPartSize2_4290622120
+	sym = flagPartSize2_4290621764
+	srfN = srfAttach,Rockomax8BW_4290622892,collider,0|0|0.0549999997,0|0|-1,0|0|0.0549999997
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlagDecalBackground
+		isEnabled = True
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
+		displayingPortrait = False
+		flagSize = 1
+		placementID = 0
+		flagDisplayed = True
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallPortrait
+			orientation = PORTRAIT
+			mass = 0.000360000005
+			cost = 6.25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallLandscape
+			orientation = LANDSCAPE
+			mass = 0
+			cost = 0
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.00562500022
+			cost = 25
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00202500005
+			cost = 12.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumPortrait
+			orientation = PORTRAIT
+			mass = 0.00211500004
+			cost = 25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumLandscape
+			orientation = LANDSCAPE
+			mass = 0.000675000018
+			cost = 12.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0231749993
+			cost = 62.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00877500046
+			cost = 37.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargePortrait
+			orientation = PORTRAIT
+			mass = 0.00913500041
+			cost = 62.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargeLandscape
+			orientation = LANDSCAPE
+			mass = 0.00337500009
+			cost = 37.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargePortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0933749974
+			cost = 137.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargeLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.0357749984
+			cost = 87.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TransparentBackground
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = flagPartSize2_4290622476
+	partName = Part
+	persistentId = 2455059273
+	pos = -0.464306921,25.5454597,3.1051867
+	attPos = 0,0,0
+	attPos0 = -0.904971182,-0.136457443,0.904971123
+	rot = 4.29429825E-08,-0.923879564,-1.03673536E-07,-0.382683426
+	attRot = 0,0,0,1
+	attRot0 = 4.29429825E-08,-0.923879564,-1.03673536E-07,-0.382683426
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 12.5
+	modMass = 0.000675000018
+	modSize = 0,0,0
+	sym = flagPartSize2_4290622120
+	sym = flagPartSize2_4290621764
+	sym = flagPartSize2_4290622832
+	srfN = srfAttach,Rockomax8BW_4290622892,collider,0|0|0.0549999997,0|0|-1,0|0|0.0549999997
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlagDecalBackground
+		isEnabled = True
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
+		displayingPortrait = False
+		flagSize = 1
+		placementID = 0
+		flagDisplayed = True
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallPortrait
+			orientation = PORTRAIT
+			mass = 0.000360000005
+			cost = 6.25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallLandscape
+			orientation = LANDSCAPE
+			mass = 0
+			cost = 0
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.00562500022
+			cost = 25
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00202500005
+			cost = 12.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumPortrait
+			orientation = PORTRAIT
+			mass = 0.00211500004
+			cost = 25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumLandscape
+			orientation = LANDSCAPE
+			mass = 0.000675000018
+			cost = 12.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0231749993
+			cost = 62.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00877500046
+			cost = 37.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargePortrait
+			orientation = PORTRAIT
+			mass = 0.00913500041
+			cost = 62.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargeLandscape
+			orientation = LANDSCAPE
+			mass = 0.00337500009
+			cost = 37.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargePortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0933749974
+			cost = 137.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargeLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.0357749984
+			cost = 87.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TransparentBackground
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = flagPartSize2_4290622120
+	partName = Part
+	persistentId = 4105256856
+	pos = 1.34563482,25.5454597,3.1051867
+	attPos = 0,0,0
+	attPos0 = 0.904971242,-0.136457443,0.904971123
+	rot = -4.29429896E-08,-0.923879564,-1.03673536E-07,0.382683486
+	attRot = 0,0,0,1
+	attRot0 = -4.29429896E-08,-0.923879564,-1.03673536E-07,0.382683486
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 12.5
+	modMass = 0.000675000018
+	modSize = 0,0,0
+	sym = flagPartSize2_4290621764
+	sym = flagPartSize2_4290622832
+	sym = flagPartSize2_4290622476
+	srfN = srfAttach,Rockomax8BW_4290622892,collider,0|0|0.0549999997,0|0|-1,0|0|0.0549999997
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlagDecalBackground
+		isEnabled = True
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
+		displayingPortrait = False
+		flagSize = 1
+		placementID = 0
+		flagDisplayed = True
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallPortrait
+			orientation = PORTRAIT
+			mass = 0.000360000005
+			cost = 6.25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallLandscape
+			orientation = LANDSCAPE
+			mass = 0
+			cost = 0
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.00562500022
+			cost = 25
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00202500005
+			cost = 12.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumPortrait
+			orientation = PORTRAIT
+			mass = 0.00211500004
+			cost = 25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumLandscape
+			orientation = LANDSCAPE
+			mass = 0.000675000018
+			cost = 12.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0231749993
+			cost = 62.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00877500046
+			cost = 37.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargePortrait
+			orientation = PORTRAIT
+			mass = 0.00913500041
+			cost = 62.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargeLandscape
+			orientation = LANDSCAPE
+			mass = 0.00337500009
+			cost = 37.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargePortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0933749974
+			cost = 137.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargeLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.0357749984
+			cost = 87.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TransparentBackground
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = flagPartSize2_4290621764
+	partName = Part
+	persistentId = 4038261676
+	pos = 1.34563482,25.5454597,1.29524636
+	attPos = 0,0,0
+	attPos0 = 0.904971004,-0.136457443,-0.904971182
+	rot = -1.03673536E-07,-0.382683426,-4.29429825E-08,0.923879564
+	attRot = 0,0,0,1
+	attRot0 = -1.03673536E-07,-0.382683426,-4.29429825E-08,0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 12.5
+	modMass = 0.000675000018
+	modSize = 0,0,0
+	sym = flagPartSize2_4290622832
+	sym = flagPartSize2_4290622476
+	sym = flagPartSize2_4290622120
+	srfN = srfAttach,Rockomax8BW_4290622892,collider,0|0|0.0549999997,0|0|-1,0|0|0.0549999997
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlagDecalBackground
+		isEnabled = True
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
+		displayingPortrait = False
+		flagSize = 1
+		placementID = 0
+		flagDisplayed = True
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallPortrait
+			orientation = PORTRAIT
+			mass = 0.000360000005
+			cost = 6.25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallLandscape
+			orientation = LANDSCAPE
+			mass = 0
+			cost = 0
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.00562500022
+			cost = 25
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00202500005
+			cost = 12.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumPortrait
+			orientation = PORTRAIT
+			mass = 0.00211500004
+			cost = 25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumLandscape
+			orientation = LANDSCAPE
+			mass = 0.000675000018
+			cost = 12.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0231749993
+			cost = 62.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00877500046
+			cost = 37.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargePortrait
+			orientation = PORTRAIT
+			mass = 0.00913500041
+			cost = 62.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargeLandscape
+			orientation = LANDSCAPE
+			mass = 0.00337500009
+			cost = 37.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargePortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0933749974
+			cost = 137.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargeLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.0357749984
+			cost = 87.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TransparentBackground
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = domeLight1_4290621408
+	partName = Part
+	persistentId = 1794436402
+	pos = -0.436994642,25.9390907,1.32255769
+	attPos = -0.0236365795,-0.336090088,0
+	attPos0 = -0.877658606,0.257173538,-0.877658546
+	rot = 4.48921043E-08,-0.382683456,-1.85949194E-08,-0.923879564
+	attRot = 0,0,0,1
+	attRot0 = 4.48921043E-08,-0.382683456,-1.85949194E-08,-0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = domeLight1_4290621354
+	sym = domeLight1_4290621300
+	sym = domeLight1_4290621246
+	srfN = srfAttach,Rockomax8BW_4290622892,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		disableColorPicker = False
+		lightR = 0.0980392173
+		lightG = 0.694117665
+		lightB = 0.698039234
+		castLight = True
+		movementTransformName = movementTransformName
+		isBlinking = False
+		rotationAngle = 0
+		pitchAngle = 0
+		blinkRate = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			lightR
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			lightG
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			lightB
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			rotationAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			pitchAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			blinkRate
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = White
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = domeLight1_4290621354
+	partName = Part
+	persistentId = 1312857825
+	pos = -0.436994642,25.9390907,3.07787538
+	attPos = -0.0236365795,-0.336090088,0
+	attPos0 = -0.877658546,0.257173538,0.877658486
+	rot = 1.85949176E-08,-0.923879564,-4.48921043E-08,-0.382683426
+	attRot = 0,0,0,1
+	attRot0 = 1.85949176E-08,-0.923879564,-4.48921043E-08,-0.382683426
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = domeLight1_4290621300
+	sym = domeLight1_4290621246
+	sym = domeLight1_4290621408
+	srfN = srfAttach,Rockomax8BW_4290622892,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		disableColorPicker = False
+		lightR = 0.0980392173
+		lightG = 0.694117665
+		lightB = 0.698039234
+		castLight = True
+		movementTransformName = movementTransformName
+		isBlinking = False
+		rotationAngle = 0
+		pitchAngle = 0
+		blinkRate = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			lightR
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			lightG
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			lightB
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			rotationAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			pitchAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			blinkRate
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = White
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = domeLight1_4290621300
+	partName = Part
+	persistentId = 3779995435
+	pos = 1.31832254,25.9390907,3.07787538
+	attPos = -0.0236365795,-0.336090088,0
+	attPos0 = 0.877658725,0.257173538,0.877658486
+	rot = -1.85949212E-08,-0.923879564,-4.48921043E-08,0.382683486
+	attRot = 0,0,0,1
+	attRot0 = -1.85949212E-08,-0.923879564,-4.48921043E-08,0.382683486
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = domeLight1_4290621246
+	sym = domeLight1_4290621408
+	sym = domeLight1_4290621354
+	srfN = srfAttach,Rockomax8BW_4290622892,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		disableColorPicker = False
+		lightR = 0.0980392173
+		lightG = 0.694117665
+		lightB = 0.698039234
+		castLight = True
+		movementTransformName = movementTransformName
+		isBlinking = False
+		rotationAngle = 0
+		pitchAngle = 0
+		blinkRate = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			lightR
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			lightG
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			lightB
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			rotationAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			pitchAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			blinkRate
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = White
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = domeLight1_4290621246
+	partName = Part
+	persistentId = 1169838293
+	pos = 1.31832206,25.9390907,1.32255769
+	attPos = -0.0236365795,-0.336090088,0
+	attPos0 = 0.877658486,0.257173538,-0.877658665
+	rot = -4.48921043E-08,-0.382683426,-1.85949176E-08,0.923879564
+	attRot = 0,0,0,1
+	attRot0 = -4.48921043E-08,-0.382683426,-1.85949176E-08,0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = domeLight1_4290621408
+	sym = domeLight1_4290621354
+	sym = domeLight1_4290621300
+	srfN = srfAttach,Rockomax8BW_4290622892,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		disableColorPicker = False
+		lightR = 0.0980392173
+		lightG = 0.694117665
+		lightB = 0.698039234
+		castLight = True
+		movementTransformName = movementTransformName
+		isBlinking = False
+		rotationAngle = 0
+		pitchAngle = 0
+		blinkRate = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			lightR
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			lightG
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			lightB
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			rotationAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			pitchAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			blinkRate
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = White
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = probeStackSmall_4290621192
+	partName = Part
+	persistentId = 355834528
+	pos = 0.440663725,26.2369156,2.20021653
+	attPos = 0,0,0
+	attPos0 = 0,0.55499649,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -31648,9 +33734,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = dockingPort2_4289912188
-	attN = bottom,WOLF.AgricultureModule375_4292733402_0|-0.100000001|0_0|-1|0_0|-0.100000001|0_0|-1|0
-	attN = top,dockingPort2_4289912188_0|0.100000001|0_0|1|0_0|0.100000001|0_0|1|0
+	link = dockingPort2_4290621134
+	attN = bottom,Rockomax8BW_4290622892_0|-0.100000001|0_0|-1|0_0|-0.100000001|0_0|-1|0
+	attN = top,dockingPort2_4290621134_0|0.100000001|0_0|1|0_0|0.100000001|0_0|1|0
 	EVENTS
 	{
 	}
@@ -32605,25 +34691,25 @@ PART
 	}
 	VESSELNAMING
 	{
-		name = 03 Midlands AERS
+		name = 03 Midlands AERS (Teal)
 		type = Lander
 		priority = 20
 	}
 }
 PART
 {
-	part = dockingPort2_4289912188
+	part = dockingPort2_4290621134
 	partName = Part
-	persistentId = 3511486555
-	pos = 0.440663725,25.4269218,2.20021653
+	persistentId = 2493929907
+	pos = 0.440663725,26.3369141,2.20021653
 	attPos = 0,0,0
-	attPos0 = 0,0.100002289,0
+	attPos0 = 0,0.100000381,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	autostrutMode = Root
+	autostrutMode = Off
 	rigidAttachment = False
 	istg = -1
 	resPri = 0
@@ -32637,7 +34723,7 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	attN = top,Null_0_0|0.282883197|0_0|1|0_0|0.282883197|0_0|1|0
-	attN = bottom,probeStackSmall_4285066616_0|0|0_0|-1|0_0|0|0_0|-1|0
+	attN = bottom,probeStackSmall_4290621192_0|0|0_0|-1|0_0|0|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -32734,10 +34820,6 @@ PART
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				axisSpeedMultiplier = 0
 				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 			}
 		}
 		UPGRADESAPPLIED
@@ -32813,5 +34895,2556 @@ PART
 		UPGRADESAPPLIED
 		{
 		}
+	}
+}
+PART
+{
+	part = flagPartSize2_4290563612
+	partName = Part
+	persistentId = 1001037514
+	pos = -3.90229225,14.7532635,2.20021629
+	attPos = 0,0,0
+	attPos0 = -1.2814666,0.404868752,0
+	rot = 8.63481731E-08,0.707106829,-8.6348166E-08,0.707106709
+	attRot = 0,0,0,1
+	attRot0 = 8.22147683E-10,-0.707106829,-8.22140578E-10,-0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 37.5
+	modMass = 0.00337500009
+	modSize = 0,0,0
+	sym = flagPartSize2_4290550376
+	sym = flagPartSize2_4290550016
+	sym = flagPartSize2_4290549656
+	sym = flagPartSize2_4290549296
+	sym = flagPartSize2_4290548936
+	sym = flagPartSize2_4290548576
+	sym = flagPartSize2_4290548216
+	srfN = srfAttach,Rockomax32.BW_4290470324,collider,0|0|0.0549999997,0|0|-1,0|0|0.0549999997
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlagDecalBackground
+		isEnabled = True
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
+		displayingPortrait = False
+		flagSize = 2
+		placementID = 0
+		flagDisplayed = True
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallPortrait
+			orientation = PORTRAIT
+			mass = 0.000360000005
+			cost = 6.25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallLandscape
+			orientation = LANDSCAPE
+			mass = 0
+			cost = 0
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.00562500022
+			cost = 25
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00202500005
+			cost = 12.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumPortrait
+			orientation = PORTRAIT
+			mass = 0.00211500004
+			cost = 25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumLandscape
+			orientation = LANDSCAPE
+			mass = 0.000675000018
+			cost = 12.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0231749993
+			cost = 62.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00877500046
+			cost = 37.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargePortrait
+			orientation = PORTRAIT
+			mass = 0.00913500041
+			cost = 62.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargeLandscape
+			orientation = LANDSCAPE
+			mass = 0.00337500009
+			cost = 37.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargePortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0933749974
+			cost = 137.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargeLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.0357749984
+			cost = 87.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TransparentBackground
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = flagPartSize2_4290550376
+	partName = Part
+	persistentId = 2929552097
+	pos = -2.63027,14.7532635,5.27115011
+	attPos = 0,0,0
+	attPos0 = -1.28146672,0.404868782,-8.94069672E-08
+	rot = 4.67313086E-08,0.923879683,-1.12819308E-07,0.382683337
+	attRot = 0,0,0,1
+	attRot0 = 8.22145907E-10,-0.707106888,-8.22144131E-10,-0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 37.5
+	modMass = 0.00337500009
+	modSize = 0,0,0
+	sym = flagPartSize2_4290550016
+	sym = flagPartSize2_4290549656
+	sym = flagPartSize2_4290549296
+	sym = flagPartSize2_4290548936
+	sym = flagPartSize2_4290548576
+	sym = flagPartSize2_4290548216
+	sym = flagPartSize2_4290563612
+	srfN = srfAttach,Rockomax32.BW_4290469830,collider,0|0|0.0549999997,0|0|-1,0|0|0.0549999997
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlagDecalBackground
+		isEnabled = True
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
+		displayingPortrait = False
+		flagSize = 2
+		placementID = 0
+		flagDisplayed = True
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallPortrait
+			orientation = PORTRAIT
+			mass = 0.000360000005
+			cost = 6.25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallLandscape
+			orientation = LANDSCAPE
+			mass = 0
+			cost = 0
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.00562500022
+			cost = 25
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00202500005
+			cost = 12.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumPortrait
+			orientation = PORTRAIT
+			mass = 0.00211500004
+			cost = 25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumLandscape
+			orientation = LANDSCAPE
+			mass = 0.000675000018
+			cost = 12.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0231749993
+			cost = 62.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00877500046
+			cost = 37.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargePortrait
+			orientation = PORTRAIT
+			mass = 0.00913500041
+			cost = 62.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargeLandscape
+			orientation = LANDSCAPE
+			mass = 0.00337500009
+			cost = 37.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargePortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0933749974
+			cost = 137.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargeLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.0357749984
+			cost = 87.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TransparentBackground
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = flagPartSize2_4290550016
+	partName = Part
+	persistentId = 1455379990
+	pos = 0.44066447,14.7532635,6.54317284
+	attPos = 0,0,0
+	attPos0 = -1.28146696,0.404868752,0
+	rot = -2.13162821E-14,1.00000012,-1.22114784E-07,-2.08616257E-07
+	attRot = 0,0,0,1
+	attRot0 = 8.22144575E-10,-0.707106888,-8.22140578E-10,-0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 37.5
+	modMass = 0.00337500009
+	modSize = 0,0,0
+	sym = flagPartSize2_4290549656
+	sym = flagPartSize2_4290549296
+	sym = flagPartSize2_4290548936
+	sym = flagPartSize2_4290548576
+	sym = flagPartSize2_4290548216
+	sym = flagPartSize2_4290563612
+	sym = flagPartSize2_4290550376
+	srfN = srfAttach,Rockomax32.BW_4290469336,collider,0|0|0.0549999997,0|0|-1,0|0|0.0549999997
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlagDecalBackground
+		isEnabled = True
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
+		displayingPortrait = False
+		flagSize = 2
+		placementID = 0
+		flagDisplayed = True
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallPortrait
+			orientation = PORTRAIT
+			mass = 0.000360000005
+			cost = 6.25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallLandscape
+			orientation = LANDSCAPE
+			mass = 0
+			cost = 0
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.00562500022
+			cost = 25
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00202500005
+			cost = 12.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumPortrait
+			orientation = PORTRAIT
+			mass = 0.00211500004
+			cost = 25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumLandscape
+			orientation = LANDSCAPE
+			mass = 0.000675000018
+			cost = 12.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0231749993
+			cost = 62.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00877500046
+			cost = 37.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargePortrait
+			orientation = PORTRAIT
+			mass = 0.00913500041
+			cost = 62.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargeLandscape
+			orientation = LANDSCAPE
+			mass = 0.00337500009
+			cost = 37.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargePortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0933749974
+			cost = 137.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargeLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.0357749984
+			cost = 87.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TransparentBackground
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = flagPartSize2_4290549656
+	partName = Part
+	persistentId = 656648819
+	pos = 3.51160049,14.7532635,5.27115059
+	attPos = 0,0,0
+	attPos0 = -1.28146696,0.404868782,-1.1920929E-07
+	rot = -4.67313193E-08,0.923879504,-1.12819393E-07,-0.382683575
+	attRot = 0,0,0,1
+	attRot0 = 8.2214402E-10,-0.707106888,-8.22140467E-10,-0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 37.5
+	modMass = 0.00337500009
+	modSize = 0,0,0
+	sym = flagPartSize2_4290549296
+	sym = flagPartSize2_4290548936
+	sym = flagPartSize2_4290548576
+	sym = flagPartSize2_4290548216
+	sym = flagPartSize2_4290563612
+	sym = flagPartSize2_4290550376
+	sym = flagPartSize2_4290550016
+	srfN = srfAttach,Rockomax32.BW_4290468842,collider,0|0|0.0549999997,0|0|-1,0|0|0.0549999997
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlagDecalBackground
+		isEnabled = True
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
+		displayingPortrait = False
+		flagSize = 2
+		placementID = 0
+		flagDisplayed = True
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallPortrait
+			orientation = PORTRAIT
+			mass = 0.000360000005
+			cost = 6.25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallLandscape
+			orientation = LANDSCAPE
+			mass = 0
+			cost = 0
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.00562500022
+			cost = 25
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00202500005
+			cost = 12.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumPortrait
+			orientation = PORTRAIT
+			mass = 0.00211500004
+			cost = 25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumLandscape
+			orientation = LANDSCAPE
+			mass = 0.000675000018
+			cost = 12.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0231749993
+			cost = 62.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00877500046
+			cost = 37.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargePortrait
+			orientation = PORTRAIT
+			mass = 0.00913500041
+			cost = 62.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargeLandscape
+			orientation = LANDSCAPE
+			mass = 0.00337500009
+			cost = 37.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargePortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0933749974
+			cost = 137.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargeLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.0357749984
+			cost = 87.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TransparentBackground
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = flagPartSize2_4290549296
+	partName = Part
+	persistentId = 889354715
+	pos = 4.78361988,14.7532635,2.20021629
+	attPos = 0,0,0
+	attPos0 = -1.2814666,0.404868752,0
+	rot = -8.6348166E-08,0.707106709,-8.63481731E-08,-0.707106829
+	attRot = 0,0,0,1
+	attRot0 = 8.22147683E-10,-0.707106829,-8.22140578E-10,-0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 37.5
+	modMass = 0.00337500009
+	modSize = 0,0,0
+	sym = flagPartSize2_4290548936
+	sym = flagPartSize2_4290548576
+	sym = flagPartSize2_4290548216
+	sym = flagPartSize2_4290563612
+	sym = flagPartSize2_4290550376
+	sym = flagPartSize2_4290550016
+	sym = flagPartSize2_4290549656
+	srfN = srfAttach,Rockomax32.BW_4290468348,collider,0|0|0.0549999997,0|0|-1,0|0|0.0549999997
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlagDecalBackground
+		isEnabled = True
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
+		displayingPortrait = False
+		flagSize = 2
+		placementID = 0
+		flagDisplayed = True
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallPortrait
+			orientation = PORTRAIT
+			mass = 0.000360000005
+			cost = 6.25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallLandscape
+			orientation = LANDSCAPE
+			mass = 0
+			cost = 0
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.00562500022
+			cost = 25
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00202500005
+			cost = 12.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumPortrait
+			orientation = PORTRAIT
+			mass = 0.00211500004
+			cost = 25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumLandscape
+			orientation = LANDSCAPE
+			mass = 0.000675000018
+			cost = 12.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0231749993
+			cost = 62.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00877500046
+			cost = 37.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargePortrait
+			orientation = PORTRAIT
+			mass = 0.00913500041
+			cost = 62.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargeLandscape
+			orientation = LANDSCAPE
+			mass = 0.00337500009
+			cost = 37.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargePortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0933749974
+			cost = 137.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargeLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.0357749984
+			cost = 87.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TransparentBackground
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = flagPartSize2_4290548936
+	partName = Part
+	persistentId = 4120564362
+	pos = 3.51159906,14.7532635,-0.870720148
+	attPos = 0,0,0
+	attPos0 = -1.28146672,0.404868782,0
+	rot = -1.12819336E-07,0.382683158,-4.67312731E-08,-0.923879743
+	attRot = 0,0,0,1
+	attRot0 = 8.22147683E-10,-0.707106888,-8.22144131E-10,-0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 37.5
+	modMass = 0.00337500009
+	modSize = 0,0,0
+	sym = flagPartSize2_4290548576
+	sym = flagPartSize2_4290548216
+	sym = flagPartSize2_4290563612
+	sym = flagPartSize2_4290550376
+	sym = flagPartSize2_4290550016
+	sym = flagPartSize2_4290549656
+	sym = flagPartSize2_4290549296
+	srfN = srfAttach,Rockomax32.BW_4290467854,collider,0|0|0.0549999997,0|0|-1,0|0|0.0549999997
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlagDecalBackground
+		isEnabled = True
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
+		displayingPortrait = False
+		flagSize = 2
+		placementID = 0
+		flagDisplayed = True
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallPortrait
+			orientation = PORTRAIT
+			mass = 0.000360000005
+			cost = 6.25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallLandscape
+			orientation = LANDSCAPE
+			mass = 0
+			cost = 0
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.00562500022
+			cost = 25
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00202500005
+			cost = 12.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumPortrait
+			orientation = PORTRAIT
+			mass = 0.00211500004
+			cost = 25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumLandscape
+			orientation = LANDSCAPE
+			mass = 0.000675000018
+			cost = 12.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0231749993
+			cost = 62.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00877500046
+			cost = 37.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargePortrait
+			orientation = PORTRAIT
+			mass = 0.00913500041
+			cost = 62.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargeLandscape
+			orientation = LANDSCAPE
+			mass = 0.00337500009
+			cost = 37.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargePortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0933749974
+			cost = 137.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargeLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.0357749984
+			cost = 87.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TransparentBackground
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = flagPartSize2_4290548576
+	partName = Part
+	persistentId = 81556972
+	pos = 0.440663844,14.7532635,-2.14274001
+	attPos = 0,0,0
+	attPos0 = -1.28146696,0.404868752,0
+	rot = 1.22114784E-07,1.1920929E-07,7.10542736E-15,1.00000012
+	attRot = 0,0,0,1
+	attRot0 = 8.22147683E-10,-0.707106888,-8.2213325E-10,-0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 37.5
+	modMass = 0.00337500009
+	modSize = 0,0,0
+	sym = flagPartSize2_4290548216
+	sym = flagPartSize2_4290563612
+	sym = flagPartSize2_4290550376
+	sym = flagPartSize2_4290550016
+	sym = flagPartSize2_4290549656
+	sym = flagPartSize2_4290549296
+	sym = flagPartSize2_4290548936
+	srfN = srfAttach,Rockomax32.BW_4285859280,collider,0|0|0.0549999997,0|0|-1,0|0|0.0549999997
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlagDecalBackground
+		isEnabled = True
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
+		displayingPortrait = False
+		flagSize = 2
+		placementID = 0
+		flagDisplayed = True
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallPortrait
+			orientation = PORTRAIT
+			mass = 0.000360000005
+			cost = 6.25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallLandscape
+			orientation = LANDSCAPE
+			mass = 0
+			cost = 0
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.00562500022
+			cost = 25
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00202500005
+			cost = 12.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumPortrait
+			orientation = PORTRAIT
+			mass = 0.00211500004
+			cost = 25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumLandscape
+			orientation = LANDSCAPE
+			mass = 0.000675000018
+			cost = 12.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0231749993
+			cost = 62.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00877500046
+			cost = 37.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargePortrait
+			orientation = PORTRAIT
+			mass = 0.00913500041
+			cost = 62.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargeLandscape
+			orientation = LANDSCAPE
+			mass = 0.00337500009
+			cost = 37.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargePortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0933749974
+			cost = 137.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargeLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.0357749984
+			cost = 87.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TransparentBackground
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = flagPartSize2_4290548216
+	partName = Part
+	persistentId = 1525660816
+	pos = -2.63027024,14.7532635,-0.870717287
+	attPos = 0,0,0
+	attPos0 = -1.2814666,0.404868782,-2.98023224E-08
+	rot = 1.12819336E-07,0.382683516,-4.67312979E-08,0.923879623
+	attRot = 0,0,0,1
+	attRot0 = 8.22147683E-10,-0.707106829,-8.22151236E-10,-0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 37.5
+	modMass = 0.00337500009
+	modSize = 0,0,0
+	sym = flagPartSize2_4290563612
+	sym = flagPartSize2_4290550376
+	sym = flagPartSize2_4290550016
+	sym = flagPartSize2_4290549656
+	sym = flagPartSize2_4290549296
+	sym = flagPartSize2_4290548936
+	sym = flagPartSize2_4290548576
+	srfN = srfAttach,Rockomax32.BW_4290470818,collider,0|0|0.0549999997,0|0|-1,0|0|0.0549999997
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlagDecalBackground
+		isEnabled = True
+		currentflagUrl = UmbraSpaceIndustries/WOLF/Assets/Flags/teal_square
+		displayingPortrait = False
+		flagSize = 2
+		placementID = 0
+		flagDisplayed = True
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallPortrait
+			orientation = PORTRAIT
+			mass = 0.000360000005
+			cost = 6.25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small
+			meshName = 2.5SmallLandscape
+			orientation = LANDSCAPE
+			mass = 0
+			cost = 0
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.00562500022
+			cost = 25
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = small
+			displayName = Small Panel
+			meshName = 2.5SmallLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00202500005
+			cost = 12.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumPortrait
+			orientation = PORTRAIT
+			mass = 0.00211500004
+			cost = 25
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium
+			meshName = 2.5MediumLandscape
+			orientation = LANDSCAPE
+			mass = 0.000675000018
+			cost = 12.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumPortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0231749993
+			cost = 62.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = medium
+			displayName = Medium Panel
+			meshName = 2.5MediumLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.00877500046
+			cost = 37.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargePortrait
+			orientation = PORTRAIT
+			mass = 0.00913500041
+			cost = 62.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large
+			meshName = 2.5LargeLandscape
+			orientation = LANDSCAPE
+			mass = 0.00337500009
+			cost = 37.5
+			variantNames = White,Dark,Orange,TransparentBackground
+			indexOffset = 0
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargePortraitPanel
+			orientation = PORTRAIT
+			mass = 0.0933749974
+			cost = 137.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		MESH
+		{
+			name = large
+			displayName = Large Panel
+			meshName = 2.5LargeLandscapePanel
+			orientation = LANDSCAPE
+			mass = 0.0357749984
+			cost = 87.5
+			variantNames = WhitePanel,DarkPanel,OrangePanel
+			indexOffset = 1000
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TransparentBackground
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = Decoupler.3_4294189142
+	partName = Part
+	persistentId = 3078535960
+	pos = 0.440663725,12.6089201,2.20021653
+	attPos = 0,0,0
+	attPos0 = 0,-2.08699989,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 0
+	sepI = 0
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = Size3MediumTank_4294195094
+	attN = top,Size3MediumTank_4285892446_0|0.150000006|0_0|1|0_0|0.150000006|0_0|1|0
+	attN = bottom,Size3MediumTank_4294195094_0|-0.150000006|0_0|-1|0_0|-0.150000006|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			EnableAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DisableAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = Size3MediumTank_4294195094
+	partName = Part
+	persistentId = 511369878
+	pos = 0.440663725,10.5279198,2.20021653
+	attPos = 0,0,0
+	attPos0 = 0,-2.08100033,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,Decoupler.3_4294189142_0|1.93099999|0_0|1|0_0|1.93099999|0_0|1|0
+	attN = bottom,Null_0_0|-1.93700004|0_0|-1|0_0|-1.93700004|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 3240
+		maxAmount = 3240
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 3960
+		maxAmount = 3960
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
 	}
 }
