@@ -19,8 +19,8 @@ Then just remember to bring the lander near the passenger terminal to transfer c
 You can also colour code. For example some distinct colours that aren't related to navigation lights:
 
 + Orange (#FF7D00)
-+ Violet (#7E00FF)
 + Teal (#19B1B2)
++ Violet (#7E00FF)
 
 ### Mun Route Builder 1
 

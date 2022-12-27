@@ -97,9 +97,12 @@
   - [Expansion Fleet](#expansion-fleet)
   - [Moho Shipyard](#moho-shipyard)
   - [Locations](#locations)
-  - [01 Western Lowlands Karborundum](#01-western-lowlands-karborundum)
+  - [Moho Route Builder Rover](#moho-route-builder-rover)
+  - [01 Midlands Karborundum](#01-midlands-karborundum)
   - [Route To Eve And Kerbin](#route-to-eve-and-kerbin)
   - [Water and Karborundum for Kerbin](#water-and-karborundum-for-kerbin)
+  - [02 Western Lowlands Exotics (Orange)](#02-western-lowlands-exotics-orange)
+  - [03 Midlands AERS (Teal)](#03-midlands-aers-teal)
 - [Here There Be Dragons](#here-there-be-dragons)
 - [Duna Expansion](#duna-expansion)
   - [Relay Satellites](#relay-satellites)
@@ -629,7 +632,7 @@ Here's the **WOLF SSTO** at the end of a 3t haul to orbit having just refuelled.
 
 ![WOLF SSTO in Kerbin orbit with Kerbin Shipyard in background and WOLF Transport Computer action window showing route cost 0 and route payload 3][WOLFSSTO0CREDITS]
 
-As an aside, you might find that it's easier to use the "detank propellant before launch" method on worlds where you can use _Planetary Logistics_, while the "refill propellant after arrival" method works best for routes terminating at shipyards. This is due to the shipyards being propellant producers, so you will have a hassle keeping the fuel tanks empty enough to detank propellant.
+As an aside, you might find that it's easier to use the "detank propellant before launch" method on worlds where you can use _Planetary Logistics_, while the "refill propellant after arrival" method works best for routes terminating at shipyards. This is due to the shipyards being propellant producers, so you will have a hassle keeping the shipyard's fuel tanks empty enough to detank propellant.
 
 **Go back and load your "Before Transport Credits" save game**.
 
@@ -2205,11 +2208,24 @@ As for the other expansions the initial focus will be setting up the **Moho Ship
 
 ### Locations
 
-There's only one biome we're concerned with at Moho.
+Land depots in all these biomes. Build the route between _Orbit_ and _Midlands_.
 
+- Canyon (-37.040, -139.242)
+- Central Lowlands (33.022, -97.730) ()
+- Highlands (1.665, 54.604)
+- **Midlands** (-1.638, 50.597) (1° 38' 16.8"S, 50° 35' 49.2"E)
+- Minor Craters (-5.925, 58.612) (5° 55' 30"S, 58° 36' 43.2"E)
+- North Pole (53.125, 25.356)
+- South Pole (-59.566, 58.893)
+- South Eastern Lowlands (-14.236, -175.666) () NB: lots of flat terrain
+- South Western Lowlands (-17.445, 49.299) (17° 26' 42"S, 49° 17' 56.4"E)
 - Western Lowlands (14.356, 25.821) (14° 21' 21.6"N, 25° 49' 15.6"E)
 
-### 01 Western Lowlands Karborundum
+### Moho Route Builder Rover
+
+Build a **Route Builder Rover** and keep it in orbit until the first crew arrives. Use the engineer from that crew to activate the rover and land it in the Midlands. Build routes between the _Midlands_ and all the biomes on **Moho**.
+
+### 01 Midlands Karborundum
 
 Very basic depot expansion to get some Karborundum.
 
@@ -2219,7 +2235,7 @@ Exports:
 
 ### Route To Eve And Kerbin
 
-Now it's time to build the route back to Eve. Using the stock maneuver tool you should be able to get a departure burn from Moho to Eve under 1500m/s. Two "pusher" support craft should be sufficient to get the route builder back to Eve. Remember to start the cargo route before you leave!
+Now it's time to build the route back to Eve. Using the stock maneuver tool you should be able to get a departure burn from Moho to Eve under 1500m/s (if you get a much higher delta-v option just wait it out and plan the route again). Two 5m Pusher (LFO) support craft should be sufficient to get the route builder back to Eve. Perform the multi-tanker equivalent of asparagus staging: after the departure burn, refill the route builder. Remember to start the cargo route before you leave!
 
 The basic plan with the route builder is to send along extra fuel to refill after the departure burn so that the route builder has enough propellant to capture at the destination. Some transfers will require extra propellant after capture to circularise at the destination's "orbit" biome.
 
@@ -2230,6 +2246,62 @@ Once at Eve, complete the Moho-Eve route. The route back to Kerbin should requir
 ### Water and Karborundum for Kerbin
 
 The final step of this great adventure is to set up the propellant facilities for torch ships. They run on _Karborundum_ (which we've just imported from **Moho**) and _Water_ (which we can import from **Kerbin**, **Minmus** or **Mun**).
+
+### 02 Western Lowlands Exotics (Orange)
+
+Use the engineer from this crew to activate the **Moho Route Builder Rover** and leave the crew in the crew Transport until they're needed for the lander. Land the rover in the _Western Lowlands_. Build the route from _Western Lowlands_ to _Midlands_ and import the material kits required to establish this depot.
+
+Imports:
+
+- 3 Material Kits
+
+Crew:
+
+- Engineer
+- Farmer
+- Kolonist
+- Mechanic
+- Medic
+- Scientist
+
+Exports:
+
+- 110 Exotic Minerals
+- 5 Fertilizer
+- 5 Food
+- 10 Water
+
+Build: 301,172 _Material Kits_
+
+### 03 Midlands AERS (Teal)
+
+I got carried away with packing everything I could onto this lander so it's a bit heavy. There's a drop tank that you should ditch as soon as possible (preferably after the deorbit burn, before the braking burn).
+
+Crew:
+
+- Engineer
+- Farmer
+- Kolonist
+- Mechanic
+- Medic
+- Miner x 2
+- Scientist x 2
+- Technician x 3
+
+Exports (to Western Lowlands):
+
+- 3 Material Kits
+
+Reclaim the 3 Material Kits routed to Western Lowlands from orbit.
+
+Exports (to orbit):
+
+- Alloys
+- Electronics
+- 5 Food
+- Robotics
+- 5 Specialized Parts
+- Synthetics
 
 ## Here There Be Dragons
 
