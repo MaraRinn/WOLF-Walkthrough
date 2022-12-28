@@ -1,8 +1,8 @@
 ship = Advanced Materials Delivery
-version = 1.12.3
+version = 1.12.4
 description = 
 type = VAB
-size = 3.98377609,24.7294693,4.01677275
+size = 3.98377609,32.2094688,4.01677275
 steamPublishedFileId = 0
 persistentId = 1358249470
 rot = 0,0,0,0
@@ -16,7 +16,7 @@ PART
 {
 	part = Rockomax32.BW_4293674286
 	partName = Part
-	persistentId = 2487262847
+	persistentId = 2857786887
 	pos = -0.0933223367,26.9913673,-0.110745616
 	attPos = 0,0,0
 	attPos0 = -0.0933223367,26.9913673,-0.110745616
@@ -166,7 +166,7 @@ PART
 {
 	part = FTT.SAS.0250_4293672934
 	partName = Part
-	persistentId = 58304970
+	persistentId = 2277548324
 	pos = -0.0933223367,29.0013676,-0.110745616
 	attPos = 0,0,0
 	attPos0 = 0,2.01000023,0
@@ -188,8 +188,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = C3.Kontainer.01_4293814424
-	attN = top,C3.Kontainer.01_4293814424_0|0.150000006|0_0|1|0_0|0.150000006|0_0|1|0
+	link = C3.FlatTank.02_4292611084
+	attN = top,C3.FlatTank.02_4292611084_0|0.150000006|0_0|1|0_0|0.150000006|0_0|1|0
 	attN = bottom,Rockomax32.BW_4293674286_0|-0.150000006|0_0|-1|0_0|-0.150000006|0_0|-1|0
 	EVENTS
 	{
@@ -317,937 +317,9 @@ PART
 }
 PART
 {
-	part = C3.Kontainer.01_4293814424
-	partName = Part
-	persistentId = 2015483646
-	pos = -0.0933223367,29.6513672,-0.110745586
-	attPos = 0,0,0
-	attPos0 = 0,0.649999619,2.98023224E-08
-	rot = -0.707106829,0,0,0.707106829
-	attRot = -0.707106769,0,0,0.707106769
-	attRot0 = -0.707106829,0,0,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	sameVesselCollision = False
-	modCost = 64000
-	modMass = 0
-	modSize = 0,0,0
-	link = C3.Kontainer.01_4293746646
-	link = radialRCSTank_4290837776
-	link = radialRCSTank_4290837238
-	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
-	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
-	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
-	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
-	attN = top,Null_0_0|1|0_0|1|0_0|1|0_0|1|0
-	attN = bottom,Null_0_0|-1|0_0|-1|0_0|-1|0_0|-1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = FStextureSwitch2
-		isEnabled = True
-		selectedTexture = 13
-		selectedTextureURL = UmbraSpaceIndustries/Kontainers/Assets/Kontainer_14
-		selectedMapURL = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FSfuelSwitch
-		isEnabled = True
-		selectedTankSetup = 13
-		hasLaunched = False
-		configLoaded = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleResourceWarehouse
-		isEnabled = True
-		soiTransferEnabled = False
-		localTransferEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleBin
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = SpecializedParts
-		amount = 2000
-		maxAmount = 2000
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = C3.Kontainer.01_4293746646
-	partName = Part
-	persistentId = 1234192217
-	pos = -0.0933223367,30.6513672,-0.110745586
-	attPos = 0,0,0
-	attPos0 = 0,-1.1920929E-07,0.999999881
-	rot = -0.707106829,0,0,0.707106829
-	attRot = -0.707106769,0,0,0.707106769
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	sameVesselCollision = False
-	modCost = 1400000
-	modMass = 0
-	modSize = 0,0,0
-	link = C3.FlatTank.01_4293709772
-	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
-	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
-	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
-	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
-	attN = top,Null_0_0|1|0_0|1|0_0|1|0_0|1|0
-	attN = bottom,Null_0_0|-1|0_0|-1|0_0|-1|0_0|-1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = FStextureSwitch2
-		isEnabled = True
-		selectedTexture = 28
-		selectedTextureURL = UmbraSpaceIndustries/Kontainers/Assets/Kontainer_29
-		selectedMapURL = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FSfuelSwitch
-		isEnabled = True
-		selectedTankSetup = 28
-		hasLaunched = False
-		configLoaded = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleResourceWarehouse
-		isEnabled = True
-		soiTransferEnabled = False
-		localTransferEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleBin
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = Synthetics
-		amount = 2000
-		maxAmount = 2000
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = C3.FlatTank.01_4293709772
-	partName = Part
-	persistentId = 3919895944
-	pos = -0.0933223367,31.4013672,-0.110745706
-	attPos = 0,0,0
-	attPos0 = 0,0,0.750000119
-	rot = 0,0,0,1.00000012
-	attRot = 0,0,0,1
-	attRot0 = 0.707106829,0,0,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	sameVesselCollision = False
-	modCost = 2100000
-	modMass = 0
-	modSize = 0,0,0
-	link = C3.FlatTank.01_4293704232
-	attN = top,C3.FlatTank.01_4293704232_0|0.25|0_0|1|0_0|0.25|0_0|1|0
-	attN = bottom,C3.Kontainer.01_4293746646_0|-0.25|0_0|-1|0_0|-0.25|0_0|-1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = FStextureSwitch2
-		isEnabled = True
-		selectedTexture = 27
-		selectedTextureURL = 
-		selectedMapURL = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FSfuelSwitch
-		isEnabled = True
-		selectedTankSetup = 27
-		hasLaunched = False
-		configLoaded = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleResourceWarehouse
-		isEnabled = True
-		soiTransferEnabled = False
-		localTransferEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleBin
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = Robotics
-		amount = 600
-		maxAmount = 600
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = C3.FlatTank.01_4293704232
-	partName = Part
-	persistentId = 2558849495
-	pos = -0.0933223367,31.901371,-0.110745586
-	attPos = 0,0,0
-	attPos0 = 0,0.500000358,5.9604659E-08
-	rot = 0,0,0,1.00000012
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	sameVesselCollision = False
-	modCost = 229200
-	modMass = 0
-	modSize = 0,0,0
-	link = C3.FlatTank.01_4293698804
-	link = RCSBlock.v2_4291001586
-	link = RCSBlock.v2_4290936348
-	link = RCSBlock.v2_4290936102
-	link = RCSBlock.v2_4290935856
-	attN = top,C3.FlatTank.01_4293698804_0|0.25|0_0|1|0_0|0.25|0_0|1|0
-	attN = bottom,C3.FlatTank.01_4293709772_0|-0.25|0_0|-1|0_0|-0.25|0_0|-1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = FStextureSwitch2
-		isEnabled = True
-		selectedTexture = 25
-		selectedTextureURL = 
-		selectedMapURL = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FSfuelSwitch
-		isEnabled = True
-		selectedTankSetup = 25
-		hasLaunched = False
-		configLoaded = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleResourceWarehouse
-		isEnabled = True
-		soiTransferEnabled = False
-		localTransferEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleBin
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = Electronics
-		amount = 600
-		maxAmount = 600
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = C3.FlatTank.01_4293698804
-	partName = Part
-	persistentId = 2631805144
-	pos = -0.0933223367,32.4013672,-0.110745586
-	attPos = 0,0,0
-	attPos0 = 0,0.50000006,-5.96046732E-08
-	rot = 0,0,0,1.00000012
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Root
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	sameVesselCollision = False
-	modCost = 360000
-	modMass = 0
-	modSize = 0,0,0
-	link = C3.FlatTank.01_4290947684
-	link = StowPakSup_4286893090
-	link = StowPakSup_4286892440
-	link = StowPakSup_4286892368
-	link = StowPakSup_4286892296
-	attN = top,C3.FlatTank.01_4290947684_0|0.25|0_0|1|0_0|0.25|0_0|1|0
-	attN = bottom,C3.FlatTank.01_4293704232_0|-0.25|0_0|-1|0_0|-0.25|0_0|-1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = FStextureSwitch2
-		isEnabled = True
-		selectedTexture = 24
-		selectedTextureURL = 
-		selectedMapURL = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FSfuelSwitch
-		isEnabled = True
-		selectedTankSetup = 24
-		hasLaunched = False
-		configLoaded = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleResourceWarehouse
-		isEnabled = True
-		soiTransferEnabled = False
-		localTransferEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleBin
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = Alloys
-		amount = 600
-		maxAmount = 600
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
 	part = LiquidEngineRE-J10_4293824332
 	partName = Part
-	persistentId = 3131931562
+	persistentId = 4049612419
 	pos = -0.0933223367,24.7702999,-0.110745616
 	attPos = 0,0,0
 	attPos0 = 0,-2.22106743,0
@@ -1571,7 +643,7 @@ PART
 {
 	part = solarPanels5_4293646412
 	partName = Part
-	persistentId = 2228837546
+	persistentId = 961402800
 	pos = 1.12674022,28.5641823,-0.110745542
 	attPos = 0,0,0
 	attPos0 = 1.22006261,1.57281494,7.4505806E-08
@@ -1714,7 +786,7 @@ PART
 {
 	part = solarPanels5_4293646154
 	partName = Part
-	persistentId = 3941204999
+	persistentId = 2832642111
 	pos = -0.0933221877,28.5641823,-1.33080816
 	attPos = 0,0,0
 	attPos0 = 1.49011612E-07,1.57281494,-1.22006249
@@ -1857,7 +929,7 @@ PART
 {
 	part = solarPanels5_4293646116
 	partName = Part
-	persistentId = 914726159
+	persistentId = 1018183632
 	pos = -1.31338501,28.5641823,-0.110745586
 	attPos = 0,0,0
 	attPos0 = -1.22006261,1.57281494,2.98023224E-08
@@ -2000,7 +1072,7 @@ PART
 {
 	part = solarPanels5_4293646078
 	partName = Part
-	persistentId = 2135987614
+	persistentId = 548845457
 	pos = -0.0933223367,28.5641823,1.10931683
 	attPos = 0,0,0
 	attPos0 = 0,1.57281494,1.22006249
@@ -2141,1304 +1213,9 @@ PART
 }
 PART
 {
-	part = C3.FlatTank.01_4290947684
-	partName = Part
-	persistentId = 3190736680
-	pos = -0.0933223367,32.9013672,-0.110745825
-	attPos = 0,0,0
-	attPos0 = 0,0.500000596,-1.19209318E-07
-	rot = 0,0,0,1.00000012
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Heaviest
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	sameVesselCollision = False
-	modCost = 18000000
-	modMass = 0
-	modSize = 0,0,0
-	link = probeCoreOcto2.v2_4291014462
-	attN = top,probeCoreOcto2.v2_4291014462_0|0.25|0_0|1|0_0|0.25|0_0|1|0
-	attN = bottom,C3.FlatTank.01_4293698804_0|-0.25|0_0|-1|0_0|-0.25|0_0|-1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = FStextureSwitch2
-		isEnabled = True
-		selectedTexture = 26
-		selectedTextureURL = 
-		selectedMapURL = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FSfuelSwitch
-		isEnabled = True
-		selectedTankSetup = 26
-		hasLaunched = False
-		configLoaded = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleResourceWarehouse
-		isEnabled = True
-		soiTransferEnabled = False
-		localTransferEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleBin
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = Prototypes
-		amount = 60.000000894069672
-		maxAmount = 600
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = probeCoreOcto2.v2_4291014462
-	partName = Part
-	persistentId = 370431400
-	pos = -0.0933223367,33.212429,-0.110745825
-	attPos = 0,0,0
-	attPos0 = 0,0.311062038,0
-	rot = 0,0,0,1.00000012
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = dockingPort2_4291018930
-	attN = bottom,C3.FlatTank.01_4290947684_0|-0.0610621013|0_0|-1|0_0|-0.0610621013|0_0|-1|0
-	attN = top,dockingPort2_4291018930_0|0.0610621013|0_0|1|0_0|0.0610621013|0_0|1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCommand
-		isEnabled = True
-		hibernation = False
-		hibernateOnWarp = False
-		activeControlPointName = _default
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			MakeReferenceToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			HibernateToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSAS
-		isEnabled = True
-		standaloneToggle = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKerbNetAccess
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OpenKerbNetAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDataTransmitter
-		isEnabled = True
-		xmitIncomplete = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			StartTransmissionAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = MechJebCore
-		isEnabled = True
-		running = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnOrbitProgradeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnOrbitRetrogradeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnOrbitNormalAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnOrbitAntinormalAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnOrbitRadialInAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnOrbitRadialOutAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnKillRotationAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnDeactivateSmartASSAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnLandsomewhereAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnLandTargetAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnPanicAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnTranslatronOffAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnTranslatronKeepVertAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnTranslatronZeroSpeedAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnTranslatronPlusOneSpeedAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnTranslatronMinusOneSpeedAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnTranslatronToggleHSAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			OnAscentAPToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		MechJebLocalSettings
-		{
-			MechJebModuleMenu
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRoverWindow
-			{
-				unlockParts = 
-				unlockTechs = fieldScience
-			}
-			MechJebModuleAttitudeAdjustment
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleAscentNavBall
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleLogicalStageTracking
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRCSBalancerWindow
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleRoverController
-			{
-				ControlHeading = False
-				ControlSpeed = False
-				BrakeOnEject = False
-				BrakeOnEnergyDepletion = False
-				WarpToDaylight = False
-				StabilityControl = False
-				LimitAcceleration = False
-				unlockParts = 
-				unlockTechs = 
-				heading
-				{
-					_val = 0
-					_text = 0
-				}
-				speed
-				{
-					_val = 10
-					_text = 10
-				}
-			}
-			MechJebModuleSpaceplaneGuidance
-			{
-				runwayIndex = 2
-				unlockParts = 
-				unlockTechs = unmannedTech
-			}
-			MechJebModuleAscentPVG
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleInfoItems
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSmartRcs
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentClassic
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSpaceplaneAutopilot
-			{
-				bBreakAsSoonAsLanded = False
-				unlockParts = 
-				unlockTechs = 
-				glideslope
-				{
-					_val = 3
-					_text = 3
-				}
-				approachSpeed
-				{
-					_val = 250
-					_text = 250
-				}
-				touchdownSpeed
-				{
-					_val = 100
-					_text = 100
-				}
-				maximumSafeBankAngle
-				{
-					_val = 25
-					_text = 25
-				}
-			}
-			MechJebModuleAirplaneAutopilot
-			{
-				HeadingHoldEnabled = False
-				AltitudeHoldEnabled = False
-				VertSpeedHoldEnabled = False
-				RollHoldEnabled = False
-				SpeedHoldEnabled = False
-				AltitudeTarget = 0
-				HeadingTarget = 90
-				RollTarget = 0
-				SpeedTarget = 0
-				VertSpeedTarget = 0
-				BankAngle = 30
-				unlockParts = 
-				unlockTechs = 
-				AccKp
-				{
-					_val = 0.5
-					_text = 0.5
-				}
-				AccKi
-				{
-					_val = 0.5
-					_text = 0.5
-				}
-				AccKd
-				{
-					_val = 0.0050000000000000001
-					_text = 0.005
-				}
-				PitKp
-				{
-					_val = 2
-					_text = 2
-				}
-				PitKi
-				{
-					_val = 1
-					_text = 1
-				}
-				PitKd
-				{
-					_val = 0.0050000000000000001
-					_text = 0.005
-				}
-				RolKp
-				{
-					_val = 0.5
-					_text = 0.5
-				}
-				RolKi
-				{
-					_val = 0.02
-					_text = 0.02
-				}
-				RolKd
-				{
-					_val = 0.5
-					_text = 0.5
-				}
-				YawKp
-				{
-					_val = 1
-					_text = 1
-				}
-				YawKi
-				{
-					_val = 0.25
-					_text = 0.25
-				}
-				YawKd
-				{
-					_val = 0.02
-					_text = 0.02
-				}
-				YawLimit
-				{
-					_val = 10
-					_text = 10
-				}
-				RollLimit
-				{
-					_val = 45
-					_text = 45
-				}
-				PitchDownLimit
-				{
-					_val = 15
-					_text = 15
-				}
-				PitchUpLimit
-				{
-					_val = 25
-					_text = 25
-				}
-			}
-			MechJebModuleDockingGuidance
-			{
-				unlockParts = 
-				unlockTechs = advUnmanned
-			}
-			MechJebModuleSettings
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentGT
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleDebugArrows
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSmartASS
-			{
-				mode = ORBITAL
-				target = OFF
-				advReference = INERTIAL
-				advDirection = FORWARD
-				forceRol = False
-				forcePitch = True
-				forceYaw = True
-				unlockParts = 
-				unlockTechs = flightControl
-				srfHdg
-				{
-					_val = 90
-					_text = 90
-				}
-				srfPit
-				{
-					_val = 90
-					_text = 90
-				}
-				srfRol
-				{
-					_val = 0
-					_text = 0
-				}
-				srfVelYaw
-				{
-					_val = 0
-					_text = 0
-				}
-				srfVelPit
-				{
-					_val = 0
-					_text = 0
-				}
-				srfVelRol
-				{
-					_val = 0
-					_text = 0
-				}
-				rol
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleDockingAutopilot
-			{
-				forceRol = False
-				overrideSafeDistance = False
-				overrideTargetSize = False
-				unlockParts = 
-				unlockTechs = 
-				rol
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			ModExtensionDemo
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleThrustWindow
-			{
-				autostageSavedState = False
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleWarpHelper
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-				phaseAngle
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleCustomWindowEditor
-			{
-				unlockParts = 
-				unlockTechs = flightControl
-			}
-			MechJebModuleAscentAutopilot
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRendezvousAutopilotWindow
-			{
-				unlockParts = 
-				unlockTechs = advUnmanned
-			}
-			MechJebModuleNodeExecutor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleNodeEditor
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleLandingAutopilot
-			{
-				deployGears = True
-				deployChutes = True
-				rcsAdjustment = True
-				unlockParts = 
-				unlockTechs = 
-				touchdownSpeed
-				{
-					_val = 0.5
-					_text = 0.5
-				}
-				limitGearsStage
-				{
-					val = 0
-					_text = 0
-				}
-				limitChutesStage
-				{
-					val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleScript
-			{
-				minifiedGUI = False
-				selectedSlot = 0
-				selectedMemorySlotType = 0
-				activeSavepoint = -1
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleLandingGuidance
-			{
-				landingSiteIdx = 0
-				unlockParts = 
-				unlockTechs = unmannedTech
-			}
-			MechJebModuleLandingPredictions
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleTranslatron
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-				trans_spd
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleAscentGuidance
-			{
-				unlockParts = 
-				unlockTechs = unmannedTech
-			}
-			MechJebModuleRendezvousAutopilot
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleWaypointWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleWaypointHelpWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleTargetController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleManeuverPlanner
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleStageStats
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAirplaneGuidance
-			{
-				showpid = False
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleGuidanceController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRendezvousGuidance
-			{
-				unlockParts = 
-				unlockTechs = advUnmanned
-			}
-			MechJebModuleAscentClassicMenu
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleWarpController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleDeployableAntennaController
-			{
-				prev_shouldDeploy = False
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSolarPanelController
-			{
-				prev_shouldDeploy = False
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleThrustController
-			{
-				limitThrottle = False
-				limiterMinThrottle = False
-				electricThrottle = False
-				unlockParts = 
-				unlockTechs = 
-				maxThrottle
-				{
-					_val = 1
-					_text = 100
-				}
-				minThrottle
-				{
-					_val = 0.050000000000000003
-					_text = 5
-				}
-				electricThrottleLo
-				{
-					_val = 0.050000000000000003
-					_text = 5
-				}
-				electricThrottleHi
-				{
-					_val = 0.14999999999999999
-					_text = 15
-				}
-			}
-			MechJebModuleRCSController
-			{
-				unlockParts = 
-				unlockTechs = 
-				Tf
-				{
-					_val = 1
-					_text = 1
-				}
-				Kp
-				{
-					_val = 0.125
-					_text = 0.125
-				}
-				Ki
-				{
-					_val = 0.070000000000000007
-					_text = 0.07
-				}
-				Kd
-				{
-					_val = 0.53000000000000003
-					_text = 0.53
-				}
-			}
-			MechJebModuleRCSBalancer
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAttitudeController
-			{
-				unlockParts = 
-				unlockTechs = 
-				MJAttitudeController
-				{
-				}
-				KosAttitudeController
-				{
-				}
-				HybridController
-				{
-				}
-				BetterController
-				{
-				}
-			}
-			MechJebModuleStagingController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleFlightRecorder
-			{
-				markUT = 0
-				deltaVExpended = 0
-				dragLosses = 0
-				gravityLosses = 0
-				steeringLosses = 0
-				markLAN = 0
-				markLatitude = 0
-				markLongitude = 0
-				markAltitude = 0
-				markBodyIndex = 1
-				maxDragGees = 0
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleFlightRecorderGraph
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTripLogger
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		Log
-		{
-			flight = 0
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 5
-		maxAmount = 5
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = dockingPort2_4291018930
-	partName = Part
-	persistentId = 105922673
-	pos = -0.0933223367,33.2734909,-0.110745825
-	attPos = 0,0,0
-	attPos0 = 0,0.0610618591,0
-	rot = 0,0,0,1.00000012
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 0
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	attN = top,Null_0_0|0.282883197|0_0|1|0_0|0.282883197|0_0|1|0
-	attN = bottom,probeCoreOcto2.v2_4291014462_0|0|0_0|-1|0_0|0|0_0|-1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDockingNode
-		isEnabled = True
-		acquireForceTweak = 100
-		crossfeed = True
-		nodeIsLocked = True
-		targetAngle = 0
-		inverted = False
-		stagingEnabled = False
-		state = Ready
-		dockUId = 0
-		dockNodeIdx = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleLockedAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ServoEngageLockAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ServoDisgageLockAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			UndockAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			MakeReferenceToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			EnableXFeedAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			DisableXFeedAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleXFeedAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			targetAngle
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColorChanger
-		isEnabled = True
-		animState = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = Light
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
 	part = RCSBlock.v2_4291003132
 	partName = Part
-	persistentId = 400603309
+	persistentId = 1350183018
 	pos = -1.3123486,25.954998,-0.110745542
 	attPos = 0,0,0
 	attPos0 = -1.21902633,-1.03636932,7.4505806E-08
@@ -3606,7 +1383,7 @@ PART
 {
 	part = RCSBlock.v2_4291002604
 	partName = Part
-	persistentId = 1297471356
+	persistentId = 659564985
 	pos = -0.0933223367,25.954998,1.10828054
 	attPos = 0,0,0
 	attPos0 = 0,-1.03636932,1.21902621
@@ -3774,7 +1551,7 @@ PART
 {
 	part = RCSBlock.v2_4291002358
 	partName = Part
-	persistentId = 1968206507
+	persistentId = 1711054893
 	pos = 1.12570405,25.954998,-0.110745795
 	attPos = 0,0,0
 	attPos0 = 1.21902633,-1.03636932,-1.78813934E-07
@@ -3942,7 +1719,7 @@ PART
 {
 	part = RCSBlock.v2_4291002112
 	partName = Part
-	persistentId = 2663193705
+	persistentId = 1825130183
 	pos = -0.0933224857,25.954998,-1.32977188
 	attPos = 0,0,0
 	attPos0 = -1.49011612E-07,-1.03636932,-1.21902621
@@ -3968,678 +1745,6 @@ PART
 	sym = RCSBlock.v2_4291002604
 	sym = RCSBlock.v2_4291002358
 	srfN = srfAttach,Rockomax32.BW_4293674286,collider,-0.00875000004|0|0,0.125|0|0,-0.00875000004|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		selectedVariant = 4Horn
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateRCS
-		isEnabled = True
-		stagingEnabled = True
-		animStates = 0,0,0,0,0,0,0,0,0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = RCSBlock.v2_4291001586
-	partName = Part
-	persistentId = 1852740950
-	pos = -0.694837809,31.8342438,-0.110745586
-	attPos = 0,0,0
-	attPos0 = -0.601515472,-0.0671272576,0
-	rot = 0,8.42937098E-08,0,1.00000012
-	attRot = 0,0,0,1
-	attRot0 = 0,8.42937027E-08,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = RCSBlock.v2_4290936348
-	sym = RCSBlock.v2_4290936102
-	sym = RCSBlock.v2_4290935856
-	srfN = srfAttach,C3.FlatTank.01_4293704232,Cylinder,-0.00875000004|0|0,0.125|0|0,-0.00875000004|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		selectedVariant = 4Horn
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateRCS
-		isEnabled = True
-		stagingEnabled = True
-		animStates = 0,0,0,0,0,0,0,0,0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = RCSBlock.v2_4290936348
-	partName = Part
-	persistentId = 2620954796
-	pos = -0.0933223367,31.8342438,0.490772307
-	attPos = 0,0,0
-	attPos0 = 0,-0.0671274364,0.60151571
-	rot = 0,0.707107067,0,0.707106769
-	attRot = 0,0,0,1
-	attRot0 = 0,0.707106888,0,0.707106769
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = RCSBlock.v2_4290936102
-	sym = RCSBlock.v2_4290935856
-	sym = RCSBlock.v2_4291001586
-	srfN = srfAttach,C3.FlatTank.01_4293704232,Cylinder,-0.00875000004|0|0,0.125|0|0,-0.00875000004|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		selectedVariant = 4Horn
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateRCS
-		isEnabled = True
-		stagingEnabled = True
-		animStates = 0,0,0,0,0,0,0,0,0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = RCSBlock.v2_4290936102
-	partName = Part
-	persistentId = 813049144
-	pos = 0.508193135,31.8342438,-0.110745586
-	attPos = 0,0,0
-	attPos0 = 0.601515472,-0.0671272576,0
-	rot = 0,1.00000012,0,-1.28005126E-07
-	attRot = 0,0,0,1
-	attRot0 = 0,1,0,-1.28005112E-07
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = RCSBlock.v2_4290935856
-	sym = RCSBlock.v2_4291001586
-	sym = RCSBlock.v2_4290936348
-	srfN = srfAttach,C3.FlatTank.01_4293704232,Cylinder,-0.00875000004|0|0,0.125|0|0,-0.00875000004|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		selectedVariant = 4Horn
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateRCS
-		isEnabled = True
-		stagingEnabled = True
-		animStates = 0,0,0,0,0,0,0,0,0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = RCSBlock.v2_4290935856
-	partName = Part
-	persistentId = 3975945245
-	pos = -0.0933224112,31.8342438,-0.712263525
-	attPos = 0,0,0
-	attPos0 = -7.4505806E-08,-0.0671270788,-0.60151571
-	rot = 0,0.707106769,0,-0.707107067
-	attRot = 0,0,0,1
-	attRot0 = 0,0.707106769,0,-0.707106888
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = RCSBlock.v2_4291001586
-	sym = RCSBlock.v2_4290936348
-	sym = RCSBlock.v2_4290936102
-	srfN = srfAttach,C3.FlatTank.01_4293704232,Cylinder,-0.00875000004|0|0,0.125|0|0,-0.00875000004|0|0
 	EVENTS
 	{
 	}
@@ -5615,8 +2720,3082 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = Size3EngineCluster_4293194890
+	link = Size3LargeTank_4291470188
 	attN = top,fairingSize3_4293224566_0|3.74000001|0_0|1|0_0|3.74000001|0_0|1|0
+	attN = bottom,Size3LargeTank_4291470188_0|-3.74000001|0_0|-1|0_0|-3.74000001|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 6480
+		maxAmount = 6480
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 7920
+		maxAmount = 7920
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = C3.FlatTank.02_4292611084
+	partName = Part
+	persistentId = 251402881
+	pos = -0.0933223367,29.6513672,-0.110745616
+	attPos = 0,0,0
+	attPos0 = 0,0.649999619,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 144000
+	modMass = 0
+	modSize = 0,0,0
+	link = C3.Kontainer.01_4293746646
+	attN = top,C3.Kontainer.01_4293746646_0|0.5|0_0|1|0_0|0.5|0_0|1|0
+	attN = bottom,FTT.SAS.0250_4293672934_0|-0.5|0_0|-1|0_0|-0.5|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FStextureSwitch2
+		isEnabled = True
+		selectedTexture = 13
+		selectedTextureURL = 
+		selectedMapURL = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSfuelSwitch
+		isEnabled = True
+		selectedTankSetup = 13
+		hasLaunched = False
+		configLoaded = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleResourceWarehouse
+		isEnabled = True
+		soiTransferEnabled = False
+		localTransferEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleBin
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SpecializedParts
+		amount = 4500
+		maxAmount = 4500
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = C3.Kontainer.01_4293746646
+	partName = Part
+	persistentId = 3842851779
+	pos = -0.0933223367,31.1513672,-0.110745616
+	attPos = 0,0,0
+	attPos0 = 0,1.5,0
+	rot = -1,0,0,0
+	attRot = -0.99999994,0,0,0
+	attRot0 = -1,0,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 1400000
+	modMass = 0
+	modSize = 0,0,0
+	link = C3.FlatTank.01_4293709772
+	link = rcsTankRadialLong_4293038722
+	link = rcsTankRadialLong_4293038408
+	link = StowPakSup_4291337516
+	link = StowPakSup_4291337172
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = side,Null_0_0|0|0.5_0|0|1_0|0|0.5_0|0|1
+	attN = side,Null_0_-0.5|0|0_-1|0|0_-0.5|0|0_-1|0|0
+	attN = side,Null_0_0.5|0|0_1|0|0_0.5|0|0_1|0|0
+	attN = top,C3.FlatTank.02_4292611084_0|1|0_0|1|0_0|1|0_0|1|0
+	attN = bottom,C3.FlatTank.01_4293709772_0|-1|0_0|-1|0_0|-1|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FStextureSwitch2
+		isEnabled = True
+		selectedTexture = 28
+		selectedTextureURL = UmbraSpaceIndustries/Kontainers/Assets/Kontainer_29
+		selectedMapURL = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSfuelSwitch
+		isEnabled = True
+		selectedTankSetup = 28
+		hasLaunched = False
+		configLoaded = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleResourceWarehouse
+		isEnabled = True
+		soiTransferEnabled = False
+		localTransferEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleBin
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Synthetics
+		amount = 2000
+		maxAmount = 2000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = C3.FlatTank.01_4293709772
+	partName = Part
+	persistentId = 1992311652
+	pos = -0.0933223367,32.4013672,-0.110745616
+	attPos = 0,0,0
+	attPos0 = 0,-1.24999976,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 1,0,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 2100000
+	modMass = 0
+	modSize = 0,0,0
+	link = RCSBlock.v2_4291001586
+	link = RCSBlock.v2_4292560676
+	link = RCSBlock.v2_4292560430
+	link = RCSBlock.v2_4292560184
+	link = C3.FlatTank.01_4293698804
+	attN = top,C3.FlatTank.01_4293698804_0|0.25|0_0|1|0_0|0.25|0_0|1|0
+	attN = bottom,C3.Kontainer.01_4293746646_0|-0.25|0_0|-1|0_0|-0.25|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FStextureSwitch2
+		isEnabled = True
+		selectedTexture = 27
+		selectedTextureURL = 
+		selectedMapURL = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSfuelSwitch
+		isEnabled = True
+		selectedTankSetup = 27
+		hasLaunched = False
+		configLoaded = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleResourceWarehouse
+		isEnabled = True
+		soiTransferEnabled = False
+		localTransferEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleBin
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Robotics
+		amount = 240.00000357627869
+		maxAmount = 600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = RCSBlock.v2_4291001586
+	partName = Part
+	persistentId = 2037222418
+	pos = -0.709215224,32.4216843,-0.110745579
+	attPos = 0,0,0
+	attPos0 = -0.615892887,0.0203169584,3.72528959E-08
+	rot = 0,8.42937027E-08,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,8.42937027E-08,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = RCSBlock.v2_4292560676
+	sym = RCSBlock.v2_4292560430
+	sym = RCSBlock.v2_4292560184
+	srfN = srfAttach,C3.FlatTank.01_4293709772,Cylinder,-0.00875000004|0|0,0.125|0|0,-0.00875000004|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = 4Horn
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateRCS
+		isEnabled = True
+		stagingEnabled = True
+		animStates = 0,0,0,0,0,0,0,0,0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = RCSBlock.v2_4292560676
+	partName = Part
+	persistentId = 560974833
+	pos = -0.0933223367,32.4216843,0.505147219
+	attPos = 0,0,0
+	attPos0 = 0,0.0203169584,0.615892708
+	rot = 0,0.707106829,0,0.707106709
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106829,0,0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = RCSBlock.v2_4292560430
+	sym = RCSBlock.v2_4292560184
+	sym = RCSBlock.v2_4291001586
+	srfN = srfAttach,C3.FlatTank.01_4293709772,Cylinder,-0.00875000004|0|0,0.125|0|0,-0.00875000004|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = 4Horn
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateRCS
+		isEnabled = True
+		stagingEnabled = True
+		animStates = 0,0,0,0,0,0,0,0,0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = RCSBlock.v2_4292560430
+	partName = Part
+	persistentId = 2743018201
+	pos = 0.52257055,32.4216843,-0.110745706
+	attPos = 0,0,0
+	attPos0 = 0.615892887,0.0203169584,-8.94069458E-08
+	rot = 0,1,0,-1.28005098E-07
+	attRot = 0,0,0,1
+	attRot0 = 0,1,0,-1.28005098E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = RCSBlock.v2_4292560184
+	sym = RCSBlock.v2_4291001586
+	sym = RCSBlock.v2_4292560676
+	srfN = srfAttach,C3.FlatTank.01_4293709772,Cylinder,-0.00875000004|0|0,0.125|0|0,-0.00875000004|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = 4Horn
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateRCS
+		isEnabled = True
+		stagingEnabled = True
+		animStates = 0,0,0,0,0,0,0,0,0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = RCSBlock.v2_4292560184
+	partName = Part
+	persistentId = 3904376762
+	pos = -0.0933224112,32.4216843,-0.726638436
+	attPos = 0,0,0
+	attPos0 = -7.4505806E-08,0.0203169584,-0.615892708
+	rot = 0,0.707106709,0,-0.707106829
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106709,0,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = RCSBlock.v2_4291001586
+	sym = RCSBlock.v2_4292560676
+	sym = RCSBlock.v2_4292560430
+	srfN = srfAttach,C3.FlatTank.01_4293709772,Cylinder,-0.00875000004|0|0,0.125|0|0,-0.00875000004|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = 4Horn
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateRCS
+		isEnabled = True
+		stagingEnabled = True
+		animStates = 0,0,0,0,0,0,0,0,0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = C3.FlatTank.01_4293698804
+	partName = Part
+	persistentId = 4249011150
+	pos = -0.0933223367,32.9013672,-0.110745616
+	attPos = 0,0,0
+	attPos0 = 0,0.499999762,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Root
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 360000
+	modMass = 0
+	modSize = 0,0,0
+	link = C3.FlatTank.01_4290947684
+	attN = top,C3.FlatTank.01_4290947684_0|0.25|0_0|1|0_0|0.25|0_0|1|0
+	attN = bottom,C3.FlatTank.01_4293709772_0|-0.25|0_0|-1|0_0|-0.25|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FStextureSwitch2
+		isEnabled = True
+		selectedTexture = 24
+		selectedTextureURL = 
+		selectedMapURL = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSfuelSwitch
+		isEnabled = True
+		selectedTankSetup = 24
+		hasLaunched = False
+		configLoaded = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleResourceWarehouse
+		isEnabled = True
+		soiTransferEnabled = False
+		localTransferEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleBin
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Alloys
+		amount = 600
+		maxAmount = 600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = C3.FlatTank.01_4290947684
+	partName = Part
+	persistentId = 4238417178
+	pos = -0.0933223367,33.4013672,-0.110745735
+	attPos = 0,0,0
+	attPos0 = 0,0.500000596,-1.19209318E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Heaviest
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 360000
+	modMass = 0
+	modSize = 0,0,0
+	link = probeCoreOcto2.v2_4291014462
+	attN = top,probeCoreOcto2.v2_4291014462_0|0.25|0_0|1|0_0|0.25|0_0|1|0
+	attN = bottom,C3.FlatTank.01_4293698804_0|-0.25|0_0|-1|0_0|-0.25|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FStextureSwitch2
+		isEnabled = True
+		selectedTexture = 24
+		selectedTextureURL = 
+		selectedMapURL = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSfuelSwitch
+		isEnabled = True
+		selectedTankSetup = 24
+		hasLaunched = False
+		configLoaded = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleResourceWarehouse
+		isEnabled = True
+		soiTransferEnabled = False
+		localTransferEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleBin
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Alloys
+		amount = 600
+		maxAmount = 600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = probeCoreOcto2.v2_4291014462
+	partName = Part
+	persistentId = 2883726112
+	pos = -0.0933223367,33.712429,-0.110745735
+	attPos = 0,0,0
+	attPos0 = 0,0.311062038,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = dockingPort2_4291018930
+	attN = bottom,C3.FlatTank.01_4290947684_0|-0.0610621013|0_0|-1|0_0|-0.0610621013|0_0|-1|0
+	attN = top,dockingPort2_4291018930_0|0.0610621013|0_0|1|0_0|0.0610621013|0_0|1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		hibernation = False
+		hibernateOnWarp = False
+		activeControlPointName = _default
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			MakeReferenceToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			HibernateToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		standaloneToggle = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleKerbNetAccess
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OpenKerbNetAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = MechJebCore
+		isEnabled = True
+		running = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnOrbitProgradeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnOrbitRetrogradeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnOrbitNormalAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnOrbitAntinormalAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnOrbitRadialInAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnOrbitRadialOutAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnKillRotationAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnDeactivateSmartASSAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnLandsomewhereAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnLandTargetAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnPanicAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnTranslatronOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnTranslatronKeepVertAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnTranslatronZeroSpeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnTranslatronPlusOneSpeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnTranslatronMinusOneSpeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnTranslatronToggleHSAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			OnAscentAPToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		MechJebLocalSettings
+		{
+			MechJebModuleMenu
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRoverWindow
+			{
+				unlockParts = 
+				unlockTechs = fieldScience
+			}
+			MechJebModuleAttitudeAdjustment
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleAscentNavBall
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleLogicalStageTracking
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRCSBalancerWindow
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleRoverController
+			{
+				ControlHeading = False
+				ControlSpeed = False
+				BrakeOnEject = False
+				BrakeOnEnergyDepletion = False
+				WarpToDaylight = False
+				StabilityControl = False
+				LimitAcceleration = False
+				unlockParts = 
+				unlockTechs = 
+				heading
+				{
+					_val = 0
+					_text = 0
+				}
+				speed
+				{
+					_val = 10
+					_text = 10
+				}
+			}
+			MechJebModuleSpaceplaneGuidance
+			{
+				runwayIndex = 2
+				unlockParts = 
+				unlockTechs = unmannedTech
+			}
+			MechJebModuleAscentPVG
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleInfoItems
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSmartRcs
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentClassic
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSpaceplaneAutopilot
+			{
+				bBreakAsSoonAsLanded = False
+				unlockParts = 
+				unlockTechs = 
+				glideslope
+				{
+					_val = 3
+					_text = 3
+				}
+				approachSpeed
+				{
+					_val = 250
+					_text = 250
+				}
+				touchdownSpeed
+				{
+					_val = 100
+					_text = 100
+				}
+				maximumSafeBankAngle
+				{
+					_val = 25
+					_text = 25
+				}
+			}
+			MechJebModuleAirplaneAutopilot
+			{
+				HeadingHoldEnabled = False
+				AltitudeHoldEnabled = False
+				VertSpeedHoldEnabled = False
+				RollHoldEnabled = False
+				SpeedHoldEnabled = False
+				AltitudeTarget = 0
+				HeadingTarget = 90
+				RollTarget = 0
+				SpeedTarget = 0
+				VertSpeedTarget = 0
+				BankAngle = 30
+				unlockParts = 
+				unlockTechs = 
+				AccKp
+				{
+					_val = 0.5
+					_text = 0.5
+				}
+				AccKi
+				{
+					_val = 0.5
+					_text = 0.5
+				}
+				AccKd
+				{
+					_val = 0.0050000000000000001
+					_text = 0.005
+				}
+				PitKp
+				{
+					_val = 2
+					_text = 2
+				}
+				PitKi
+				{
+					_val = 1
+					_text = 1
+				}
+				PitKd
+				{
+					_val = 0.0050000000000000001
+					_text = 0.005
+				}
+				RolKp
+				{
+					_val = 0.5
+					_text = 0.5
+				}
+				RolKi
+				{
+					_val = 0.02
+					_text = 0.02
+				}
+				RolKd
+				{
+					_val = 0.5
+					_text = 0.5
+				}
+				YawKp
+				{
+					_val = 1
+					_text = 1
+				}
+				YawKi
+				{
+					_val = 0.25
+					_text = 0.25
+				}
+				YawKd
+				{
+					_val = 0.02
+					_text = 0.02
+				}
+				YawLimit
+				{
+					_val = 10
+					_text = 10
+				}
+				RollLimit
+				{
+					_val = 45
+					_text = 45
+				}
+				PitchDownLimit
+				{
+					_val = 15
+					_text = 15
+				}
+				PitchUpLimit
+				{
+					_val = 25
+					_text = 25
+				}
+			}
+			MechJebModuleDockingGuidance
+			{
+				unlockParts = 
+				unlockTechs = advUnmanned
+			}
+			MechJebModuleSettings
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentGT
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleDebugArrows
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSmartASS
+			{
+				mode = ORBITAL
+				target = OFF
+				advReference = INERTIAL
+				advDirection = FORWARD
+				forceRol = False
+				forcePitch = True
+				forceYaw = True
+				unlockParts = 
+				unlockTechs = flightControl
+				srfHdg
+				{
+					_val = 90
+					_text = 90
+				}
+				srfPit
+				{
+					_val = 90
+					_text = 90
+				}
+				srfRol
+				{
+					_val = 0
+					_text = 0
+				}
+				srfVelYaw
+				{
+					_val = 0
+					_text = 0
+				}
+				srfVelPit
+				{
+					_val = 0
+					_text = 0
+				}
+				srfVelRol
+				{
+					_val = 0
+					_text = 0
+				}
+				rol
+				{
+					_val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleDockingAutopilot
+			{
+				forceRol = False
+				overrideSafeDistance = False
+				overrideTargetSize = False
+				unlockParts = 
+				unlockTechs = 
+				rol
+				{
+					_val = 0
+					_text = 0
+				}
+			}
+			ModExtensionDemo
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleThrustWindow
+			{
+				autostageSavedState = False
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleWarpHelper
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+				phaseAngle
+				{
+					_val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleCustomWindowEditor
+			{
+				unlockParts = 
+				unlockTechs = flightControl
+			}
+			MechJebModuleAscentAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRendezvousAutopilotWindow
+			{
+				unlockParts = 
+				unlockTechs = advUnmanned
+			}
+			MechJebModuleNodeExecutor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleNodeEditor
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleLandingAutopilot
+			{
+				deployGears = True
+				deployChutes = True
+				rcsAdjustment = True
+				unlockParts = 
+				unlockTechs = 
+				touchdownSpeed
+				{
+					_val = 0.5
+					_text = 0.5
+				}
+				limitGearsStage
+				{
+					val = 0
+					_text = 0
+				}
+				limitChutesStage
+				{
+					val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleScript
+			{
+				minifiedGUI = False
+				selectedSlot = 0
+				selectedMemorySlotType = 0
+				activeSavepoint = -1
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleLandingGuidance
+			{
+				landingSiteIdx = 0
+				unlockParts = 
+				unlockTechs = unmannedTech
+			}
+			MechJebModuleLandingPredictions
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleTranslatron
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+				trans_spd
+				{
+					_val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleAscentGuidance
+			{
+				unlockParts = 
+				unlockTechs = unmannedTech
+			}
+			MechJebModuleRendezvousAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWaypointWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWaypointHelpWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleTargetController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleManeuverPlanner
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleStageStats
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAirplaneGuidance
+			{
+				showpid = False
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleGuidanceController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRendezvousGuidance
+			{
+				unlockParts = 
+				unlockTechs = advUnmanned
+			}
+			MechJebModuleAscentClassicMenu
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleWarpController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleDeployableAntennaController
+			{
+				prev_shouldDeploy = False
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSolarPanelController
+			{
+				prev_shouldDeploy = False
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleThrustController
+			{
+				limitThrottle = False
+				limiterMinThrottle = False
+				electricThrottle = False
+				unlockParts = 
+				unlockTechs = 
+				maxThrottle
+				{
+					_val = 1
+					_text = 100
+				}
+				minThrottle
+				{
+					_val = 0.050000000000000003
+					_text = 5
+				}
+				electricThrottleLo
+				{
+					_val = 0.050000000000000003
+					_text = 5
+				}
+				electricThrottleHi
+				{
+					_val = 0.14999999999999999
+					_text = 15
+				}
+			}
+			MechJebModuleRCSController
+			{
+				unlockParts = 
+				unlockTechs = 
+				Tf
+				{
+					_val = 1
+					_text = 1
+				}
+				Kp
+				{
+					_val = 0.12492219800962338
+					_text = 0.124922198009623
+				}
+				Ki
+				{
+					_val = 0.0073611111111111091
+					_text = 0.00736111111111111
+				}
+				Kd
+				{
+					_val = 0.53000000000000003
+					_text = 0.53
+				}
+			}
+			MechJebModuleRCSBalancer
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAttitudeController
+			{
+				unlockParts = 
+				unlockTechs = 
+				MJAttitudeController
+				{
+				}
+				KosAttitudeController
+				{
+				}
+				HybridController
+				{
+				}
+				BetterController
+				{
+				}
+			}
+			MechJebModuleStagingController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleFlightRecorder
+			{
+				markUT = 0
+				deltaVExpended = 0
+				dragLosses = 0
+				gravityLosses = 0
+				steeringLosses = 0
+				markLAN = 0
+				markLatitude = 0
+				markLongitude = 0
+				markAltitude = 0
+				markBodyIndex = 1
+				maxDragGees = 0
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleFlightRecorderGraph
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 5
+		maxAmount = 5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = dockingPort2_4291018930
+	partName = Part
+	persistentId = 3962389890
+	pos = -0.0933223367,33.7734909,-0.110745735
+	attPos = 0,0,0
+	attPos0 = 0,0.0610618591,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,Null_0_0|0.282883197|0_0|1|0_0|0.282883197|0_0|1|0
+	attN = bottom,probeCoreOcto2.v2_4291014462_0|0|0_0|-1|0_0|0|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		acquireForceTweak = 100
+		crossfeed = True
+		nodeIsLocked = True
+		targetAngle = 0
+		inverted = False
+		stagingEnabled = False
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLockedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoEngageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoDisgageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			UndockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MakeReferenceToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			EnableXFeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DisableXFeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ToggleXFeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			targetAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = rcsTankRadialLong_4293038722
+	partName = Part
+	persistentId = 4107511912
+	pos = -0.280938536,31.2097187,-0.110745683
+	attPos = 0,0,0
+	attPos0 = -0.187616199,-0.0583515167,6.70552254E-08
+	rot = 0.707106829,0,0.707106829,0
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.707106829,0,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = rcsTankRadialLong_4293038408
+	srfN = srfAttach,C3.Kontainer.01_4293746646,COLL,0|0|-0.3125,0|0|-1,0|0|-0.3125
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 50
+		maxAmount = 50
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = rcsTankRadialLong_4293038408
+	partName = Part
+	persistentId = 2012885157
+	pos = 0.0942938626,31.2097187,-0.110745534
+	attPos = 0,0,0
+	attPos0 = 0.187616199,-0.0583515167,-8.19563866E-08
+	rot = -0.707106888,0,0.707106769,0
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.707106769,0,0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = rcsTankRadialLong_4293038722
+	srfN = srfAttach,C3.Kontainer.01_4293746646,COLL,0|0|-0.3125,0|0|-1,0|0|-0.3125
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 50
+		maxAmount = 50
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Size3LargeTank_4291470188
+	partName = Part
+	persistentId = 4020055843
+	pos = -0.0933223367,11.2152996,-0.110745616
+	attPos = 0,0,0
+	attPos0 = 0,-7.47999954,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = Size3EngineCluster_4293194890
+	attN = top,Size3LargeTank_4293196168_0|3.74000001|0_0|1|0_0|3.74000001|0_0|1|0
 	attN = bottom,Size3EngineCluster_4293194890_0|-3.74000001|0_0|-1|0_0|-3.74000001|0_0|-1|0
 	EVENTS
 	{
@@ -5735,7 +5914,7 @@ PART
 	part = Size3EngineCluster_4293194890
 	partName = Part
 	persistentId = 2682607151
-	pos = -0.0933223367,13.428051,-0.110745616
+	pos = -0.0933223367,5.94805145,-0.110745616
 	attPos = 0,0,0
 	attPos0 = 0,-5.26724815,0
 	rot = 0,0,0,1
@@ -5756,7 +5935,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,Size3LargeTank_4293196168_0|1.52724802|0_0|1|0_0|1.52724802|0_0|1|0
+	attN = top,Size3LargeTank_4291470188_0|1.52724802|0_0|1|0_0|1.52724802|0_0|1|0
 	EVENTS
 	{
 	}
@@ -6016,15 +6195,15 @@ PART
 }
 PART
 {
-	part = radialRCSTank_4290837776
+	part = StowPakSup_4291337516
 	partName = Part
-	persistentId = 2543261604
-	pos = -0.816756964,29.6513672,-0.0956841111
+	persistentId = 2370223985
+	pos = -0.0933223814,31.0140686,0.616068125
 	attPos = 0,0,0
-	attPos0 = -0.723434627,-0.0150614772,-1.86264515E-09
-	rot = 0.50000006,-0.50000006,0.50000006,-0.50000006
+	attPos0 = -4.47034836E-08,0.137298584,-0.726813734
+	rot = -1,0,0,-8.19563866E-08
 	attRot = 0,0,0,1
-	attRot0 = 2.98023224E-08,-0.707106829,0,-0.707106829
+	attRot0 = -8.19563866E-08,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -6037,239 +6216,10 @@ PART
 	sepI = -1
 	attm = 1
 	sameVesselCollision = False
-	modCost = 0
+	modCost = 8000
 	modMass = 0
 	modSize = 0,0,0
-	sym = radialRCSTank_4290837238
-	srfN = srfAttach,C3.Kontainer.01_4293814424,COLL,0|0|0.219999999,0|0|-1,0|0|0.219999999
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = MonoPropellant
-		amount = 20
-		maxAmount = 20
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = radialRCSTank_4290837238
-	partName = Part
-	persistentId = 1670871688
-	pos = 0.63011229,29.6513672,-0.0956841111
-	attPos = 0,0,0
-	attPos0 = 0.723434627,-0.0150614772,-1.86264515E-09
-	rot = -0.500000119,-0.5,0.500000119,0.5
-	attRot = 0,0,0,1
-	attRot0 = -5.96046448E-08,-0.707106829,5.96046448E-08,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = radialRCSTank_4290837776
-	srfN = srfAttach,C3.Kontainer.01_4293814424,COLL,0|0|0.219999999,0|0|-1,0|0|0.219999999
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = MonoPropellant
-		amount = 20
-		maxAmount = 20
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = StowPakSup_4286893090
-	partName = Part
-	persistentId = 2045699387
-	pos = -0.682543933,32.5995369,0.478477061
-	attPos = 0,0,0
-	attPos0 = -0.589221597,0.19816947,0.589221895
-	rot = 0,0.923879623,0,0.382683456
-	attRot = 0,0,0,1
-	attRot0 = 0,0.923879504,0,0.382683426
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 500
-	modMass = 0
-	modSize = 0,0,0
-	sym = StowPakSup_4286892440
-	sym = StowPakSup_4286892368
-	sym = StowPakSup_4286892296
-	srfN = srfAttach,C3.FlatTank.01_4293698804,Cylinder,0|0|0.224999994,0|0|-1,0|0|0.224999994
+	srfN = srfAttach,C3.Kontainer.01_4293746646,COLL,0|0|0.224999994,0|0|-1,0|0|0.224999994
 	EVENTS
 	{
 	}
@@ -6298,7 +6248,7 @@ PART
 	{
 		name = FStextureSwitch2
 		isEnabled = True
-		selectedTexture = 14
+		selectedTexture = 13
 		selectedTextureURL = 
 		selectedMapURL = 
 		stagingEnabled = True
@@ -6316,7 +6266,7 @@ PART
 	{
 		name = FSfuelSwitch
 		isEnabled = True
-		selectedTankSetup = 14
+		selectedTankSetup = 13
 		hasLaunched = False
 		configLoaded = True
 		stagingEnabled = True
@@ -6428,7 +6378,7 @@ PART
 	}
 	RESOURCE
 	{
-		name = Fertilizer
+		name = SpecializedParts
 		amount = 250
 		maxAmount = 250
 		flowState = True
@@ -6440,15 +6390,15 @@ PART
 }
 PART
 {
-	part = StowPakSup_4286892440
+	part = StowPakSup_4291337172
 	partName = Part
-	persistentId = 44846472
-	pos = 0.4958992,32.5995369,0.478477061
+	persistentId = 1189525485
+	pos = -0.0933222249,31.0140686,-0.837559342
 	attPos = 0,0,0
-	attPos0 = 0.589221537,0.19816947,0.589221895
-	rot = 0,0.923879743,0,-0.382683456
+	attPos0 = 1.11758709E-07,0.137298584,0.726813734
+	rot = 4.37113883E-08,8.19563866E-08,-1,3.58242759E-15
 	attRot = 0,0,0,1
-	attRot0 = 0,0.923879623,0,-0.382683396
+	attRot0 = 3.58242759E-15,1,8.19563866E-08,-4.37113883E-08
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -6461,13 +6411,10 @@ PART
 	sepI = -1
 	attm = 1
 	sameVesselCollision = False
-	modCost = 500
+	modCost = 175000
 	modMass = 0
 	modSize = 0,0,0
-	sym = StowPakSup_4286892368
-	sym = StowPakSup_4286892296
-	sym = StowPakSup_4286893090
-	srfN = srfAttach,C3.FlatTank.01_4293698804,Cylinder,0|0|0.224999994,0|0|-1,0|0|0.224999994
+	srfN = srfAttach,C3.Kontainer.01_4293746646,COLL,0|0|0.224999994,0|0|-1,0|0|0.224999994
 	EVENTS
 	{
 	}
@@ -6496,7 +6443,7 @@ PART
 	{
 		name = FStextureSwitch2
 		isEnabled = True
-		selectedTexture = 14
+		selectedTexture = 29
 		selectedTextureURL = 
 		selectedMapURL = 
 		stagingEnabled = True
@@ -6514,7 +6461,7 @@ PART
 	{
 		name = FSfuelSwitch
 		isEnabled = True
-		selectedTankSetup = 14
+		selectedTankSetup = 29
 		hasLaunched = False
 		configLoaded = True
 		stagingEnabled = True
@@ -6626,403 +6573,7 @@ PART
 	}
 	RESOURCE
 	{
-		name = Fertilizer
-		amount = 250
-		maxAmount = 250
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = StowPakSup_4286892368
-	partName = Part
-	persistentId = 1517015930
-	pos = 0.4958992,32.5995369,-0.699967563
-	attPos = 0,0,0
-	attPos0 = 0.589221537,0.198169589,-0.589221835
-	rot = 0,0.382683456,0,-0.923879743
-	attRot = 0,0,0,1
-	attRot0 = 0,0.382683396,0,-0.923879623
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 500
-	modMass = 0
-	modSize = 0,0,0
-	sym = StowPakSup_4286892296
-	sym = StowPakSup_4286893090
-	sym = StowPakSup_4286892440
-	srfN = srfAttach,C3.FlatTank.01_4293698804,Cylinder,0|0|0.224999994,0|0|-1,0|0|0.224999994
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = FStextureSwitch2
-		isEnabled = True
-		selectedTexture = 14
-		selectedTextureURL = 
-		selectedMapURL = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FSfuelSwitch
-		isEnabled = True
-		selectedTankSetup = 14
-		hasLaunched = False
-		configLoaded = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleResourceWarehouse
-		isEnabled = True
-		soiTransferEnabled = False
-		localTransferEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleBin
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWeightDistributableCargo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = Fertilizer
-		amount = 250
-		maxAmount = 250
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = StowPakSup_4286892296
-	partName = Part
-	persistentId = 313043615
-	pos = -0.682543933,32.5995369,-0.699967563
-	attPos = 0,0,0
-	attPos0 = -0.589221597,0.198169827,-0.589221835
-	rot = 0,-0.382683456,0,-0.923879743
-	attRot = 0,0,0,1
-	attRot0 = 0,-0.382683396,0,-0.923879623
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 500
-	modMass = 0
-	modSize = 0,0,0
-	sym = StowPakSup_4286893090
-	sym = StowPakSup_4286892440
-	sym = StowPakSup_4286892368
-	srfN = srfAttach,C3.FlatTank.01_4293698804,Cylinder,0|0|0.224999994,0|0|-1,0|0|0.224999994
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = FStextureSwitch2
-		isEnabled = True
-		selectedTexture = 14
-		selectedTextureURL = 
-		selectedMapURL = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FSfuelSwitch
-		isEnabled = True
-		selectedTankSetup = 14
-		hasLaunched = False
-		configLoaded = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleResourceWarehouse
-		isEnabled = True
-		soiTransferEnabled = False
-		localTransferEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleBin
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWeightDistributableCargo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = Fertilizer
+		name = Synthetics
 		amount = 250
 		maxAmount = 250
 		flowState = True
